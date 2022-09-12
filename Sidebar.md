@@ -1,11 +1,23 @@
 # Site Navigation
+
 [[README|Home]]  
 
-<!-- This comment is not rendered visibly to web.
+## Plans
 
-This file is published as the sidebar in the Basso theme.
+[[Massive Wiki Roadmap]]  
+[[Pier2Pier]]  
+[[Notional Pier 2 Pier Screens]]  
 
-Feel free to edit this page to customize your sidebar.
+## For Testing
 
-Remember to add two space characters to the end of lines to make a line break, or separate menu links will run together one one line.
--->
+[[wiki link test page]]
+
+## For Fun
+
+[[The Walrus]]
+
+## General Navigation
+
+[Search](/search.html)  
+[All Pages](/all-pages.html)  
+_maybe someday, Random Article!_  
