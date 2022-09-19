@@ -2,5 +2,8 @@
 
  - another test page
 
+2022-09-19: testing linking to different pages with the same name:
+
+- link to the first page created: [[Link workbench/samePageName]]
 
 
