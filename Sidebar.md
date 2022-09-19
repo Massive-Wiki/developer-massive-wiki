@@ -7,6 +7,7 @@
 [[Massive Wiki Roadmap]]  
 [[Pier2Pier]]  
 [[Notional Pier 2 Pier Screens]]  
+[[Massive Wiki Builder redesign notes and plans|Massive Wiki Builder redesign]]     
 
 ## For Testing
 
