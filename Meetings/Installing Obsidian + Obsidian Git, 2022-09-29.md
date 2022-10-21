@@ -16,7 +16,7 @@
 - There are places to ignore errors:
     - when you don't have a .git directory (can be fixed with Obsidian Git command to initialize repo)
 - Filename errors in Developer Wiki prevented it from cloning properly on Windows. We fixed `"Breadcrumbs"`, we didn't fix a link testing file.
-- Separately, Mathew and Pete created a [Fellowship of the Link organization in GitHub](https://github.com/Fellowship-of-the-Link) for Tft repo(s).
+- Separately, Mathew and Pete created a [Fellowship of the Link organization in GitHub](https://github.com/Fellowship-of-the-Link) for TfT repo(s).
 
 ## Software installs
 
