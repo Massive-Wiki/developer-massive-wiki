@@ -1,6 +1,6 @@
 # 2022-10-24 Hugo markdown testing
 
-This is an Obsidian note to observe what happens in Hugo to bulleted lists.
+This is an Obsidian note to observe what happens in Hugo to bulleted lists.  
 - like this bullet item here
 - and this other one
 - and yet a third one following on
