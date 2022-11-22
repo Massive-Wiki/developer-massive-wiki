@@ -11,6 +11,7 @@ phones:
   - +1-512-693-7378
 short-name: Bill
 sortable-name: "Anderson, Bill"
+fediverse: "@band@octodon.social"
 twitter: "@band"
 discord: "anderbill#9242"
 urls: 
