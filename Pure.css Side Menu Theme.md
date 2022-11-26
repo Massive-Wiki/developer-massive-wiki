@@ -12,7 +12,7 @@ Comments, contributions, or forks are welcome.
 
 ## Wishes and Issues
 
-BUG: The bounding box for links in the sidebar is too tall, which means it's easy to for a click to go to the wrong link for links that are stacked right on top of one another.
+**BUG:** The bounding box for links in the sidebar is too tall, which means it's easy to for a click to go to the wrong link for links that are stacked right on top of one another.
 
 Needs a "home page" template (which would need support in MWB).
 
