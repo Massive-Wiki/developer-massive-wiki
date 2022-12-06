@@ -73,3 +73,9 @@ Netlify has API access, and I've used it to publish static sites. It appears, th
 A service could be built that takes a webhook notification from Codeberg, builds the Massive Wiki static files, then uploads them to Netlify.  This could be Massive Wiki-specific (it only builds Massive Wikis), or more general, by using a CI tool like [Woodpecker CI](https://woodpecker-ci.org/).
 
 Another thing to check: whether Vercel would do a build and deploy via API.
+
+## Continuing Evolution
+
+Preferring a particular forge for now -- or even preferring a forge, rather than something that works peer-to-peer -- is not an end state, but another step in an evolution.
+
+The community should continue to evaluate its Git coordination strategy, and because it's Git, it should never be too hard to make another step towards a preferred solution.
