@@ -68,5 +68,5 @@ More information about using Massive Wiki Builder to generate a permanent versio
 ## Discussion
 
 *WLA (2022-12-11):* created an airtable for constructing Permanent Versions property metrics:
-  <https://airtable.com/appQ9KYTm2YxgCR2A/tblpTrYtVSqa7p5Xl/viwyiBVcKmR1HlBdc?blocks=hide>
-- the content of the fields need discussion and clarification.
+  <https://airtable.com/appQ9KYTm2YxgCR2A/tblpTrYtVSqa7p5Xl/viwyiBVcKmR1HlBdc?blocks=hide>  
+- the contents of the fields need discussion and clarification.
