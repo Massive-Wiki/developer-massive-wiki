@@ -64,3 +64,9 @@ The message should be obviously not the intended content, and of course, it will
 ## Implementations
 
 More information about using Massive Wiki Builder to generate a permanent version of a particular file will go here.
+
+## Discussion
+
+*WLA (2022-12-11):* created an airtable for constructing Permanent Versions property metrics:
+  <https://airtable.com/appQ9KYTm2YxgCR2A/tblpTrYtVSqa7p5Xl/viwyiBVcKmR1HlBdc?blocks=hide>
+- the content of the fields need discussion and clarification.
