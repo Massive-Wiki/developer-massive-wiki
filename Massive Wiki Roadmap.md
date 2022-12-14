@@ -2,7 +2,6 @@
 
 ## Massive Wiki Projects
 
-- [ ] upgrade Developer Wiki to MWB 2.0 (Bill)
 - [ ] create fractal/graph db of MW projects
 - [ ] improving Massive Wiki Builder
 - [ ] move MWB and MWT central repos from github:peterkaminski to github:Massive-Wiki
