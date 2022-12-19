@@ -73,3 +73,4 @@ More information about using Massive Wiki Builder to generate a permanent versio
 - the contents of the fields need discussion and clarification.
 - it seems that we probably want to truncate the SHA-256 hash to the first 128 bits (32 hex characters); 64 characters take up a lot of room on a line in an email or a web page
 - A similar but different way to do it, use the regular filename and filepath as a page, but save a fixed version suffixed with a date stamp: "/example folder/example page 20221212T183227.123Z.html" or similar. Cons: doesn't integrate a hash to guarantee no changes, different fixed pages will end up in different directories; original page name may disappear so preserving the filename may not help you find the current version anyway.
+- A similar but different way to do it: [[Tech Note - Permanent HTML Snapshots]]
