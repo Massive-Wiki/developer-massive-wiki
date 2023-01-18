@@ -6,7 +6,7 @@
 
 [[Massive Wiki Roadmap]]  
 [[Pier2Pier]]  
-[[Notional Pier 2 Pier Screens]]  
+[[Notional Pier 2 Pier Screens, 2022-03-16.drawio.png|Notional Pier 2 Pier Screens]]  
 [[Massive Wiki Builder redesign notes and plans|Massive Wiki Builder redesign]]     
 
 ## For Testing
