@@ -46,4 +46,4 @@ Matrix: @anderbill:matrix.org
 
 Discord: anderbill#9242
 
-Twitter: [@band](https://twitter.com/band)
+Twitter: [@band](https://twitter.com/band) (deprecated)  
