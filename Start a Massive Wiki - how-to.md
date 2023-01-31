@@ -1,7 +1,5 @@
 # Start a Massive Wiki - how-to
 
-_2023-01-31: Version 0_
-_Author: Bill Anderson_
 
 A Massive Wiki supports the sharing of versions of files in Markdown format. Markdown, Shared, Versioned, Files led to an acronym, MaSVF, that is pronounced like the word "Massive". A Massive Wiki is a collection of files in markdown format that can contain links to each other and to other resources both local and on the internet.
 
