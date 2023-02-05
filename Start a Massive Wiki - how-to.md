@@ -12,7 +12,7 @@ Establishing and using a Massive Wiki starts with answering a few questions.
 
 With these two questions answered a Massive Wiki can be created and put into practice. One further question remains.
 
-**Third**: will this wiki be published to the World-Wide Web? The Massive Wiki team provides a publication method, Massive Wiki Builder (MWB), that renders the content of the wiki as a static web site. For a Github wiki repository, MWB can be enabled by Github, or by another hosting service such as [Netlify](https://netlify.app).  
+**Third**: will this wiki be published to the World-Wide Web? The Massive Wiki team provides a publication method, Massive Wiki Builder (MWB), that renders the content of the wiki as a static web site. For a Github wiki repository, MWB publishing can be enabled by Github, or by another hosting service such as [Netlify](https://netlify.app).  
 
 
 
