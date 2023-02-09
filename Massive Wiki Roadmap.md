@@ -42,5 +42,5 @@
 - [ ] more cleanup of mwb_wikilinks_plus #refactoring
 - [ ] decide whether we want a plugin system or not
 - [ ] <https://github.com/peterkaminski/massivewikibuilder/issues>
-- [ ] look at [Stork](https://stork-search.net/) for another search engine
+- [ ] look at [Stork](https://stork-search.net/) for another search engine (in addition or to supplant [[Lunr]])
 - [ ] evaluate other [[Python Markdown engines]], add to or replace current library if appropriate
