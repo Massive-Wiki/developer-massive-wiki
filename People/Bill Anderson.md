@@ -12,7 +12,7 @@ phones:
 short-name: Bill
 sortable-name: "Anderson, Bill"
 fediverse: "@band@octodon.social"
-twitter: "@band" (deprecated)
+twitter: "@band (deprecated)"
 discord: "anderbill#9242"
 urls: 
   - "https://about.me/wlanderson/"
