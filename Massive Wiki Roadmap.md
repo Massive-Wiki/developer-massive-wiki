@@ -2,10 +2,7 @@
 
 ## Massive Wiki Projects
 
-- [ ] create fractal/graph db of MW projects
 - [ ] improving Massive Wiki Builder
-- [ ] move MWB and MWT central repos from github:peterkaminski to github:Massive-Wiki
-	- [ ] fix all the links to the peterkaminski repos in READMEs and whatever else
 - [ ] create [[Opal]]
 - [ ] create [[Zirconia]]
 	- [ ] kill or revive [Missive Weaver](https://github.com/peterkaminski/missive-weaver)
@@ -15,14 +12,16 @@
 
 ## Icebox / Looking to the Future
 
+- [ ] move MWB and MWT central repos from github:peterkaminski to github:Massive-Wiki
 - [ ] store Massive Wiki on Hyperdrive?
 - [ ] store Massive Wiki as [Noosphere](https://subconscious.substack.com/p/noosphere-a-protocol-for-thought) spheres?
 - [ ] publish Massive Wikis vis [Distributed Press](https://distributed.press/)?
 
 ## Blog About Our Experiences
 
-- [ ] try Pijul
-- [ ] try Syncthing
+- [ ] version control and sharing: Pijul, Syncthing, Git, Git forges
+- [ ] use SuperLiminal
+- [ ] Wiki Culture
 
 ## Improving Massive Wiki Builder
 
