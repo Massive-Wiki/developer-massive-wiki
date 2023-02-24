@@ -1,5 +1,7 @@
 # Opal
 
+One of the [[Things to Build]].
+
 Also see: [[Zirconia]], [[Obsidian]].
 
 Opal is a desktop (and probably web and mobile) front-end, or client, for Massive Wiki.
