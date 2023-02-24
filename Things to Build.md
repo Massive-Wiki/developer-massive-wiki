@@ -2,4 +2,4 @@
 
 - [[Axinite]]
 - [[Opal]]
-- [[Zirconia]]
+- [[Zircon]]

@@ -4,7 +4,7 @@
 
 - [ ] improving Massive Wiki Builder
 - [ ] create [[Opal]]
-- [ ] create [[Zirconia]]
+- [ ] create [[Zircon]]
 	- [ ] kill or revive [Missive Weaver](https://github.com/peterkaminski/missive-weaver)
 - [ ] create [[Pier2Pier]]
 	- [ ] may be obviated by [[Obsidian Git]]'s source control view
