@@ -3,3 +3,5 @@
 - [[Axinite]]
 - [[Opal]]
 - [[Zircon]]
+
+this is a test from GitJournal
