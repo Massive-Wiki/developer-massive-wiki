@@ -20,7 +20,7 @@ This page contains some preliminary thinking by [[Bill Anderson]].
  
   - Zettelkasten: this [introduction](https://zettelkasten.de/introduction/) provides a generative description of the method.
 
-  - Unix OS file system: how files are managed in the directory system; how hierarchy of the file system is related to maintaince of file system integrity. (cf., [Bell System Technical Journal: The UNIX Operating System, July 1978](https://bandstands.praxis101.net/references/1978_ritchie_unixtimesharingsystem))
+  - Unix OS file system: how files are managed in the directory system; how hierarchy of the file system is related to maintenance of file system integrity. (cf., [Bell System Technical Journal: The UNIX Operating System, July 1978](https://bandstands.praxis101.net/references/1978_ritchie_unixtimesharingsystem))
 
   - linking on wikis and elsewhere: in order to link an item it needs a name, hence item 3, above. In the world-wide-web lands, links are represented by [[URIs URLs and URNs]].
 
