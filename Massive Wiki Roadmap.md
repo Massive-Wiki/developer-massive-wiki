@@ -27,6 +27,7 @@
 
 ### Now
 
+- [ ] [[MWB3]] - replace Markdown parser with [[Mistletoe]]
 - [ ] add reverse-chronological div to All Pages (Bill)
 	- [ ] make alpha + chrono divs into tabs, use [jQuery tabs](https://jqueryui.com/tabs/) to toggle (Pete)
 - [ ] [Format incipient links differently #37](https://github.com/peterkaminski/massivewikibuilder/issues/37)
