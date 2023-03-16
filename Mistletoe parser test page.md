@@ -18,13 +18,16 @@ $ date -u
 	- [[Gemstone Names]]  
 	- [[WikiNow]]  
 	- [[Link workbench/testdir/text only wiki page.txt|text format page]]
-	- images will need some special handling
-		- here is an image from the MassiveWiki `_attachments` folder in CommonMark format
-		  `![custom display text](link_to_image_file)`:  
-	   ![The purpose of poetry](_attachments/2021-11-11-Milosz.jpeg)  
-		- and here is one from another directory using Obsidian wikilink format 
-		`![[image_file_name]]`:  
-		![[Anderson_2017_semanticWebEntities.png]]  
+	- images will need some special handling  
+	
+	- here is an image from the MassiveWiki `_attachments` folder in CommonMark format:  
+			  `![custom display text](link_to_image_file)`:  
+	 
+	![The purpose of poetry](_attachments/2021-11-11-Milosz.jpeg)  
+	-  and here is an image from a different directory using Obsidian wikilink format: 
+			`![[image_file_name]]`:  
+	
+	![[Anderson_2017_semanticWebEntities.png]]  
 	
 
 Other tests of using Mistletoe to render Markdown to HTML for Massive Wikis are needed. And, we expect, more general usage will unearth any issues. In fact, we are certain of that.
