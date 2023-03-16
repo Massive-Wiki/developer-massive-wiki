@@ -18,4 +18,4 @@ node_modules
 
 # Massive Wiki Builder
 .massivewikibuilder/output/*
-.massivewikibuilder/output3/*
+.massivewikibuilder/output*/*
