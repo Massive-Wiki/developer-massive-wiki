@@ -20,7 +20,7 @@ $ date -u
 	- [[Link workbench/testdir/text only wiki page.txt|text format page]]
 	- images will need some special handling
 		- here is an image from the MassiveWiki `_attachments` folder in CommonMark format
-		  `![custom display text](link_to_image_file)`:
+		  `![custom display text](link_to_image_file)`:  
 	   ![The purpose of poetry](_attachments/2021-11-11-Milosz.jpeg)  
 		- and here is one from another directory using Obsidian wikilink format 
 		`![[image_file_name]]`:  
