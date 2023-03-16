@@ -1,5 +1,4 @@
 # MassiveWikiBuilder V3-pseudocode
-# MassiveWikiBuilder V3-pseudocode
 
 outline of MassiveWiki HTML rendering process
 
