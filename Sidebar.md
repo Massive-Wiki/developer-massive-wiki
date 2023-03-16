@@ -11,7 +11,7 @@
 ## For Testing
 
 [[wiki link test page]]  
-[[2023-02-25 Mistletoe parser test page|Mistletoe parser test page]]  
+[[Mistletoe parser test page|Mistletoe parser test page]]  
 
 ## For Fun
 
