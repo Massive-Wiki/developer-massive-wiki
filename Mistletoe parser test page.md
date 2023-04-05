@@ -21,7 +21,7 @@ $ date -u
 	- images will need some special handling  
 	
 	- here is an image from the MassiveWiki `_attachments` folder in CommonMark format:  
-			  `![custom display text](link_to_image_file)`:  
+			  `![alternate text](link_to_image_file)`:  
 	 
 	![The purpose of poetry](_attachments/2021-11-11-Milosz.jpeg)  
 	-  and here is an image from a different directory using Obsidian wikilink format: 
