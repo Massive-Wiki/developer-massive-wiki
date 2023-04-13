@@ -1,7 +1,7 @@
 [submodule ".massivewikibuilder/massivewikibuilder"]
 	path = .massivewikibuilder/massivewikibuilder
 	url = https://github.com/peterkaminski/massivewikibuilder.git
-	branch = wla-mwb3-20230406
+	branch = pk-mistletoe-img-20230410
 [submodule ".massivewikibuilder/massive-wiki-themes"]
 	path = .massivewikibuilder/massive-wiki-themes
 	url = https://github.com/peterkaminski/massive-wiki-themes.git
