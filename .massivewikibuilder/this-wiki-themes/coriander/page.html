@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }}</title>
+    <style>
+      body {
+          font-family: 'Arial', sans-serif;
+          font-size: 16px;
+          line-height: 1.6;
+          margin: 0;
+          padding: 0;
+      }
+
+      header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          background-color: #f8f9fa;
+          border-bottom: 1px solid #a2a9b1;
+          padding: 10px 20px;
+      }
+
+      nav {
+          display: flex;
+          align-items: center;
+          flex: 0 0 40%; /* width of top nav */
+          justify-content: flex-end;
+      }
+
+      nav ul {
+          display: flex;
+          flex-wrap: wrap;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      nav ul li {
+          margin-right: 15px;
+          margin-bottom: 5px;
+      }
+
+      nav ul li a {
+          text-decoration: none;
+          color: #0645ad;
+      }
+
+      nav ul li a:hover {
+          text-decoration: underline;
+      }
+
+      #sidebar {
+          position: sticky;
+          top: 0;
+          width: 20%;
+          height: 100%;
+          overflow-y: auto;
+          padding: 20px;
+          border-right: 1px solid #a2a9b1;
+      }
+
+      #content {
+          width: 80%;
+          padding: 20px;
+      }
+
+      .wrapper {
+          display: flex;
+      }
+
+      .sidebar-btn {
+          display: none;
+      }
+
+      @media screen and (max-width: 768px) {
+          header h1 {
+              font-size: 1.2em;
+          }
+
+          nav {
+              flex: 0 0 100%; /* Set the width to 100% on small screens */
+              justify-content: right;
+          }
+
+          .wrapper {
+              flex-direction: column;
+          }
+
+          #sidebar {
+              position: fixed;
+              top: 100;
+              left: -100%;
+              width: 25%;
+              height: 50%;
+              z-index: 1;
+              transition: left 0.3s;
+          }
+
+          .sidebar-btn {
+              display: block;
+              cursor: pointer;
+              background-color: transparent;
+              border: none;
+              font-size: 1.2em;
+              margin: 10px;
+          }
+
+          .sidebar-btn:focus {
+              outline: none;
+          }
+
+          #sidebar.show {
+              left: 0;
+          }
+      }
+    </style>
+
+    <script>
+      function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("show");
+      }
+    </script>
+
+  </head>
+  <body>
+    <header>
+      <h1>{{ wiki_title }}</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">All Pages</a></li>
+          <li><a href="#">Random Page</a></li>
+          <li><a href="#">Search</a></li>
+    </ul>
+  </nav>
+  <button class="sidebar-btn" onclick="toggleSidebar()">&gt;</button>
+</header>
+
+<div class="wrapper">
+  <aside id="sidebar">
+    <button class="sidebar-btn" onclick="toggleSidebar()">&lt;</button>
+    {{ sidebar_body }}
+  </aside>
+
+  <div id="content">
+    {{ markdown_body }}
+  </div>
+</div>
+</body>
+</html>
