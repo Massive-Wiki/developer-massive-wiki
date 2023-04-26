@@ -3,6 +3,8 @@
 ## Massive Wiki Projects
 
 - [ ] improving Massive Wiki Builder
+	- [ ] mwb3 (ready to ship 3.0.0!
+	- [ ] finish Coriander theme
 - [ ] create [[Opal]]
 - [ ] create [[Zircon]]
 	- [ ] kill or revive [Missive Weaver](https://github.com/peterkaminski/missive-weaver)
