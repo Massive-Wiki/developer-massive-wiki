@@ -35,4 +35,3 @@ $ date -u
  ![[Anderson_2017_semanticWebEntities.png]]  
 
 Other tests of using Mistletoe to render Markdown to HTML for Massive Wikis are needed. And, we expect, more general usage will unearth any issues. In fact, we are certain of that.
-
