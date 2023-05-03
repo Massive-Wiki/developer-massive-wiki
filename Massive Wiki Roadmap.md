@@ -6,7 +6,8 @@
 
 - [x] [[MWB3]] - replace Markdown parser with [[Mistletoe]]
 - [ ] port alpha + chrono All Pages from developer wiki's this themes / Basso and make a MWT release
-	- [ ] some day make alpha + chrono divs into tabs, use [jQuery tabs](https://jqueryui.com/tabs/) to toggle (Pete)
+	- [ ] some day make alpha + chrono divs into tabs, use [jQuery tabs](https://jqueryui.com/tabs/) to toggle
+- [ ] pass build-results dict to page rendering, add build-results section in Basso (maybe commented out?)
 - [ ] [Format incipient links differently #37](https://github.com/peterkaminski/massivewikibuilder/issues/37)
 - [ ] backlinks (in a right-hand sidebar? at the bottom of the page? like TiddlyWiki?)
 
