@@ -1,9 +1,29 @@
 # Massive Wiki Roadmap
 
+## Improving Massive Wiki Builder
+
+### Now
+
+- [ ] [[MWB3]] - replace Markdown parser with [[Mistletoe]]
+- [ ] add reverse-chronological div to All Pages (Bill)
+	- [ ] make alpha + chrono divs into tabs, use [jQuery tabs](https://jqueryui.com/tabs/) to toggle (Pete)
+- [ ] [Format incipient links differently #37](https://github.com/peterkaminski/massivewikibuilder/issues/37)
+- [ ] backlinks (in a right-hand sidebar? at the bottom of the page? like TiddlyWiki?)
+
+### Up Next
+
+- [ ] merge all calls to .render() into one call #refactoring
+- [ ] separate home page template (generalize to _many_ page templates)
+- [ ] more than one sidebar (left, right)
+- [ ] decide whether we want a plugin system or not
+- [ ] <https://github.com/peterkaminski/massivewikibuilder/issues>
+- [ ] look at [Stork](https://stork-search.net/) for another search engine (in addition or to supplant [[Lunr]])
+- [ ] continue to evaluate other [[Python Markdown engines]]
+
 ## Massive Wiki Projects
 
 - [ ] improving Massive Wiki Builder
-	- [ ] mwb3 (ready to ship 3.0.0!
+	- [ ] mwb3 (ready to ship 3.0.1)!
 	- [ ] finish Coriander theme
 - [ ] create [[Opal]]
 - [ ] create [[Zircon]]
@@ -18,6 +38,7 @@
 - [ ] store Massive Wiki on Hyperdrive?
 - [ ] store Massive Wiki as [Noosphere](https://subconscious.substack.com/p/noosphere-a-protocol-for-thought) spheres?
 - [ ] publish Massive Wikis vis [Distributed Press](https://distributed.press/)?
+- [ ] other filesystems / messaging systems: IPFS, Nostr
 
 ## Blog About Our Experiences
 
@@ -25,24 +46,3 @@
 - [ ] use SuperLiminal
 - [ ] Wiki Culture
 
-## Improving Massive Wiki Builder
-
-### Now
-
-- [ ] [[MWB3]] - replace Markdown parser with [[Mistletoe]]
-- [ ] add reverse-chronological div to All Pages (Bill)
-	- [ ] make alpha + chrono divs into tabs, use [jQuery tabs](https://jqueryui.com/tabs/) to toggle (Pete)
-- [ ] [Format incipient links differently #37](https://github.com/peterkaminski/massivewikibuilder/issues/37)
-- [ ] backlinks (in a right-hand sidebar? at the bottom of the page? like TiddlyWiki?)
-
-### Up Next
-
-- [ ] merge index_wiki() and main processing loop #refactoring
-- [ ] merge all calls to .render() into one call #refactoring
-- [ ] separate home page template (generalize to _many_ page templates)
-- [ ] more than one sidebar (left, right)
-- [ ] more cleanup of mwb_wikilinks_plus #refactoring
-- [ ] decide whether we want a plugin system or not
-- [ ] <https://github.com/peterkaminski/massivewikibuilder/issues>
-- [ ] look at [Stork](https://stork-search.net/) for another search engine (in addition or to supplant [[Lunr]])
-- [ ] evaluate other [[Python Markdown engines]], add to or replace current library if appropriate
