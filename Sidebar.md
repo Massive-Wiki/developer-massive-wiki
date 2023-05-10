@@ -12,6 +12,7 @@
 
 [[wiki link test page]]  
 [[Mistletoe parser test page|Mistletoe parser test page]]  
+[[Mistletoe & the ampersand story]]  
 
 ## For Fun
 
