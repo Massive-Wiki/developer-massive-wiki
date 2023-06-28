@@ -12,6 +12,17 @@
 	  <div class="column">
             <div class="content markdown-body">
               {{ markdown_body }}
+	      {% if backlinks %}
+	      <hr>
+	      <div>
+		<h4>Pages that link to this page</h4>
+		<ul>
+		  {% for backlink in backlinks %}
+		    <li><a href="{{backlink.path}}">{{backlink.title}}</a>
+		  {%- endfor -%}
+		</ul>
+	      </div>
+	      {% endif %}
             </div>
 	  </div>
 	</div>
