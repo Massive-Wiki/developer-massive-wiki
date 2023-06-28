@@ -13,7 +13,7 @@ short-name: Bill
 sortable-name: "Anderson, Bill"
 fediverse: "@band@octodon.social"
 twitter: "@band (deprecated)"
-discord: "anderbill#9242"
+discord: "anderbill"
 urls: 
   - "https://about.me/wlanderson/"
 ---
