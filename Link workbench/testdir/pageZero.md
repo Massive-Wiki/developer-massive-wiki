@@ -12,7 +12,7 @@ link back to this page, the one we have named pageZero.md.
 
 The simple thinking here is to read each wiki page and as we find
 links append the needed backlink information; viz., the name of this
-page, to a data item about that page. Got it? No? Me, neither.
+page, to a data item about that page. Got it? No? Me neither.
 
 
 
