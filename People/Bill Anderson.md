@@ -12,17 +12,17 @@ phones:
 short-name: Bill
 sortable-name: "Anderson, Bill"
 fediverse: "@band@octodon.social"
-twitter: "@band (deprecated)"
 discord: "anderbill"
+twitter (deprecated): "@band"
 urls: 
   - "https://about.me/wlanderson/"
 ---
 # Bill Anderson
 
 ## What about me?
-A retired data informatician (what does that mean?), sociotechnical (what? another big word?) computer systems engineer, and chemist. Also an open access advocate and inveterate punster.
+A retired data informatician (what does that mean?), sociotechnical computer systems engineer, and chemist. Also an open access advocate and inveterate punster.
 
-When asked recently about what I value and my interests I responded with "Kindness, curiosity, honesty, and humor. I am interested in learning about, examining, and promoting abundance-based models and ideas of sustainable human societies."
+When asked recently about what I value and my interests I said, with "Kindness, curiosity, honesty, and humor. I am interested in learning about, examining, and promoting abundance-based models and ideas of sustainable human societies."
 
 I am also reviewing my childhood first-order learnings about how the world works.
 
@@ -40,10 +40,8 @@ Initials: "WLA"
 
 Basic landing page: https://about.me/wlanderson
 
-Mastodon: https://octodon.social/@band  
-
-Matrix: @anderbill:matrix.org
-
-Discord: anderbill#9242
-
-Twitter: [@band](https://twitter.com/band) (deprecated)  
+Socials:  
+ - Mastodon: https://octodon.social/@band  
+ - Matrix: @anderbill:matrix.org  
+ - Discord: anderbill  
+ - Twitter (DEPRECATED): [@band](https://twitter.com/band)  
