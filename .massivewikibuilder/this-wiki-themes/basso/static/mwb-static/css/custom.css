@@ -4,4 +4,21 @@ div#allPagesTableWrapper {
 
 /* incipient links */
 span.incipient-wikilink { color:#dd3333; text-decoration:underline; }
+/* format the hover tooltip for these links */
+/* TODO: review colors, position, ... */
+span.incipient-wikilink .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
 
+span.incipient-wikilink:hover .tooltiptext {
+  visibility: visible;
+}
