@@ -7774,7 +7774,7 @@ span.incipient-wikilink {
 
 /* body of incipient link popup */
 span.incipient-wikilink::before {
-  content: "No page exists for this link yet, but it may be created in the future.";
+  content: "No page exists for this link yet, but one may be created in the future.";
   position: absolute;
   bottom: 100%;
   left: 50%;
