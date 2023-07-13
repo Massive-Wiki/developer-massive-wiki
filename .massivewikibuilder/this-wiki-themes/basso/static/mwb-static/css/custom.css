@@ -2,23 +2,44 @@ div#allPagesTableWrapper {
     margin: 3em 4em 1em 4em;
 }
 
-/* incipient links */
-span.incipient-wikilink { color:#dd3333; text-decoration:underline; }
-/* format the hover tooltip for these links */
-/* TODO: review colors, position, ... */
-span.incipient-wikilink .tooltiptext {
-  visibility: hidden;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 10px;
-  
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
+span.incipient-wikilink {
+  color: #dd3333;
+  position: relative;
+  display: inline-block;
+  text-decoration: underline dashed;
+  cursor: pointer;
 }
 
-span.incipient-wikilink:hover .tooltiptext {
-  visibility: visible;
+span.incipient-wikilink::before {
+  content: "No page exists for this link yet, but it may be created in the future.";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ee8;
+  color: #000;
+  padding: .1em .5em .1em .5em;
+  border-radius: .5em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+span.incipient-wikilink:hover::before {
+  opacity: 1;
+}
+
+span.incipient-wikilink:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: .5em solid transparent;
+  border-top-color: #ee8;
+  border-bottom: 0;
+  margin-left: -.5em;
+  margin-bottom: -.5em;
 }
