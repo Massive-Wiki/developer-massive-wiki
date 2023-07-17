@@ -8,11 +8,13 @@
 - [ ] port alpha + chrono All Pages from developer wiki's this themes / Basso and make a MWT release
 	- [ ] some day make alpha + chrono divs into tabs, use [jQuery tabs](https://jqueryui.com/tabs/) to toggle
 - [ ] pass build-results dict to page rendering, add build-results section in Basso (maybe commented out?)
-- [ ] [Format incipient links differently #37](https://github.com/peterkaminski/massivewikibuilder/issues/37)
-- [ ] backlinks (in a right-hand sidebar? at the bottom of the page? like TiddlyWiki?)
+- [x] [Format incipient links differently #37](https://github.com/peterkaminski/massivewikibuilder/issues/37)
+- [x] backlinks (in a right-hand sidebar? at the bottom of the page? like TiddlyWiki?)
 
 ### Up Next
 
+- [ ] annotate external links with destination domain (e.g., `[Iron](https://en.wikipedia.org/wiki/Iron)` gets " (en.wikipedia)" appended)
+- [ ] password-protect deployed with with StatiCrypt or PageCrypt
 - [ ] merge all calls to .render() into one call #refactoring
 - [ ] separate home page template (generalize to _many_ page templates)
 - [ ] more than one sidebar (left, right)
@@ -24,7 +26,7 @@
 ## Massive Wiki Projects
 
 - [ ] improving Massive Wiki Builder
-	- [ ] mwb3 (ready to ship 3.0.1)!
+	- [ ] mwb3 (ready to ship 3.1)!
 	- [ ] finish Coriander theme
 - [ ] create [[Opal]]
 - [ ] create [[Zircon]]
