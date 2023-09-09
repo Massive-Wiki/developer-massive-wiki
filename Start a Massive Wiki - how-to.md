@@ -5,10 +5,10 @@ A Massive Wiki supports the sharing of versions of files in Markdown format. Mar
 
 Establishing and using a Massive Wiki starts with answering a few questions.
 
-**First**: what software apps will be used to write and edit Markdown Files? One app that supports Markdown and inter-file linking is [Obsidian](https://obsidian.md). There are other well-supported apps for creating wiki-linked notes, such as [Logseq](https://logseq.com). Plain text editors such as Emacs, Vim, Notepad, (more??) can be used but wiki-linking is often left without support from the app.  
+**First**: what software apps are used to write and edit Markdown Files? One app that supports Markdown and inter-file linking is [Obsidian](https://obsidian.md). There are other well-supported apps for creating wiki-linked notes, such as [Logseq](https://logseq.com). Plain text editors such as Emacs, Vim, Notepad, (more??) can be used but wiki-linking is often left without support from the app.  
  - TODO: clarify this list and include links
 
-**Second**: how will wiki files be shared and versioned? One way to do this is to use a Git-based system, such as [GIthub](https://github.com), [Gitlab](https://gitlab.com), or [Codeberg](https://codeberg.org). Our current primary wiki practice uses Github. Git services manage the versioning of wiki files well; sharing practices need to be established for each wiki. We have [[File Sharing and Versioning|suggestions]].  
+**Second**: how are wiki files shared and versioned? One way to do this is to use a Git-based system, such as [GIthub](https://github.com), [Gitlab](https://gitlab.com), or [Codeberg](https://codeberg.org). Our current primary wiki practice uses Github. Git services manage the versioning of wiki files well; sharing practices need to be established for each wiki. We have [[File Sharing and Versioning|suggestions]].  
 
 With these two questions answered a Massive Wiki can be created and put into practice. One further question remains.
 
