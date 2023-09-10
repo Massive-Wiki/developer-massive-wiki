@@ -1,5 +1,8 @@
 # Installing Git and GitHub CLI on Mac
 
+- By Peter Kaminski, CC-BY, edits welcome, please credit yourself here.
+- Edits may be incorporated into Pete's Path Shift People lesson on this topic unless you license your changes differently.
+- Last updated: 2023-09-10
 ## Overview
 
 These instructions apply if you are want to install Git and the GitHub CLI on your Mac. We will use the "Terminal" app to run commands on your Mac. If you prefer to use a GUI (graphical user interface, with app windows and your mouse), these instructions are not for you.
