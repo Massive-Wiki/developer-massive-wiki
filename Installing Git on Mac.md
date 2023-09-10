@@ -198,7 +198,9 @@ Resolving deltas: 100% (74/74), done.
 
 Using Finder, open the Documents/GitHub folder. You should see a new folder, "prosefusion-cloud", which was just cloned from GitHub. You can open that folder and explore. You can even change the files here on your computer. Those changes won't happen to the cloud repo in GitHub, nor to anyone else's copy of the repo, unless you use Git to sync them.
 
-Congratulations, you have installed Homebrew, Git, and GitHub CLI on your Mac! You can move to the next lesson, **Using Git to Sync Changes**.
+Congratulations, you have installed Homebrew, Git, and GitHub CLI on your Mac!
+
+You can move to the next lesson, **Using Git to Sync Changes**.
 
 ---
 ## PK, 2023-09-09
