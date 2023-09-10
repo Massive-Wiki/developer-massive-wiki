@@ -1,7 +1,7 @@
 # Installing Git and GitHub CLI on Mac
 
 - By Peter Kaminski, CC-BY, edits welcome, please credit yourself here.
-- Edits may be incorporated into Pete's Path Shift People lesson on this topic unless you license your changes differently.
+- Edits may be incorporated into Pete's Path Shift People lesson on this topic, with attribution, unless you license your changes differently.
 - Last updated: 2023-09-10
 ## Overview
 
