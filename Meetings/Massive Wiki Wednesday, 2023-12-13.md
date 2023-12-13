@@ -6,5 +6,5 @@
 - next year, consider working on:
     - permalink solutions (reconcile local folder convenience with web need for permalinks)
     - maybe move Git-for-beginners work to Prose Fusion?
-    - develop and share more wiki best practices, ho-to, etc.
+    - develop and share more wiki best practices, how-to, etc.
 - off-topic: better messaging apps, Pete's idea about an email-based short-threaded-message network
