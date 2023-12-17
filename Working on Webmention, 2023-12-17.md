@@ -1,7 +1,7 @@
 <div class="h-entry">
 <h1 class="p-name">Working on Webmention, 2023-12-17</h1>
 <a class="u-url" href="https://developer.massive.wiki/working_on_webmention,_2023-12-17">permalink</a>
-<div class=e-content">
+<div class="e-content">
 I (Pete) am working on Webmention as part of IndieWebCamp San Diego 2023.
 
 [Angelo](https://ragt.ag/) is graciously helping me by answering newbie questions. :-)
