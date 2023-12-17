@@ -27,3 +27,5 @@ Pseudocode:
 			- update the "last checked for sending webmentions" time for this page
 
 See <https://indieweb.org/Webmention-developer#Libraries> for libraries.
+
+Consider doing an RSS feed at the same time.
