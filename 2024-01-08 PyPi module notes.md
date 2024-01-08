@@ -8,7 +8,7 @@
  - important to create and use `test.pypi.org` to work out the use details; requires creating a login and an API key  
  - reading the `flit` documentation, care must be taken to insure that testing uses the `test.pypi.org` system; seems easy to end up using the default, which is the main PyPI server, and that needs to be avoided.  
 
- - a few questions to answer:  
+ - questions to answer:  
 	 - best to just have an empty `__init.py__` file?  
 	 - where is a good place to define the `version` descriptor? (reason for this question: some docs show it in the `pyproject.toml` file which seems like a terrible place -- once all that metadata is set up just leave that file alone; some docs show it imported into the `__init.py__` file, but how is that used?; `flit` wants the version descriptor at the top of the source file -- OK, that seems maintainable )  
 
