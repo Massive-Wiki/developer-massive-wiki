@@ -1,4 +1,4 @@
-# 2024-01-08 PyPi module notes
+# 2024-01-08 PyPI module notes
 (note by Bill)
 
 - reviewed several PyPi module build tools and settled on two prospects:
