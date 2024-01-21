@@ -12,6 +12,8 @@ You can make a link like this: `[[double square brackets]]` - for example, `[[Ma
 
 If you need to change the link text: [[Massive Wiki Roadmap|roadmap]].
 
+Massive Wiki Builder does not currently support internal Markdown links like this, though: [roadmap][Massive%20Wiki%20Roadmap.md].
+
 Sometimes, we use a fenced code block as an example.
 
 ```markdown
