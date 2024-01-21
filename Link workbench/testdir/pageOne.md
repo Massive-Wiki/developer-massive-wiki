@@ -10,6 +10,8 @@ We have [[links that are incipient]] (i.e., a link to MassiveWiki page that has 
 
 You can make a link like this: `[[double square brackets]]` - for example, `[[Massive Wiki Roadmap]]`.
 
+If you need to change the link text: [roadmap](Massive Wiki Roadmap).
+
 Sometimes, we use a fenced code block as an example.
 
 ```markdown
