@@ -1,4 +1,8 @@
-# Massive Wiki Wednesda,y, 2024-01-31
+# Massive Wiki Wednesday, 2024-01-31
+
+## Recording
+
+- [Massive Wiki Wednesday, 2024-01-31 (YouTube)](https://youtu.be/_tM-XHLM7JU)
 
 ## Topics
 - [[Fellowship of the link]]
@@ -153,14 +157,53 @@ Desired outcome:
 
 A page from Pete about types of transcriptions in handwriting -- might there be something similar with audio transcription?
 
-# Diplomatic and Normalized Transcriptions
+![[Diplomatic and Normalized Transcriptions]]
 
-In handwriting transcription, we have "diplomatic" transcription and "normalized" transcription.  (And semi-diplomatic and semi-normalized....)
+---
 
-"Diplomatic" transcription tries to copy the text exactly, with archaic orthography and what-have-you.
+## Zoom Chat
 
-"Normalized" transcription tries to make the text readable by a modern reader.
+_two space characters appended to each line_
 
-Resources:
-
-- [TEI: Levels of Transcription \(Driscoll\)](https://tei-c.org/Vault/ETE/Preview/driscoll.html)
+00:12:42	Pete Kaminski:	https://hackmd.io/@peterkaminski/BJrV07O5a/edit?both  
+00:12:46	Flancian:	Reacted to "https://hackmd.io/..." with 👍  
+00:13:24	Jerry Michalski:	ah, I had this doc that u started before: https://hackmd.io/a8n8NAYXRweKSSjws977KQ?both  
+00:14:01	Pete Kaminski:	d'oh we were supposed to use that one! let's stay on the new one i made  
+00:14:07	Jerry Michalski:	kk  
+00:15:58	Flancian:	sorry, zoom/pipewire issues  
+00:16:04	Flancian:	will be back eventually I guess :)  
+00:17:14	Flancian:	https://anagora.org  
+00:17:19	Flancian:	e.g. https://anagora.org/nuggets  
+00:19:12	Jerry Michalski:	similar/same list, as represented in my Brain: https://bra.in/5j88Pk  
+00:22:21	BentleyDavis.com:	you could keep the sidebar a page by allowing lists in all pages to be hierarchical expandable. htmx?  
+00:24:18	Jerry Michalski:	my wet brain doesn’t cross wiki/vault boundaries well, so my pref is to have a large name space in one place  
+00:27:11	Jerry Michalski:	Kindle Direct Publishing, but here we likely mean KFF, the Kindle File Format  
+00:29:33	Jordan Nicholas Sukut:	Lulu - alternative to KDP - that allows for distribution and print on demand at Amazon ++ vs. only Amazon  
+00:29:51	Pete Kaminski:	Reacted to "Lulu - alternative t..." with 🙏  
+00:30:16	Flancian:	Reacted to "Lulu - alternative..." with 🙏  
+00:31:53	Jerry Michalski:	Replying to "Lulu - alternative t..."  
+  
+Lulu has its own format?  
+00:32:33	Jerry Michalski:	Replying to "Lulu - alternative t..."  
+  
+seems like they use epub and pdf  
+00:33:27	Jerry Michalski:	from 2018: Can I publish the same book on KDP and Lulu?  
+  
+  
+If Lulu allows you to de-select Amazon for the print edition, you can certainly do that, but the usual system is to buy your own ISBN and publish the two versions as the same book. Some experienced self-publishers do this with Amazon (first using CreateSpace, now using KDP Print) and IngramSpark  
+00:34:43	Jerry Michalski:	ooooooh  
+00:39:32	Jerry Michalski:	sounds like even simple styles like headline won’t make it through?  
+00:41:45	Flancian:	https://github.com/flancian/flancia/blob/master/pages/Makefile  
+00:48:43	Flancian:	https://anagora.org/transcription+bot  
+00:48:53	Flancian:	-> https://maya.land/monologues/2021/08/05/matrix-bot-transcribe-speech-audio-messages.html  
+00:52:28	Pete Kaminski:	speaking of transcription, Whisper and the its large model is WONDERFUL at transcript, and converts an interview into nice text without clumsy disfluencies. it's better than Otter and Descript on a one-pass good transcript.  
+00:52:57	Flancian:	+1, whisper is amazing  
+00:53:03	Pete Kaminski:	(i use Whisper in MacWhisper)  
+00:59:47	Jerry Michalski:	https://en.wikipedia.org/wiki/Planning_poker  
+01:00:33	Jerry Michalski:	angora is the fuzzier version  
+01:00:52	Flancian:	angora is the fuzzier version  
+love it!  
+01:01:43	Pete Kaminski:	And at Socialtext "Planning Game" was something different, where we did something similar to what Jerry just described -- a list of candidate projects, and a budget of poker chips to "spend" as votes.  
+01:02:36	Bill Anderson:	makefiles can rule  
+01:06:38	Jerry Michalski:	commenting  
+01:07:16	Jerry Michalski:	metadata  
