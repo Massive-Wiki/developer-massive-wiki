@@ -7,6 +7,7 @@
  - (also experimented with using `build` and `twine` modules: very simple; does not support dependencies so that is not suitable for Massive Wiki publishing.)  
  - important to create and use `test.pypi.org` to work out the use details; requires creating a login and an API key  
  - reading the `flit` documentation, care must be taken to insure that testing uses the `test.pypi.org` system; seems easy to end up using the default, which is the main PyPI server, and that needs to be avoided.  
+	 - see how to upload to `test.pypi.org` here: [Using .pypirc, Controlling package uploads](https://flit.pypa.io/en/stable/upload.html#using-pypirc)
 
  - questions to answer:  
 	 - best to just have an empty `__init.py__` file?  
