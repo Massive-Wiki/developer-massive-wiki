@@ -17,10 +17,10 @@
 -----
 ## Resources
 
-- Flit: [Flit 3.9.0 — Flit 3.9.0 documentation (pypa.io)](https://flit.pypa.io/en/stable/index.html))  
-- Hatch: [About - Hatch (pypa.io)](https://hatch.pypa.io/1.9/)  
-- Twine: [twine · PyPI](https://pypi.org/project/twine/)  
-- Build: [build · PyPI](https://pypi.org/project/build/)  
+- Flit: [Flit 3.9.0 — Flit 3.9.0 documentation (pypa.io)](https://flit.pypa.io/en/stable/index.html))
+- Hatch: [About - Hatch (pypa.io)](https://hatch.pypa.io/1.9/)
+- Twine: [twine · PyPI](https://pypi.org/project/twine/)
+- Build: [build · PyPI](https://pypi.org/project/build/)
 
 - An example of a good documentation practice to emulate: [The Most Complete Guide for Creating a Good PyPI Package | by Elise Landman | Towards Data Science](https://towardsdatascience.com/the-complete-guide-for-creating-a-good-pypi-package-acb5420a03f8)  
-	- what I like about this description is the inclusion of the barebones project directory tree and the warm tone and style of the writing.
+	- what I like about this description is the inclusion of the barebones project directory tree and the warm tone and style of the writing.  
