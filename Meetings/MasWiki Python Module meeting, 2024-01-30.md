@@ -10,7 +10,8 @@
 1. I'm installing MasWiki because I want to turn Obsidian vaults into websites -> install MasWiki
     - "website" - does that mean local? cloud? both?
     - "install MasWiki" -- globally, or with a venv
-3. I want a quick and easy website (and a static site is okay) -> install Publishing Toolkit
+2. I want a quick and easy website (and a static site is okay) -> install Publishing Toolkit
+   Further notes on this topic: [[web and wiki publishing - scenarios and workflows]]  
 
 ## Package Name
 
