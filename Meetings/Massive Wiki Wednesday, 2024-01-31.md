@@ -207,3 +207,53 @@ love it!
 01:02:36	Bill Anderson:	makefiles can rule  
 01:06:38	Jerry Michalski:	commenting  
 01:07:16	Jerry Michalski:	metadata  
+
+---
+
+## AI Summary (hopefully useful, may be inaccurate)
+
+
+### Quick recap
+
+The team discussed various projects, including a proposal writing wiki, a podcasting and publishing back-end infrastructure, and an open-source project. They also explored the idea of individual wikis working together and the potential of a chatbot for their project. Pete Kaminski discussed the ongoing development of the Wiki builder's homepage template and the potential of turning a massive wiki into a print-on-demand book. The team also discussed the idea of using AI to generate summaries of calls and the importance of documenting thoughts and actions. They also touched upon the potential of a podcasting infrastructure.
+
+### Summary
+
+#### Projects and Collaboration in Massive Wiki
+
+Pete Kaminski, Jordan Nicholas Sukut, Jerry Michalski, and Flancian discussed various projects, including a massive wiki for proposal writing and the development of a back-end infrastructure for podcasting and publishing. Jerry introduced the concept of 'tiles' and 'waggle dance', while Flancian discussed his work on an open-source project and his note-taking skills. Pete showed interest in collaboration between Massive Wiki and Agora, a note-taking and backlinking system. He also suggested improvements to Massive Wiki, such as adding an 'edit this page' button to the Github interface and building more themes. The idea of individual wikis working better together, including sister pages and interwiki linking, was also discussed.
+
+#### Data Management and Visualization Ideas
+
+Pete and Jerry discussed the need for efficient data management and standardized schemas for their project. They also explored the idea of incorporating metadata into their project to facilitate easier navigation. Jerry proposed the concept of a multi-plane mosaic, a semi-3D visual representation of their project, which could be used to inspect different layers of the project. Additionally, Pete suggested the idea of turning a massive wiki into a print-on-demand book or a Kindle publication. Lastly, they touched upon the potential of a chatbot for their project.
+
+#### Wiki Builder's Homepage Template and Printable Book Proposal
+
+Pete Kaminski discussed the ongoing development and potential issues with the Wiki builder's homepage template and its 'basso' theme. He mentioned that he was working on a new theme using simple HTML and CSS, but it might require a rewrite. Jordan Nicholas Sukut proposed the idea of creating a printable book from the modular content in the Lionsbird Wiki, which he was willing to pilot. He raised a challenge of finding a print-on-demand service that allows distribution to other e-book platforms, suggesting the potential use of Lulu. The team agreed to consider pushing a couple of packages through the process as a proof of concept.
+
+#### Writing Tools and Documentation Process
+
+Pete Kaminski discussed his recent experiences with different writing tools, such as Microsoft Word, Google Docs, Obsidian, and Typeora. He explained the process he used to transfer documents between these tools, which involved exporting HTML without styles, pasting it into Google Docs, and then submitting it for production. He noted that the process was fiddly and might be easier to do by hand at first. Jordan Nicholas Sukut and Flancian agreed with Pete's suggestion to thoroughly document the process before attempting to automate it. Flancian shared his experience with using Pando and suggested that there might be value in learning complex tasks to make them more manageable.
+
+#### Intermediate Representation and Future Projects
+
+Flancian discussed the development of an intermediate representation in the form of a preprocessor step that would produce an HTML file with simple markup. This could be further expanded and connected as needed. Pete Kaminski mentioned the native format used by Sphinx and others brought up the possibility of using restructured text. Jordan Nicholas Sukut suggested a next step of documenting the current process to improve it, using one or two manuals and podcasts as test cases. Pete Kaminski proposed a shift towards using Markdown for future projects, emphasizing its compatibility with other Markdown-based systems.
+
+#### Content Creation and AI Summary Ideas
+
+Jordan, Pete, and Flancian discussed the potential uses and applications of audio and written content creation. They considered the idea of creating podcasts, monological transmissions, and anthropological interviews. Pete suggested the concept of using AI to generate summaries of calls, and the need for a system that allows for iterative improvements to the AI-generated summary. Flancian proposed the idea of a universal labeling interface for all media, which could provide valuable insights from human interaction and consumption.
+
+#### AI Plan, Company Building, and Project Prioritization
+
+Bill expressed concerns about the AI plan's workload and questioned its problem-solving capacity. He emphasized the importance of documenting thoughts and actions. Jordan highlighted the need for documenting the process of company building. Pete suggested discussing the proposal list's sifting, sorting, and summarizing process and proposed creating simple themes. Jerry proposed assigning points to projects on a spreadsheet to determine their costs. The team agreed to rationalize the list quickly. They also discussed the Wiki project's publication process, the creation of an audio version, and potential connectivity problems. The team agreed to continue working on these projects while considering the importance of prioritization and planning. They also discussed the potential of a podcasting infrastructure.
+
+#### Next steps
+
+- Pete will continue working on the hack and be project and share it with more people.
+- Jordan will compose modular content from the Lionsburg Wiki into a printable book and explore options for publishing on Kendall or Lulu.
+- Jordan, Pete, and Flancian will document the current process for creating and publishing content.
+- Pete will explore the possibility of creating a tool that allows for iterative improvement of AI-generated transcripts.
+- Pete will try to create a nice list for the planning game in two weeks.
+- Consider discussing commenting, metadata, and interwiki in future meetings.
+
+_AI-generated content may be inaccurate or misleading. Always check for accuracy._
