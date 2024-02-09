@@ -6,9 +6,8 @@ Here we are providing samples for fuzzy linking to other pages:
   - one in another folder [[Bill Anderson]]
   - one in this folder [[sameFolder note]]
   - one in a folder in a folder [[folder in a folder test page]]
-  - let's include an image [[2021-11-11-Milosz.jpeg| of a poem]]
+  - let's include an image [[2021-11-11-Milosz.jpeg| of a poem]]  
   
-
 ### 2022-05-21
 Another set of links with explicit paths to wiki pages for testing:
  (N.B. Obsidian behavior when trying to create these pages by double-clicking in read-view: Obsidian does not create a new page even when subdir exists (it is more complicated than that))
