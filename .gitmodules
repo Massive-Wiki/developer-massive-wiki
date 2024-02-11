@@ -1,7 +1,7 @@
 [submodule ".massivewikibuilder/massivewikibuilder"]
 	path = .massivewikibuilder/massivewikibuilder
 	url = https://github.com/peterkaminski/massivewikibuilder.git
-	branch = main
+	branch = wla-issue54-20240209
 [submodule ".massivewikibuilder/massive-wiki-themes"]
 	path = .massivewikibuilder/massive-wiki-themes
 	url = https://github.com/peterkaminski/massive-wiki-themes.git
