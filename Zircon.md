@@ -9,3 +9,7 @@ It runs in the browser and presents edit, preview, page lists, searches, and wik
 In the back end, it reads and edits the files via API calls to the Git forge.
 
 It would have an "anonymous" mode where the access to the backend is done through a shared user account, and also a mode where it helps the user auth into the forge under their own account.
+
+## Other Approaches
+
+Instead of Zircon, we could just put an Edit button on each page.
