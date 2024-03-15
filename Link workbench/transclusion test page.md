@@ -4,4 +4,12 @@
 - requirement for MWW to support transclusion
 - seems straightforward; let's try to keep some notes
 
+---
+
 ![[transclude this]]  
+
+---
+
+![[and transclude this]]  
+
+---

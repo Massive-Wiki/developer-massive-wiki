@@ -16,7 +16,10 @@
 
 ## For Fun
 
-[[The Walrus]]
+[[The Walrus]]  
+![[transclude this]]
+![[Sidebar]]
+
 
 ## General Navigation
 
