@@ -13,3 +13,7 @@
 ![[and transclude this]]  
 
 ---
+
+![[text only wiki page.txt]]
+
+---
