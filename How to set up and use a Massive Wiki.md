@@ -21,6 +21,6 @@ What are the steps needed to publish the documents on the Web?
 1. Install and configure Massive Wiki Publishing Kit
 	- install web theme `basso`
 	- set web site configuration properties in `mwb.yaml`
-1. Set up an account on a web-hosting service such as [Netlify](https://netlify.app)
-2. Configure Netlify to rebuild your website when the Github repository content is updated.
+2. Set up an account on a web-hosting service such as [Netlify](https://netlify.app)
+3. Configure Netlify to rebuild your website when the Github repository content is updated.
 
