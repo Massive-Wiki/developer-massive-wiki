@@ -67,30 +67,38 @@ Definition of done:
 
 Future enhancements:
 
+* n/a
+
 ---
+
 ## Edit this page, phase 1 $600
 
-Add an "edit this page" button to every Massive Wiki page that
-allows a wiki reader to edit the page content and stage the
-changes for incorporation into the wiki.
+Add an "edit this page" button to every Massive Wiki page that allows a wiki reader to edit the page content and stage the changes for incorporation into the wiki.
 
 Timeline:
 
 - Feature implemented in MWB v3.3.0, 2024-05-15, still to do:
   - implementation
-  - documentation, perhaps with a short video demo?  
-  - deployment to `massive.wiki` and `wiki.openglobalmind.com` and
-    `developer.massive.wiki`?  
+  - documentation, perhaps with a short video demo? 
+  - deployment to `massive.wiki` and `wiki.openglobalmind.com` and `developer.massive.wiki`?
 
 Definition of done:
 
-* feature is built into a version of MWB  
-* feature is deployed to `massive.wiki` and `wiki.openglobalmind.com`  
-* feature has been tested (by MW users and well as developers)  
-* feature has been documented in MWB's README.md  
-  - documentation includes a "how-to-use" this feature  
+* feature is built into a version of MWB
+* feature is deployed to `massive.wiki` and `wiki.openglobalmind.com`
+* feature has been tested (by MW users and well as developers)
+* feature has been documented in MWB's README.md
+  - documentation includes a "how-to-use" this feature
 
 Future enhancements:
+
+* n/a
+
+---
+
+## 2-3 New Themes
+
+Create 2 or 3 new themes that are clean and attractive, and have affordances for Sidebar nav. Themes must work well at desktop and mobile aspect ratios, including nav (e.g., collapse nav to a hamburger menu).
 
 ---
 
