@@ -10,10 +10,12 @@
             </div>
 	  </div>
 	  <div class="column">
+	    {% if edit_url %}
 	    <div> <!-- edit this page button -->
-	      <p style="float:right; margin:.5em .5em .5em">For testing purposes, does not work properly: <a href="https://github.com/Massive-Wiki/developer-massive-wiki" style="display: inline-block; padding: .25em .5em; background-color: #22aa22; color: white; text-align: center; text-decoration: none; border-radius: .5em;">Edit This Page</a></p>
+	      <p style="float:right; margin:.5em .5em .5em"><a target="_blank" href="{{edit_url}}" class="edit-this-page-button">Edit This Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' will open a new tab or window to edit this page on the Git forge. You'll need to be signed into the forge to edit. Close the edit page to return to this one.</span></span></p>
 	      <br clear="all">
 	    </div> <!-- edit this page button -->
+	    {% endif %}
             <div class="content markdown-body">
               {{ markdown_body }}
 	      {% if backlinks %}
