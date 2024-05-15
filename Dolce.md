@@ -25,5 +25,10 @@ _for dev_: if dev-ham-icon clicked:
 
 - toggle display of side-column + side-floating (either on-off or off-on)
 
+## Simple Dolce Mockup, 2024-05-15
+
+Bill and Pete worked a little on a new mockup of some of the Dolce toggling.
+
+It's at [[simple-dolce-mockup.html]].
 
 
