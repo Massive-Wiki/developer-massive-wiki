@@ -27,9 +27,19 @@
         .hidden {
             display: none;
         }
+
+        /* Style for the hamburger button */
+        #hamburger-btn {
+            display: block;
+            font-size: 30px;
+            cursor: pointer;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
+    <div id="hamburger-btn">☰</div>
+
     <div id="floating">
         <h2>Floating Div</h2>
         <p>This is the floating div.</p>
@@ -55,6 +65,15 @@
         document.getElementById('move-btn').addEventListener('click', function() {
             this.classList.add('hidden');
             document.getElementById('hide-btn').classList.remove('hidden');
+        });
+
+        document.getElementById('hamburger-btn').addEventListener('click', function() {
+            var sideColumn = document.getElementById('side-column');
+            if (sideColumn.classList.contains('hidden')) {
+                sideColumn.classList.remove('hidden');
+            } else {
+                sideColumn.classList.add('hidden');
+            }
         });
     </script>
 </body>
