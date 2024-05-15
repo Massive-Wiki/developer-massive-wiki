@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Divs Page</title>
+    <style>
+        /* Basic styles to distinguish the divs */
+        #floating {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        #side-column {
+            background-color: lightgreen;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        #main-column {
+            background-color: lightcoral;
+            padding: 20px;
+        }
+
+        /* Hide elements by default */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="floating">
+        <h2>Floating Div</h2>
+        <p>This is the floating div.</p>
+    </div>
+
+    <div id="side-column">
+        <h2>Side Column</h2>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+    </div>
+
+    <div id="main-column">
+        <h2>Main Column</h2>
+        <p>This is the main column.</p>
+    </div>
+
+    <script>
+        document.getElementById('hide-btn').addEventListener('click', function() {
+            this.classList.add('hidden');
+            document.getElementById('move-btn').classList.remove('hidden');
+        });
+
+        document.getElementById('move-btn').addEventListener('click', function() {
+            this.classList.add('hidden');
+            document.getElementById('hide-btn').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
