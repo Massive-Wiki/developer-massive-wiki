@@ -8,13 +8,18 @@
         /* Flexbox container */
         .container {
             display: flex;
+            align-items: flex-start;
         }
 
         /* Basic styles to distinguish the divs */
         #side-column {
             background-color: lightgreen;
+            width: 13em;
+            max-height: 80vh;
             padding: 20px;
             margin-right: 10px;
+            overflow-y: auto;
+            transition: all 0.3s ease;
         }
 
         #main-column {
@@ -35,12 +40,21 @@
             cursor: pointer;
             margin: 10px;
         }
+
+        /* Floating style for the side-column */
+        .floating {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
     <div id="hamburger-btn">☰</div>
 
-    <div class="container">
+    <div class="container" id="flex-container">
         <div id="side-column">
             <h2>Side Column</h2>
             <button id="hide-btn">Hide</button>
@@ -57,13 +71,14 @@
         document.getElementById('hide-btn').addEventListener('click', function() {
             this.classList.add('hidden');
             document.getElementById('move-btn').classList.remove('hidden');
-            document.getElementById('side-column').classList.add('hidden');
+            document.getElementById('side-column').classList.add('floating');
+            document.getElementById('side-column').classList.remove('hidden');
         });
 
         document.getElementById('move-btn').addEventListener('click', function() {
             this.classList.add('hidden');
             document.getElementById('hide-btn').classList.remove('hidden');
-            document.getElementById('side-column').classList.remove('hidden');
+            document.getElementById('side-column').classList.remove('floating');
         });
 
         document.getElementById('hamburger-btn').addEventListener('click', function() {
