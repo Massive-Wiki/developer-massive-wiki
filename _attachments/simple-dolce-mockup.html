@@ -74,8 +74,8 @@
   <div class="container" id="flex-container">
     <div id="side-column">
       <div>
-        <button id="hide-btn">Hide</button> <button id="move-btn"
-        class="hidden">Move to Sidebar</button>
+        <button id="hide-btn">Hide</button>
+	<button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
 
       <h2>Site Navigation</h2>
@@ -86,7 +86,7 @@
 
       <p><a href=''>All Pages</a></p>
 
-      <p><a href=''>What's New</a></p>
+      <p><a href=''>Recent Pages</a></p>
 
       <h2>More Info</h2>
 
@@ -227,7 +227,9 @@
       to effective information organization is to keep it simple,
       logical, and consistent.</p>
     </div>
-  </div><script type="text/javascript">
+  </div>
+
+  <script type="text/javascript">
       function alignSideColumn() {
             const mainColumn = document.getElementById('main-column');
             const sideColumn = document.getElementById('side-column');
@@ -256,6 +258,9 @@
                 sideColumn.style.visibility = 'visible';
             } else {
                 sideColumn.style.visibility = 'hidden';
+		sideColumn.classList.add('floating');
+		document.getElementById('move-btn').classList.remove('hidden');
+		document.getElementById('hide-btn').classList.add('hidden');
             }
         });
 
