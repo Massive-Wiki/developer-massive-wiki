@@ -1,26 +1,19 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Patterns for Organizing Information - Dolce Demonstration Site</title>
   <style type="text/css">
     body {
           font-family: sans-serif;
       }
-
-        /* Flexbox container */
         .container {
             display: flex;
             align-items: flex-start;
         }
-
-        /* Basic styles to distinguish the divs */
         #side-column {
             font-size: 0.9em;
-            background-color: lightgreen;
             background-color: white;
             min-width: 12em;
             max-height: 80vh;
@@ -28,34 +21,24 @@
             margin-right: 10px;
             overflow-y: auto;
         }
-
         #main-column {
-            background-color: lightcoral;
             background-color: white;
             padding: 20px;
             flex-grow: 1;
         }
-
-        /* Hide elements by default */
         .hidden {
             display: none;
         }
-
-        /* Style for the hamburger button */
         #hamburger-btn {
             font-size: 2rem;
             cursor: pointer;
             margin-right: 0.5em;
         }
-
-        /* Style for the header */
         #header {
             font-family: serif;
             font-size: 2rem;
             margin: 0.5em;
         }
-
-        /* Floating style for the side-column */
         .floating {
             position: absolute;
             left: 10px;
@@ -67,160 +50,115 @@
 
 <body>
   <div id="header">
-    <span id="hamburger-btn">&#9776;</span> Dolce Demonstration
-    Site
+    <span id="hamburger-btn" class="hidden">&#9776;</span> Dolce Demonstration Site
   </div>
 
   <div class="container" id="flex-container">
     <div id="side-column">
       <div>
         <button id="hide-btn">Hide</button>
-	<button id="move-btn" class="hidden">Move to Sidebar</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
 
       <h2>Site Navigation</h2>
-
       <p><a href=''>Home</a></p>
-
       <p><a href=''>Search</a></p>
-
       <p><a href=''>All Pages</a></p>
-
       <p><a href=''>Recent Pages</a></p>
-
       <h2>More Info</h2>
-
       <p><a href=''>What Massive Wiki Means</a></p>
-
       <p><a href=''>Get Started</a></p>
-
       <p><a href=''>Conceptual Diagram</a></p>
-
       <p><a href=''>Meetups</a></p>
-
       <p><a href=''>Massive Wiki People</a></p>
-
       <p><a href=''>FAQ</a></p>
-
       <h2>Even More</h2>
-
       <p><a href=''>Massive Wiki Builder</a></p>
-
       <p><a href=''>Working with Git</a></p>
-
       <p><a href=''>A Day in the Life</a></p>
-
       <p><a href=''>Massive Wiki in Action</a></p>
     </div>
 
     <div id="main-column">
       <h1>Patterns for Organizing Information</h1>
-
       <p>Organizing information effectively is crucial for clarity,
       comprehension, and efficient retrieval. Here are some key
       patterns and methods to help you structure and manage
       information more effectively:</p>
-
       <h2>Gather, Sort, Select</h2>
-
       <h3>Gather</h3>
-
       <p>The first step in organizing information is to gather all
       relevant data and materials. This can include documents,
       notes, articles, multimedia files, and any other resources
       related to your topic. Gathering is about collecting without
       judging or filtering, ensuring that you have a comprehensive
       pool of information to work with.</p>
-
       <ul>
         <li><strong>Sources</strong>: Identify where the
         information is coming from. This can be books, websites,
         interviews, etc.</li>
-
         <li><strong>Methods</strong>: Use tools like Evernote,
         Google Keep, or simple physical notebooks to gather
         information.</li>
       </ul>
-
       <h3>Sort</h3>
-
       <p>Once you have gathered all the necessary information, the
       next step is to sort it. Sorting involves categorizing
       information into different groups or themes based on
       similarities, relevance, or any other criteria that make
       sense for your project.</p>
-
       <ul>
         <li><strong>Categories</strong>: Create broad categories
         and subcategories to help organize the information.</li>
-
         <li><strong>Tools</strong>: Utilize spreadsheets, mind
         maps, or software like Trello to help with the sorting
         process.</li>
       </ul>
-
       <h3>Select</h3>
-
-      <p>After sorting, it&#8217;s time to select the most
+      <p>After sorting, it’s time to select the most
       pertinent information. This step involves filtering out
       unnecessary or redundant data and focusing on the key pieces
       that will be most useful for your purpose.</p>
-
       <ul>
         <li><strong>Criteria</strong>: Establish clear criteria for
         what makes information relevant or useful.</li>
-
         <li><strong>Prioritization</strong>: Rank the selected
         information in order of importance or relevance.</li>
       </ul>
-
       <h2>Chunking, Naming, Linking</h2>
-
       <h3>Chunking</h3>
-
       <p>Chunking is the process of breaking down large amounts of
       information into smaller, more manageable pieces. This makes
       the information easier to understand and remember.</p>
-
       <ul>
         <li><strong>Size</strong>: Determine the optimal size for
-        each chunk to ensure it&#8217;s digestible.</li>
-
+        each chunk to ensure it’s digestible.</li>
         <li><strong>Structure</strong>: Arrange chunks logically,
         so they build on each other and form a coherent whole.</li>
       </ul>
-
       <h3>Naming</h3>
-
       <p>Giving clear and descriptive names to chunks or categories
       of information is essential for quick identification and
       recall. Effective naming helps in creating mental labels that
       facilitate easier retrieval.</p>
-
       <ul>
         <li><strong>Clarity</strong>: Ensure names are clear and
         unambiguous.</li>
-
         <li><strong>Consistency</strong>: Use a consistent naming
         convention throughout your information.</li>
       </ul>
-
       <h3>Linking</h3>
-
       <p>Linking involves creating connections between different
       pieces of information. This can help to show relationships,
       dependencies, and hierarchies within the data.</p>
-
       <ul>
         <li><strong>Hyperlinks</strong>: Use hyperlinks in digital
         documents to connect related information.</li>
-
         <li><strong>References</strong>: In physical documents, use
         references like footnotes or endnotes to link related
         pieces of information.</li>
       </ul>
       <hr>
-
       <p>By following these patterns, you can improve the
       organization of your information, making it easier to
       understand, use, and retrieve when needed. Remember, the key
@@ -231,50 +169,52 @@
 
   <script type="text/javascript">
       function alignSideColumn() {
-            const mainColumn = document.getElementById('main-column');
-            const sideColumn = document.getElementById('side-column');
-            const mainColumnTop = mainColumn.getBoundingClientRect().top + window.scrollY;
-            sideColumn.style.top = mainColumnTop + 'px';
-        }
+          const mainColumn = document.getElementById('main-column');
+          const sideColumn = document.getElementById('side-column');
+          const mainColumnTop = mainColumn.getBoundingClientRect().top + window.scrollY;
+          sideColumn.style.top = mainColumnTop + 'px';
+      }
 
-        document.getElementById('hide-btn').addEventListener('click', function() {
-            this.classList.add('hidden');
-            document.getElementById('move-btn').classList.remove('hidden');
-            document.getElementById('side-column').classList.add('floating');
-            alignSideColumn();
-            document.getElementById('side-column').style.visibility = 'hidden';
-        });
+      document.getElementById('hide-btn').addEventListener('click', function() {
+          this.classList.add('hidden');
+          document.getElementById('move-btn').classList.remove('hidden');
+          document.getElementById('side-column').classList.add('floating');
+          alignSideColumn();
+          document.getElementById('side-column').style.visibility = 'hidden';
+          document.getElementById('hamburger-btn').classList.remove('hidden');
+      });
 
-        document.getElementById('move-btn').addEventListener('click', function() {
-            this.classList.add('hidden');
-            document.getElementById('hide-btn').classList.remove('hidden');
-            document.getElementById('side-column').classList.remove('floating');
-            document.getElementById('side-column').style.visibility = 'visible';
-        });
+      document.getElementById('move-btn').addEventListener('click', function() {
+          this.classList.add('hidden');
+          document.getElementById('hide-btn').classList.remove('hidden');
+          document.getElementById('side-column').classList.remove('floating');
+          document.getElementById('side-column').style.visibility = 'visible';
+          document.getElementById('hamburger-btn').classList.add('hidden');
+      });
 
-        document.getElementById('hamburger-btn').addEventListener('click', function() {
-            var sideColumn = document.getElementById('side-column');
-            if (sideColumn.style.visibility === 'hidden') {
-                sideColumn.style.visibility = 'visible';
-            } else {
-                sideColumn.style.visibility = 'hidden';
-		sideColumn.classList.add('floating');
-		document.getElementById('move-btn').classList.remove('hidden');
-		document.getElementById('hide-btn').classList.add('hidden');
-            }
-        });
+      document.getElementById('hamburger-btn').addEventListener('click', function() {
+          var sideColumn = document.getElementById('side-column');
+          if (sideColumn.style.visibility === 'hidden') {
+              sideColumn.style.visibility = 'visible';
+          } else {
+              sideColumn.style.visibility = 'hidden';
+              sideColumn.classList.add('floating');
+              document.getElementById('move-btn').classList.remove('hidden');
+              document.getElementById('hide-btn').classList.add('hidden');
+          }
+      });
 
-        window.addEventListener('resize', function() {
-            if (document.getElementById('side-column').classList.contains('floating')) {
-                alignSideColumn();
-            }
-        });
+      window.addEventListener('resize', function() {
+          if (document.getElementById('side-column').classList.contains('floating')) {
+              alignSideColumn();
+          }
+      });
 
-        window.addEventListener('scroll', function() {
-            if (document.getElementById('side-column').classList.contains('floating')) {
-                alignSideColumn();
-            }
-        });
+      window.addEventListener('scroll', function() {
+          if (document.getElementById('side-column').classList.contains('floating')) {
+              alignSideColumn();
+          }
+      });
   </script>
 </body>
 </html>
