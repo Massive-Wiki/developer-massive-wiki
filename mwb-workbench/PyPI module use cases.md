@@ -1,6 +1,6 @@
 # PyPI module use cases
 
-2024-06-02: Bill's notes on issues to be discussed
+2024-06-02: Bill's notes on issues needing discussion  
 
 ### Python environment setup
 - local virtual environment setup recommended
@@ -22,4 +22,7 @@
 		 - configuration file exists in `input-directory/.maswebpublisher/nxc.yaml`
 		 - HTML templates exist in `input-directory/.maswebpublisher/this-website-themes/dolce`  
 		 - `lunr` search is enabled  
-		 - `input-directory` is a `git` repository with no uncommitted changes  
+		 - if building locally: `input-directory` is a `git` repository with no uncommitted changes  
+			 - this enables `all-pages` and `recent-pages` webpages to be generated  
+ - what changes are needed for `netlify.toml`?
+
