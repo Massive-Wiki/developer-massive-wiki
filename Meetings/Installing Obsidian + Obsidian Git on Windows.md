@@ -1,4 +1,12 @@
-# Installing Obsidian + Obsidian Git, 2022-09-29
+# Installing Obsidian + Obsidian Git
+
+## Page History
+
+- Most of the page below is from 2022-09-29
+- Pete validated the core Git install approach on 2024-06-04
+	- Windows Server 2022 21H2
+	- Git-for-Windows (64-bit) as below
+	- `git clone` from GitHub with https triggered authentication
 
 ## Setup
 
@@ -83,6 +91,9 @@ the parent directories): .git"
     - open Obsidian Git Source Control View panel (explain more)
         - pull (should say "Everything up-to-date")
         - push (should pop up the "Connect to GitHub" popup, can sign in with your browser, sign in with a code, sign in with a personal access token, or "Don't have an account? Sign Up")
+        - remember to set up Git username and email
+	        - `git config --global user.name "FIRST_NAME LAST_NAME"`
+	        - `git config --global user.email "MY_NAME@example.com"`
 
 ## Fun Errors
 
