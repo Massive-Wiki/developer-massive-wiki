@@ -87,7 +87,7 @@ Publishing nxc (0.0.3) to test-pypi
  - set up or `cd` to a working directory  
  - install `nxc` from `test.pypi.org` using this `pip` command:  
  ```shell
- pip install -i https://test.pypi.org/simple/ nxc
+ pip install --extra-index-url https://test.pypi.org/simple/ nxc
  ```
 
 
