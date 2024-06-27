@@ -45,7 +45,12 @@ poetry config pypi-token.test-pypi pypi-TOKENSTRING
 # Notes for using Poetry to build and publish a package
  - TODO: document a good way to set up the package repo (there are several different ways to do this)
  - TODO: document the `pyproject.toml` file that Poetry uses
-
+ - TODO: document how to manage dependencies:
+	 - one way to add dependencies to the `pyproject.toml` file is with this sample command, which updates and resolves dependencies, and write a new `poetry.lock` file:
+ ```shell
+ poetry add python-dateutil
+```
+- TODO: document what poetry files to track in git repo  
 
 ## build a new version  
  - update version number in `pyproject.toml`
