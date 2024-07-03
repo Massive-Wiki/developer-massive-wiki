@@ -15,3 +15,8 @@
 ## Thoughts
 
 - move origin repo when we move to new name? codeberg? self-host Gitea?
+
+### 2024-07-02 reminder notes  
+ - rename `mwb.yaml` in nxc `templates` folder (rationale: move away from the MWB name)
+ - review and update "Summer 2024 Roadmap" above  
+ - PyPI module version is now "4.0.0-candidate" (OK?)  
