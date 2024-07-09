@@ -8,9 +8,9 @@
 - finish and document "Edit on $git_repo" button, PK
 - move mainline dev work to nxc (which will have its name changed someday)
 - clean up mwb repo issues list, port any keepers to the new repo
-- code review everything
+- code review everything, make tactical improvements
 - find a name
-- make landing page for module nice enough
+- make landing page for Python module nice enough
 
 ## Thoughts
 
