@@ -10,6 +10,6 @@
 2. I want a quick and easy website (and a static site is okay) -> install Publishing Toolkit
 
 ### the three web/wiki publishing scenarios (2024-01-31: BA)
-  - establish a new wiki or document repository AND website  
-  - add a website to existing document or wiki repository  
+  - establish a new wiki, or document, repository AND website  
+  - add a website to existing document (or wiki) repository  
   - add a website and repository to an existing document collection  

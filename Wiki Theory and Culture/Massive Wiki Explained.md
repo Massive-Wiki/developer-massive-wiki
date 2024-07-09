@@ -18,9 +18,9 @@ The plain text format used by Massive Wiki works with any standard operating sys
 
 ### Decentralization
 
-Massive Wiki is built to diffuse information across space and time, unlike a centralized server-based wiki or website. Each author has a copy of the whole wiki, in text format. For public wikis, there's also a copy on GitHub or another public Git forge.
+Massive Wiki is built to diffuse information across space and time, unlike a centralized server-based wiki or website. Each author has a copy of the whole wiki, in text format. For public wikis, there is also a copy on GitHub or another public Git forge.
 
-Anyone can archive it, share it, duplicate and change it, without any infrastructure besides their computing device -- for example, a laptop, smartphone, or a tablet.
+Anyone can archive it, share it, duplicate and change it, without any infrastructure besides their computing device -- for example, a laptop, a smartphone, or a tablet.
 
 You can zip up the whole wiki easily and email the zipped-up wiki to a million friends for safekeeping or further distribution. Any recipient who can receive email and unzip a file will have the whole wiki.
 
@@ -61,4 +61,6 @@ The plural "files" is important -- a wiki needs more than one page.
 / those properties also make it easy to preserve over time //  
 / the entire wiki is available to everyone; it is portable //  
 
+2024-06-25: further thoughts from BA:  
+/ the first sentence of the "Decentralization" section needs a rewrite -- modify the comment regarding centralized wikis and websites; as written it reads as disparaging those systems //  
 
