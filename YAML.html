@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YAML - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/YAML.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h2>Description</h2>
+<p>"YAML is a human friendly data serialization standard for all programming languages." - <a href="https://yaml.org/">yaml.org</a></p>
+<h2>Guides</h2>
+<p>The Camel <a href="https://camel.readthedocs.io/en/latest/yamlref.html">Brief YAML reference </a></p>
+<h2>Specification</h2>
+<p><a href="https://yaml.org/spec/1.2/spec.html">YAML Ain’t Markup Language (YAML™) Version 1.2</a></p>
+<h2>Notes, Tips</h2>
+<h3>Regarding Markdown "Front Matter"</h3>
+<p>"<code>---</code>" separates sections ("documents") of YAML.  Using "<code>---</code> (YAML lines) <code>---</code>" for Markdown frontmatter is sort of a hack; "<code>---</code>" in Markdown will mean a horizontal line, and seeing "<code>---</code> (YAML lines)" is YAML-friendly.  By definition, "<code>---</code>" will never appear in a YAML "document" (since it delimits the start of the next document), so it's safe to use the second "<code>---</code>" to delimit the end of first YAML document -- er, the Markdown front matter.</p>
+<p>(In YAML, though, the real end of a document is "<code>...</code>".  So if there's no "<code>...</code>" at the end of the front matter, a naive YAML parser reading a Markdown file with front matter would expect the Markdown to be a second YAML document, so don't feed your Markdown file with front matter to a naive YAML parser.)</p>
+<p>(Ironically <em>(in the Morrisette sense)</em>, YAML has its own "front matter"; in a YAML file, before the first "<code>---</code>", there can be optional "directives". Markdown-with-front-matter doesn't typically have YAML directives, though.)</p>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

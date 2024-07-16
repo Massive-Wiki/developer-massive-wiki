@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Massive Wiki Wednesday, 2023-06-21 - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/Meetings/Massive Wiki Wednesday, 2023-06-21.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h2>Topics</h2>
+<ul>
+<li>Windows filename restrictions</li>
+<li>new All Pages column sorting</li>
+<li>Recent Pages enhancement: include a short snippet (or generative summary, lol) of the page</li>
+<li>thoughts about Git</li>
+<li>roadmap thoughts</li>
+</ul>
+<h2>Check out Zed</h2>
+<ul>
+<li>https://zed.dev/</li>
+<li>https://zed.dev/blog/open-sourcing-zed-on-zed</li>
+</ul>
+<h2>Roadmap Thoughts</h2>
+<p>see <a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a></p>
+<ul>
+<li>MWB 3.x release
+<ul>
+<li>get themes up-to-date</li>
+<li>get starter wiki up-to-date</li>
+<li>test with some benchmark wikis
+<ul>
+<li>lionsberg</li>
+<li>ogm</li>
+<li>tftmap</li>
+<li>bandstands</li>
+</ul>
+</li>
+<li>actual release, tagging, creating release in GitHub</li>
+</ul>
+</li>
+<li>incipient links
+<ul>
+<li>need to decide how to format
+<ul>
+<li>should not look like regular text; should be distinctive</li>
+<li>should look different from a regular link</li>
+<li>should not navigate anywhere</li>
+<li>idea: red squiggly underline, short popup on hover that says "this is a placeholder for a link ⓘ"</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>backlinks
+<ul>
+<li>need to decide how to put it on the page / how to format - Stroll has a nice backlink section at the bottom of pages :-)</li>
+</ul>
+</li>
+</ul>
+<h2>Windows filename restrictions</h2>
+<p>Bumped into the fact again that "?" is allowed on Mac, but not allowed on Windows. This causes a non-user-friendly error about pathspec not allowed.</p>
+<p>We used a workaround at the time, but didn't address anything more than that. Consider improving the Git plugin by understanding this error and doing something smart.</p>
+<h2>New All Pages column sorting</h2>
+<p>To set up default reverse chrono in Jinja, add this to the template:</p>
+<pre><code>{% for page in pages|sort(attribute='date',reverse=True) %}
+</code></pre>
+<p>How would we parameterize this in mwb.yaml?</p>
+<p>Also to note: in JS, the first column doesn't sort (and toggle sort) the way the others do; we probably need to read the docs.</p>
+<h2>Thoughts about Git</h2>
+<ul>
+<li>considering trying Subversion (centralized version control with check out / check in)
+<ul>
+<li>SmartSVN?</li>
+<li>TortoiseSVN?</li>
+</ul>
+</li>
+<li>considering trying SmartGit, which is $$$, but full-featured and has both Mac and Windows versions</li>
+</ul>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

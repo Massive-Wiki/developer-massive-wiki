@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Converting MediaWiki to Massive Wiki - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/Converting MediaWiki to Massive Wiki.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>Converting MediaWiki to Massive Wiki</h1>
+<p>This is a general overview of how to convert the pages from a running MediaWiki instance to Massive Wiki pages. There are many variables involved in the process, and you may need to change these steps or add more; or, it might not work at all. These instructions are provided as a skeleton framework on which to build, and are offered in the hope that they're useful as a starting point to build from.</p>
+<h2>Overview</h2>
+<p>We use an open source tool which knows how to read a MediaWiki XML export file and write Markdown pages. Among other things, it uses Pandoc under the hood.</p>
+<p>The tool we used was <a href="https://github.com/outofcontrol/mediawiki-to-gfm">Mediawiki to GitHub Flavoured Markdown</a>, which is based on <a href="https://github.com/philipashlock/mediawiki-to-markdown">MediaWiki to Markdown</a>.</p>
+<h2>Export MediaWiki to XML</h2>
+<p>Consulting <a href="https://en.wikipedia.org/wiki/Help:Export">Help:Export - Wikipedia</a>, we decided to use the first method documented there, <code>Special:Export</code>, after collecting all the page names with <code>Special:AllPages</code>. (If you're a Python developer, Pywikibot looks interesting too, but more involved.)</p>
+<ul>
+<li>Visit the source MediaWiki, appending <code>Special:AllPages</code> to the URL instead of a page name.</li>
+<li>Copy all the page names.</li>
+<li>Paste all the page names into a text file; make sure you end up with one page title per line.</li>
+<li>Visit the source MediaWiki, appending <code>Special:Export</code> to the URL instead of a page name.</li>
+<li>Paste the "one page title per line" page names into the appropriate box, set the checkboxes (make sure "Save as file" is ticked), then click the "Export" button. The XML export file should be downloaded to your computer.</li>
+</ul>
+<h2>Converting the XML Export to Markdown</h2>
+<p>We ran the Dockerized version of <strong>Mediawiki to GitHub Flavoured Markdown</strong>.</p>
+<p>Create a directory, change into the directory, and run the following command.</p>
+<pre><code>docker run -v $PWD:/app thawn/mediawiki-to-gfm --filename=YOUR_EXPORT.xml
+</code></pre>
+<p>The app will create a directory called <code>output</code> and save the Markdown files there. It will take a few seconds for each page.</p>
+<h2>Considerations for Massive Wiki</h2>
+<p>At this point, you are pretty close to having a Massive Wiki. Things to consider:</p>
+<ul>
+<li>Copy <code>Main_Page.md</code> to <code>README.md</code>, and put a note in <code>Main_Page.md</code> that the MediaWiki has been converted to Markdown, and the new main page is now <code>README.md</code>. Add the date of conversion, and your name and a way to contact you.</li>
+<li>The exported GFM pages have internal links, but they are of the form <code>[]()</code> rather than <code>[[]]</code>. These will work, but you might want to convert them.</li>
+<li>When Massive Wiki Publisher converts the <code>[]()</code> internal links to HTML, <code>.html</code> isn't added to the links. Depending on how you host the output HTML site, you may need to add <code>.html</code> to each internal link. (This could be added to Massive Wiki Publisher as an option some day.)</li>
+<li>The exported pages don't have the conventional page title on the first line (<code># My Page Title</code>). This can be ignored, or they can be added with some quick scripting, or Massive Wiki Publisher could have an option added some day to write title lines for files that don't have them.</li>
+<li>You'll need to install Massive Wiki Publisher if you want it.</li>
+<li>There are probably lots of MediaWiki-isms which will need to be converted; examine a good sampling of the pages looking for any other things that still need to be converted.</li>
+</ul>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

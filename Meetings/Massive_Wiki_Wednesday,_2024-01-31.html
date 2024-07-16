@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Massive Wiki Wednesday, 2024-01-31 - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/Meetings/Massive Wiki Wednesday, 2024-01-31.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>Massive Wiki Wednesday, 2024-01-31</h1>
+<h2>Recording</h2>
+<ul>
+<li><a href="https://youtu.be/_tM-XHLM7JU">Massive Wiki Wednesday, 2024-01-31 (YouTube)</a></li>
+</ul>
+<h2>Topics</h2>
+<ul>
+<li><span class="incipient-wikilink">Fellowship of the link</span></li>
+<li><span class="incipient-wikilink">Lionsberg</span>
+<ul>
+<li><span class="incipient-wikilink">Jordan Nicholas Sukut</span> on using remainder of grant to advance our mission optimally</li>
+<li>How this relates to <span class="incipient-wikilink">massive wiki</span> as a backend</li>
+<li><span class="incipient-wikilink">Jordan</span> has been working on <span class="incipient-wikilink">X</span> based on <span class="incipient-wikilink">massive wiki</span>]
+<ul>
+<li>To advance our infrastructure to support:
+<ul>
+<li><span class="incipient-wikilink">podcasts</span></li>
+<li><span class="incipient-wikilink">neobooks</span> as Jerry calls them</li>
+</ul>
+</li>
+<li><span class="incipient-wikilink">Jerry Michalski</span> previously we discussed <span class="incipient-wikilink">tiles</span>
+<ul>
+<li><span class="incipient-wikilink">tiles</span> == small software projects</li>
+</ul>
+</li>
+<li><span class="incipient-wikilink">Flancian</span> on https://anagora.org (and audio issues as usual ;)
+<ul>
+<li>interested in sharing infrastructure ideas and potentially even implementation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2><span class="incipient-wikilink">Waggle Dance</span></h2>
+</li>
+</ul>
+<h2>Waggle Dance</h2>
+<p>previous notes: <a class="wikilink" href="/nxcTestVault/Meetings/Waggle_Dance,_2024-01-24.html">Waggle Dance, 2024-01-24</a> aka <a href="https://developer.massive.wiki/meetings/waggle_dance,_2024-01-24">Waggle Dance, 2024-01-24 - Developer Wiki (Massive Wiki)</a></p>
+<p>Desired outcome:</p>
+<ul>
+<li>we all understand what kind of priorities document to create a grant proposal to Lionsberg</li>
+<li>That would constitute a "triple word score"</li>
+<li>And our target date to submit to Lionsberg</li>
+<li>And potentially a rough timeline for executing the project scope of the grant</li>
+</ul>
+<h2>Notes From Pete's Overview</h2>
+<ul>
+<li>GPTS for <span class="incipient-wikilink">NeoBooks</span> / <span class="incipient-wikilink">Lionsberg Wiki Books</span></li>
+<li>Make massive wiki more of a wiki / allow editing from the web interface or add an 'edit this page in github' button</li>
+<li>Themes for Massive Wiki
+<ul>
+<li>Different Looks</li>
+<li>Reading experience</li>
+</ul>
+</li>
+<li>Comparison between <span class="incipient-wikilink">obsidian publish</span> and <span class="incipient-wikilink">massive wiki</span></li>
+<li>Interwiki
+<ul>
+<li>Better composibility</li>
+<li>Better interwiki</li>
+</ul>
+</li>
+<li>Cannonicity
+<ul>
+<li>On the 'right page' for each concept/entity, beyond deduplication and canonical representations</li>
+<li>Mark Antoine Parent - data structure for hyperknowledge - recursive sense making around claims and counter claims.</li>
+</ul>
+</li>
+<li>Metadata
+<ul>
+<li>Jerry: composability of nuggets is crucial; also they need metadata</li>
+<li>Peter: naming that maybe <span class="incipient-wikilink">trope</span> or <span class="incipient-wikilink">pattern</span></li>
+</ul>
+</li>
+<li>Producing different outputs from a massivewiki -- e.g. an epub or <span class="incipient-wikilink">KDP</span>
+<ul>
+<li><span class="incipient-wikilink">Lulu</span> as an alternative to Amazon/Kindle specificity</li>
+<li>Storytelling in Massive Wiki</li>
+<li>Q: maybe producing an intermediate representation could be useful here (e.g. 'one big html'), and then using a common framework like <span class="incipient-wikilink">pandoc</span>?</li>
+</ul>
+</li>
+<li>Artifacts as collections of composable <span class="incipient-wikilink">Nuggets</span> / <span class="incipient-wikilink">Modular Content</span></li>
+<li>Jerry on <span class="incipient-wikilink">mushrooms</span> and the <span class="incipient-wikilink">fungi</span> semantic space, e.g. <span class="incipient-wikilink">mycellium</span></li>
+<li>Active, live, connected <span class="incipient-wikilink">Modules</span> / <span class="incipient-wikilink">Nuggets</span></li>
+<li>Fix <span class="incipient-wikilink">Basso</span> theme or put together a better one</li>
+</ul>
+<h2>Feedback/commentary</h2>
+<ul>
+<li>
+<p>#JNS happy to be a guinea pig for composability in the context of trying to produce a neobook.</p>
+<ul>
+<li>Recently discovered that if you publish through <span class="incipient-wikilink">KDP</span> you cannot use any other kind of distribution platform but <span class="incipient-wikilink">Amazon</span>'s</li>
+<li><span class="incipient-wikilink">Lulu</span> seems fairer, does Ingram as well as Amazon - <a href="https://kdp.lulu.com/">Lulu Press vs KDP Select</a></li>
+<li>Would be interested in producing, over the next 6-8w, some neobook; pushing a few packages through the whole process end-to-end</li>
+</ul>
+</li>
+<li>
+<p>Pete - Technical Feedback</p>
+<ul>
+<li>6 opr 7 authors put together KDP paperback that is out now</li>
+<li>Stop before KDP - is Microsoft Work</li>
+<li>Maybe Google Docs</li>
+<li>Maybe Markdown before that (<a class="wikilink" href="/nxcTestVault/Obsidian.html">Obsidian</a> or <span class="incipient-wikilink">Typora</span>)</li>
+<li>Rough Process for Pete was
+<ul>
+<li>Obsidian to Typora to export HTML load in Chrome past into Google Docs then...</li>
+<li>To production assistant who maybe did Word...</li>
+</ul>
+</li>
+<li>Issues
+<ul>
+<li>Headers</li>
+<li>Rectification to fit into generalizable framework</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>At first</p>
+<ul>
+<li>Running the process by hand</li>
+<li>Figuring out what needs to happen in the <span class="incipient-wikilink">Process</span></li>
+<li>Then automation becomes easier and more intelligent...</li>
+</ul>
+</li>
+<li>
+<p>Step 1: Document the existing process</p>
+<ul>
+<li>Normalize the process from Markdown to (X)</li>
+<li>e.g. https://github.com/flancian/flancia/blob/master/pages/Makefile uses <span class="incipient-wikilink">pandoc</span> and <span class="incipient-wikilink">markdown-pp</span></li>
+</ul>
+</li>
+<li>
+<p>Next steps for grant stuff: a <a class="wikilink" href="/nxcTestVault/conversationsWiki/Hypothesis.html">hypothesis</a> :)</p>
+<ul>
+<li>It would be nice to have a full description of the end-to-end process
+<ul>
+<li>Plan: we take one or two neobooks and/or podcasts and we run them all the way through</li>
+<li>Note we came up with a template for Massive Wiki topics that we use e.g. when doing podcasts (paraphrasing, please check)</li>
+<li>We could in the same way define a few primitives/templates that we could use</li>
+</ul>
+</li>
+<li>We could generalize and tackle <span class="incipient-wikilink">repo2book</span>, <span class="incipient-wikilink">repo2podcast</span>, etc.</li>
+<li><span class="incipient-wikilink">Markdown Repo to Print</span></li>
+<li><span class="incipient-wikilink">audio files to text + broadcast</span>
+<ul>
+<li>Podcast</li>
+<li>Tedtalk / Sermon</li>
+<li>Meetings</li>
+<li>Interviews
+<ul>
+<li>Anthropological</li>
+<li>Technical</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Voice Messages in Chats
+<ul>
+<li>Protopodcast, <span class="incipient-wikilink">transcription bot</span> for voice messages in chat: https://anagora.org/?q=transcription+bot</li>
+<li>Monological Transmission of more information that can be communciated in text, via voice...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Process... with Transcript</p>
+<ul>
+<li>A way for people to iteratively improve and link the AI summary - while retaining versioning... and keep them visible...</li>
+<li>Rush version - AI done</li>
+<li>ID errors</li>
+<li>Mechanisms for labelling</li>
+<li>Improving version</li>
+<li>Most well composed final version...</li>
+</ul>
+</li>
+<li>
+<p>Media in the age of AI</p>
+<ul>
+<li>No matter what generated and consumed...</li>
+<li>Human or conscious entity
+<ul>
+<li>has consumed and processed it
+<ul>
+<li>found meaning</li>
+<li>found error
+<ul>
+<li>has labeled or communicated those meanings</li>
+<li>human signaling of meaning, error, and MAGNITUDE OF MEANING OR ERROR...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+<li>
+<p><a class="wikilink" href="/nxcTestVault/People/Bill_Anderson.html">bill anderson</a> all of the sudden we're talking about a lot of work here :)</p>
+<ul>
+<li>this on top of all we've already doing</li>
+<li>like the idea of automating, adding AI generation, etc.; and have a place to add comments about it
+<ul>
+<li>this in general; e.g. comments on video recordings</li>
+<li>anchor to 'what problem is being solved; and who needs that solved'</li>
+<li><span class="incipient-wikilink">metadata is a love letter written to the future</span></li>
+</ul>
+</li>
+<li>like the idea of starting with writing down what you're doing while you're doing it
+<ul>
+<li>helps explains to your future self why you actually did something</li>
+<li>but we should curb our expectations with solving all the problems at once</li>
+</ul>
+</li>
+<li><span class="incipient-wikilink">jordan nicholas sukut</span> +1, learnt similar lessons in company contexts -- which is why starting with documentation (or e.g. a design)</li>
+</ul>
+</li>
+<li>
+<p>#PK time check: 12 minutes left. Let's focus on...</p>
+<ul>
+<li>Process Documentation</li>
+<li>Themes</li>
+<li>#JM let's do lists and points assignment?</li>
+</ul>
+</li>
+<li>
+<p>Jordan's Priorities / Intuitions</p>
+<ul>
+<li>A couple themes / Basic Fixes</li>
+<li>Spoken to Broadcast Process (NeoCasts / WikiCasts)</li>
+<li>Text to Publish Process (NeoBooks / WikiBooks)</li>
+</ul>
+</li>
+<li>
+<p><a class="wikilink" href="/nxcTestVault/People/Bill_Anderson.html">Bill Anderson</a></p>
+<ul>
+<li>those plus the connectivity aspect in general, also with other projects</li>
+</ul>
+</li>
+<li>
+<p><span class="incipient-wikilink">Jerry Michalski</span></p>
+<ul>
+<li>Q for Pete: I heard you say "it's mostly manual in the beginning" -- is that more or less correct?
+<ul>
+<li>A: yes. But motivated to automate :)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>#PK Let's continue:</p>
+<ul>
+<li>working on the list</li>
+<li>working on the documentation for the end to end process</li>
+<li>#JNS +1 but we could also start working on some things earlier based on intuition?</li>
+</ul>
+</li>
+<li>
+<p>Jerry</p>
+<ul>
+<li>Themes</li>
+<li>Publishing Path</li>
+<li>Podcasting Path</li>
+</ul>
+</li>
+</ul>
+<h2>Pete's Important Things to Discuss</h2>
+<ul>
+<li>There are some important things Pete wants to make sure we discuss, before we formulate the project plan and determine resource allocation</li>
+<li>Commenting
+<ul>
+<li>typo, question, doc to contribute</li>
+</ul>
+</li>
+<li>Meta Data</li>
+<li>Interwiki</li>
+</ul>
+<hr />
+<p>A page from Pete about types of transcriptions in handwriting -- might there be something similar with audio transcription?</p>
+<p><p><a href="/nxcTestVault/Diplomatic_and_Normalized_Transcriptions.html" style="float:right">🔗</a> <h1>Diplomatic and Normalized Transcriptions</h1>
+<p><em>First version created by copying in from Pete's local personal wiki, 2024-01-31</em></p>
+<p>In handwriting transcription, we have "diplomatic" transcription and "normalized" transcription.  (And semi-diplomatic and semi-normalized....)</p>
+<p>"Diplomatic" transcription tries to copy the text exactly, with archaic orthography and what-have-you.</p>
+<p>"Normalized" transcription tries to make the text readable by a modern reader.</p>
+<p>Resources:</p>
+<ul>
+<li><a href="https://tei-c.org/Vault/ETE/Preview/driscoll.html">TEI: Levels of Transcription (Driscoll)</a></li>
+</ul>
+ </p></p>
+<hr />
+<h2>Zoom Chat</h2>
+<p><em>two space characters appended to each line</em></p>
+<p>00:12:42	Pete Kaminski:	https://hackmd.io/@peterkaminski/BJrV07O5a/edit?both<br />
+00:12:46	Flancian:	Reacted to "https://hackmd.io/..." with 👍<br />
+00:13:24	Jerry Michalski:	ah, I had this doc that u started before: https://hackmd.io/a8n8NAYXRweKSSjws977KQ?both<br />
+00:14:01	Pete Kaminski:	d'oh we were supposed to use that one! let's stay on the new one i made<br />
+00:14:07	Jerry Michalski:	kk<br />
+00:15:58	Flancian:	sorry, zoom/pipewire issues<br />
+00:16:04	Flancian:	will be back eventually I guess :)<br />
+00:17:14	Flancian:	https://anagora.org<br />
+00:17:19	Flancian:	e.g. https://anagora.org/nuggets<br />
+00:19:12	Jerry Michalski:	similar/same list, as represented in my Brain: https://bra.in/5j88Pk<br />
+00:22:21	BentleyDavis.com:	you could keep the sidebar a page by allowing lists in all pages to be hierarchical expandable. htmx?<br />
+00:24:18	Jerry Michalski:	my wet brain doesn’t cross wiki/vault boundaries well, so my pref is to have a large name space in one place<br />
+00:27:11	Jerry Michalski:	Kindle Direct Publishing, but here we likely mean KFF, the Kindle File Format<br />
+00:29:33	Jordan Nicholas Sukut:	Lulu - alternative to KDP - that allows for distribution and print on demand at Amazon ++ vs. only Amazon<br />
+00:29:51	Pete Kaminski:	Reacted to "Lulu - alternative t..." with 🙏<br />
+00:30:16	Flancian:	Reacted to "Lulu - alternative..." with 🙏<br />
+00:31:53	Jerry Michalski:	Replying to "Lulu - alternative t..."</p>
+<p>Lulu has its own format?<br />
+00:32:33	Jerry Michalski:	Replying to "Lulu - alternative t..."</p>
+<p>seems like they use epub and pdf<br />
+00:33:27	Jerry Michalski:	from 2018: Can I publish the same book on KDP and Lulu?</p>
+<p>If Lulu allows you to de-select Amazon for the print edition, you can certainly do that, but the usual system is to buy your own ISBN and publish the two versions as the same book. Some experienced self-publishers do this with Amazon (first using CreateSpace, now using KDP Print) and IngramSpark<br />
+00:34:43	Jerry Michalski:	ooooooh<br />
+00:39:32	Jerry Michalski:	sounds like even simple styles like headline won’t make it through?<br />
+00:41:45	Flancian:	https://github.com/flancian/flancia/blob/master/pages/Makefile<br />
+00:48:43	Flancian:	https://anagora.org/transcription+bot<br />
+00:48:53	Flancian:	-&gt; https://maya.land/monologues/2021/08/05/matrix-bot-transcribe-speech-audio-messages.html<br />
+00:52:28	Pete Kaminski:	speaking of transcription, Whisper and the its large model is WONDERFUL at transcript, and converts an interview into nice text without clumsy disfluencies. it's better than Otter and Descript on a one-pass good transcript.<br />
+00:52:57	Flancian:	+1, whisper is amazing<br />
+00:53:03	Pete Kaminski:	(i use Whisper in MacWhisper)<br />
+00:59:47	Jerry Michalski:	https://en.wikipedia.org/wiki/Planning_poker<br />
+01:00:33	Jerry Michalski:	angora is the fuzzier version<br />
+01:00:52	Flancian:	angora is the fuzzier version<br />
+love it!<br />
+01:01:43	Pete Kaminski:	And at Socialtext "Planning Game" was something different, where we did something similar to what Jerry just described -- a list of candidate projects, and a budget of poker chips to "spend" as votes.<br />
+01:02:36	Bill Anderson:	makefiles can rule<br />
+01:06:38	Jerry Michalski:	commenting<br />
+01:07:16	Jerry Michalski:	metadata</p>
+<hr />
+<h2>AI Summary (hopefully useful, may be inaccurate)</h2>
+<h3>Quick recap</h3>
+<p>The team discussed various projects, including a proposal writing wiki, a podcasting and publishing back-end infrastructure, and an open-source project. They also explored the idea of individual wikis working together and the potential of a chatbot for their project. Pete Kaminski discussed the ongoing development of the Wiki builder's homepage template and the potential of turning a massive wiki into a print-on-demand book. The team also discussed the idea of using AI to generate summaries of calls and the importance of documenting thoughts and actions. They also touched upon the potential of a podcasting infrastructure.</p>
+<h3>Summary</h3>
+<h4>Projects and Collaboration in Massive Wiki</h4>
+<p>Pete Kaminski, Jordan Nicholas Sukut, Jerry Michalski, and Flancian discussed various projects, including a massive wiki for proposal writing and the development of a back-end infrastructure for podcasting and publishing. Jerry introduced the concept of 'tiles' and 'waggle dance', while Flancian discussed his work on an open-source project and his note-taking skills. Pete showed interest in collaboration between Massive Wiki and Agora, a note-taking and backlinking system. He also suggested improvements to Massive Wiki, such as adding an 'edit this page' button to the Github interface and building more themes. The idea of individual wikis working better together, including sister pages and interwiki linking, was also discussed.</p>
+<h4>Data Management and Visualization Ideas</h4>
+<p>Pete and Jerry discussed the need for efficient data management and standardized schemas for their project. They also explored the idea of incorporating metadata into their project to facilitate easier navigation. Jerry proposed the concept of a multi-plane mosaic, a semi-3D visual representation of their project, which could be used to inspect different layers of the project. Additionally, Pete suggested the idea of turning a massive wiki into a print-on-demand book or a Kindle publication. Lastly, they touched upon the potential of a chatbot for their project.</p>
+<h4>Wiki Builder's Homepage Template and Printable Book Proposal</h4>
+<p>Pete Kaminski discussed the ongoing development and potential issues with the Wiki builder's homepage template and its 'basso' theme. He mentioned that he was working on a new theme using simple HTML and CSS, but it might require a rewrite. Jordan Nicholas Sukut proposed the idea of creating a printable book from the modular content in the Lionsbird Wiki, which he was willing to pilot. He raised a challenge of finding a print-on-demand service that allows distribution to other e-book platforms, suggesting the potential use of Lulu. The team agreed to consider pushing a couple of packages through the process as a proof of concept.</p>
+<h4>Writing Tools and Documentation Process</h4>
+<p>Pete Kaminski discussed his recent experiences with different writing tools, such as Microsoft Word, Google Docs, Obsidian, and Typeora. He explained the process he used to transfer documents between these tools, which involved exporting HTML without styles, pasting it into Google Docs, and then submitting it for production. He noted that the process was fiddly and might be easier to do by hand at first. Jordan Nicholas Sukut and Flancian agreed with Pete's suggestion to thoroughly document the process before attempting to automate it. Flancian shared his experience with using Pando and suggested that there might be value in learning complex tasks to make them more manageable.</p>
+<h4>Intermediate Representation and Future Projects</h4>
+<p>Flancian discussed the development of an intermediate representation in the form of a preprocessor step that would produce an HTML file with simple markup. This could be further expanded and connected as needed. Pete Kaminski mentioned the native format used by Sphinx and others brought up the possibility of using restructured text. Jordan Nicholas Sukut suggested a next step of documenting the current process to improve it, using one or two manuals and podcasts as test cases. Pete Kaminski proposed a shift towards using Markdown for future projects, emphasizing its compatibility with other Markdown-based systems.</p>
+<h4>Content Creation and AI Summary Ideas</h4>
+<p>Jordan, Pete, and Flancian discussed the potential uses and applications of audio and written content creation. They considered the idea of creating podcasts, monological transmissions, and anthropological interviews. Pete suggested the concept of using AI to generate summaries of calls, and the need for a system that allows for iterative improvements to the AI-generated summary. Flancian proposed the idea of a universal labeling interface for all media, which could provide valuable insights from human interaction and consumption.</p>
+<h4>AI Plan, Company Building, and Project Prioritization</h4>
+<p>Bill expressed concerns about the AI plan's workload and questioned its problem-solving capacity. He emphasized the importance of documenting thoughts and actions. Jordan highlighted the need for documenting the process of company building. Pete suggested discussing the proposal list's sifting, sorting, and summarizing process and proposed creating simple themes. Jerry proposed assigning points to projects on a spreadsheet to determine their costs. The team agreed to rationalize the list quickly. They also discussed the Wiki project's publication process, the creation of an audio version, and potential connectivity problems. The team agreed to continue working on these projects while considering the importance of prioritization and planning. They also discussed the potential of a podcasting infrastructure.</p>
+<h4>Next steps</h4>
+<ul>
+<li>Pete will continue working on the hack and be project and share it with more people.</li>
+<li>Jordan will compose modular content from the Lionsburg Wiki into a printable book and explore options for publishing on Kendall or Lulu.</li>
+<li>Jordan, Pete, and Flancian will document the current process for creating and publishing content.</li>
+<li>Pete will explore the possibility of creating a tool that allows for iterative improvement of AI-generated transcripts.</li>
+<li>Pete will try to create a nice list for the planning game in two weeks.</li>
+<li>Consider discussing commenting, metadata, and interwiki in future meetings.</li>
+</ul>
+<p><em>AI-generated content may be inaccurate or misleading. Always check for accuracy.</em></p>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

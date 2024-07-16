@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2022-11-25 Massive Wiki and Mastodon spelunking - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/2022-11-25 Massive Wiki and Mastodon spelunking.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>2022-11-25 Massive Wiki and Mastodon spelunking</h1>
+<h2>start here with this toot:</h2>
+<p><a href="https://chaos.social/@opensourcegardens">** Open Source Gardens**@opensourcegardens@chaos.social</a></p>
+<p>Dear <a href="https://chaos.social/tags/Fediverse">#Fediverse</a>: We are looking for a good solution to collaboratively create and maintain a <a href="https://chaos.social/tags/list">#list</a> of <a href="https://chaos.social/tags/open">#open</a> <a href="https://chaos.social/tags/source">#source</a> technologies for <a href="https://chaos.social/tags/gardens">#gardens</a> from <a href="https://chaos.social/tags/software">#software</a> to <a href="https://chaos.social/tags/hardware">#hardware</a>.</p>
+<p>the solution should</p>
+<ul>
+<li>offer public visibility (via html)</li>
+<li>be easily editable (with or w/o account)</li>
+<li>have a version history</li>
+<li>be low tech</li>
+<li>hosted by other good people</li>
+<li>open source (of course)</li>
+</ul>
+<p>extras for some style features, data fields and federation<br />
+tips welcome, boosts as well.</p>
+<p><a href="https://chaos.social/@opensourcegardens/109403942261770713">Nov 25, 2022, 04:21</a></p>
+<h2>pete responds to band sending the above toot</h2>
+<p><a href="https://toolsforthought.rocks/@peterkaminski"><strong>Peter Kaminski</strong>@peterkaminski@toolsforthought.rocks</a></p>
+<p><a href="https://octodon.social/@band" title="band">@band</a> it does, although <a href="https://toolsforthought.rocks/tags/MassiveWiki">#MassiveWiki</a> still doesn't seem quite user-friendly enough?</p>
+<p>Or, perhaps <a href="https://toolsforthought.rocks/tags/MassiveWiki">#MassiveWiki</a> is more or less as friendly as other wiki engines, and maybe we just haven't yet found many communities that are really engaged around growing and maintaining a wiki.</p>
+<p>(Talk about weird synchronicity, I wanted to show somebody how to spelunk through Mastodon space, and in about 5 semi-random hops, I had navigated to that very post - before I had seen your post!)</p>
+<h2>band has thoughts</h2>
+<p><a href="https://octodon.social/@band"><strong>band</strong>@band</a></p>
+<p><a href="https://toolsforthought.rocks/@peterkaminski" title="peterkaminski@toolsforthought.rocks">@peterkaminski</a> (1) Massive Wiki, maybe like all wikis (but not Mediawiki?) has a barrier to web editing and commenting (hypothesis annotation maybe close enough?). (2) you are correct about finding or not finding communities engaged in wiki use and tending. (3) these thoughts deserve capture on (which?) Massive Wiki we have? (4) and how do you spelunk through Mastodon space (an inquiring mind wants to know)?</p>
+<h2>Spelunking?</h2>
+<p><a href="https://toolsforthought.rocks/@peterkaminski"><strong>Peter Kaminski</strong>@peterkaminski@toolsforthought.rocks</a></p>
+<p><a href="https://octodon.social/@band" title="band">@band</a> re spelunking Mastodon, still discovering, but:</p>
+<p>A) Start with a list of instances, say:<br />
+<a href="https://instances.social/" title="https://instances.social/">https://instances.social/</a></p>
+<p>Look for smaller instances, maybe use a keyword.<br />
+Go to instance(s), do a search, or look at "Local", or click "Profiles directory" in the lower left.</p>
+<p>B) Search hashtags on one of the big instances, e.g.:</p>
+<p><a href="https://mastodon.social/tags/rivers" title="https://mastodon.social/tags/rivers">https://mastodon.social/tags/rivers</a><br />
+<a href="https://mastodon.online/tags/rivers" title="https://mastodon.online/tags/rivers">https://mastodon.online/tags/rivers</a></p>
+<p>C) The classic social network trick: find an interesting person's profile; spelunk their Following and Followers; recurse.</p>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

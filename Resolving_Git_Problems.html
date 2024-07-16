@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resolving Git Problems - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/Resolving Git Problems.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <p>(a page to start collecting how-to-fix tips.  not yet friendly enough for most people.)</p>
+<h2>Git Authentication</h2>
+<p>Note that Git error messages make it sound like a repo is "not found", rather than there are access issues if you don't have access to it.</p>
+<p>Note that things work differently for HTTPS and SSH git URLs.  HTTPS needs a password or personal access token.  SSH uses a keypair.</p>
+<p>GitHub Desktop defaults to pulling via HTTPS.  If you pull via GitHub Desktop, but then sync via Obsidian Git or command-line, the latter may fail if you don't have authentication set up properly.</p>
+<p>If you need to cache Git credentials for HTTPS URLs, consider using Microsoft's open source "<a href="https://github.com/microsoft/Git-Credential-Manager-Core/">Git Credential Manager Core</a>", or <code>git config --global credential.helper store</code>, but read more about <code>store</code> -- it saves your password/PAT in plaintext.  Also read more about the <code>osxkeychain</code> helper if you're on a Mac.</p>
+<p>Consider using a PAT rather than your main password, because it's easier to rotate or remove if necessary</p>
+<p>See these pages about caching Git credentials:</p>
+<ul>
+<li><a href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git">Caching your GitHub credentials in Git - GitHub Docs</a></li>
+<li><a href="https://docs.github.com/en/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain">Updating credentials from the macOS Keychain - GitHub Docs</a></li>
+<li><a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">Creating a personal access token - GitHub Docs</a></li>
+<li><a href="https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage">Git - Credential Storage</a> (note, refers to "Git Credential Manager for Windows"; however, "Warning: Older versions of Git for Windows came with Git Credential Manager for Windows. This older product is no longer supported and cannot connect to GitHub via OAuth. We recommend you upgrade to the <a href="https://github.com/git-for-windows/git/releases">latest version of Git for Windows</a>.")</li>
+</ul>
+<h2>Pull failed error: Your local changes to the following files would be overwritten by merge</h2>
+<p>This happens when you have changed files on your computer and you do a pull.</p>
+<h3>Possible strategies for fixing</h3>
+<ol>
+<li>
+<p>Undo all local changes.</p>
+<ol>
+<li>command-line: <code>git checkout .</code></li>
+</ol>
+</li>
+<li>
+<p>Save ("stash") your changes to a temporary location. (PREFERRED)</p>
+<ol>
+<li>command-line:
+<ol>
+<li><code>git stash</code></li>
+<li><code>git pull</code></li>
+<li>(deal with any merge conflicts)</li>
+<li><code>git stash pop</code></li>
+<li>(continue with your edits and/or do another pull+push)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Save your changes to a new branch.</p>
+<ol>
+<li>command-line:
+<ol>
+<li><code>git checkout -b pk-name-of-new-branch-20210313</code></li>
+<li><code>git switch main</code></li>
+<li><code>git pull</code></li>
+<li>(deal with any merge conflicts)</li>
+<li><code>git switch -</code></li>
+<li><code>git merge main</code></li>
+<li>(continue working on your new branch; later, follow a strategy about merging branches back into main)</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3>Removing Repo from GitHub Desktop</h3>
+<p>You can remove a repo from GitHub Desktop's list of repos.  You can either leave the repo in place, or move it to Trash.</p>
+<p>Right-click on the repository in the repository list in GitHub Desktop and select "Remove..."" to remove the repository.  You will have the option of moving the repo to Trash or not.</p>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Massive Wiki Wednesday, 2022-10-19 - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/Meetings/Massive Wiki Wednesday, 2022-10-19.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>Massive Wiki Wednesday, 2022-10-19</h1>
+<h2>Topics</h2>
+<p><em>portions originally from <a href="https://dainty-sable-264aa3.netlify.app/project/meeting_19_october">meeting 19 October - Mapping the thinking tool landscape with collective intelligence</a></em></p>
+<ul>
+<li>[x] can we have files (like this) that we can share and edit without being published?
+<ul>
+<li>No, but nice feature request.</li>
+</ul>
+</li>
+<li>[x] <span class="incipient-wikilink">homepage spidergraph proposal</span></li>
+<li>[x] <span class="incipient-wikilink">404 page process</span></li>
+<li>[x] Scrintal (and "Scrintal Beta Early Access Plan")</li>
+<li>[x] getting new users started (and update or remove the old Getting Started Guide stuff)</li>
+<li>[x] Obsidian v1.0 Released</li>
+<li>[x] "ecosystem of tools"</li>
+<li>[ ] review and prioritize MWB issues and development</li>
+</ul>
+<h2>MWB Bugs</h2>
+<ul>
+<li>macos doesn't distinguish between case, linux does</li>
+</ul>
+<h2>Ecosystem of Tools</h2>
+<ul>
+<li>"Massive Wiki is a movement to create a wiki ecosystem (rather than just one engine) that provides classic wiki utility, with a plurality of tools and processes that enable decentralization and federation of the pages."</li>
+<li>sharing HackMD links - https://hackmd.io/@peterkaminski/H1XK1opXo/both?edit</li>
+</ul>
+<h2>Obsidian v1.0 Released</h2>
+<ul>
+<li>new setting for file header
+<ul>
+<li>recommend turning off "Show inline title" (Displays the filename as an editable title inline with the file contents.) and continue to use the <code># Page Title</code> convention</li>
+<li>consider using "Page Heading From Links" community plugin</li>
+</ul>
+</li>
+<li>don't need separate "Collapse All" plugin any more</li>
+</ul>
+<h2>"Working Notes" / "Management" pages in Massive Wiki</h2>
+<h3>Options</h3>
+<ol>
+<li>create a feature request for a way to flag pages or entire folder(s) that don't get published to the web</li>
+<li>create an "Internal Pages" section of your site, with an explanatory section home page explaining what "internal pages" are; maybe add a header at the top of each page</li>
+<li>for super-clean websites, have a staging wiki website, and a production website
+<ul>
+<li>with Git branches</li>
+<li>with two separate repos</li>
+</ul>
+</li>
+</ol>
+<h1>404 page</h1>
+<ul>
+<li>build phase: 404.md solution, mentioning that we're upgrading to a 'auto-stub creation' process.</li>
+<li>example: Lionsberg: https://lionsberg.wiki/404.md</li>
+</ul>
+<h1>homepage spidergraph proposal</h1>
+<ul>
+<li>put interactive form into later project phase</li>
+</ul>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

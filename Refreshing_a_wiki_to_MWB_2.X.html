@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Refreshing a wiki to MWB 2.X - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/Refreshing a wiki to MWB 2.X.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>Refreshing a wiki to MWB 2.x</h1>
+<h3>Push any changes to the wiki</h3>
+<p>Before you do anything else, have all contributors commit and push any changes to the wiki, and then have them close their Obsidian or other windows / editors on the wiki.  Have them wait to make changes while you do the following.</p>
+<h3>Get a clean version for a new repo</h3>
+<p>This process re-instantiates the submodules, which is good for keeping MWB and MWT files out of the repo (there's a reference pointer to the repos, but the files themselves don't get added to the repo), and also good for local testing.</p>
+<p>Assumption 0: shell commands are written for macOS and <code>zsh</code>
+Assumption 1: the existing wiki is named <code>$NEW_WIKI_VAULT_NAME</code> .
+Assumption 2: all commands in the scripts below are relative to the parent directory of this existing wiki.
+Assumption 3: the repo in GitHub belongs to <code>GH-UserID</code>, and isn't in a different organization (if it is, <code>gh</code> command needs to be changed)</p>
+<pre><code class="language-shell">export NEW_WIKI_VAULT_NAME="developer-massive-wiki"
+git clone git@github.com:Massive-Wiki/massive-wiki-starter.git temp-$NEW_WIKI_VAULT_NAME
+cd temp-$NEW_WIKI_VAULT_NAME
+rm -rf .git
+git init
+cd .massivewikibuilder
+more ../.gitmodules # get addresses for MWB and MWT
+rmdir massivewikibuilder massive-wiki-themes
+git submodule add https://github.com/peterkaminski/massivewikibuilder.git
+git submodule add https://github.com/peterkaminski/massive-wiki-themes.git
+cd ..
+git add .
+git commit -m "start with Massive Wiki Starter"
+</code></pre>
+<h3>Push this new repo to GitHub</h3>
+<pre><code class="language-Shell">export GITHUB_ORG_NAME="Your-GitHub-UserID-or-OrgName"
+gh repo create $GITHUB_ORG_NAME/temp-$NEW_WIKI_VAULT_NAME --public --source=. --remote=upstream
+git branch -M main
+git remote add origin https://github.com/$GITHUB_ORG_NAME/temp-$NEW_WIKI_VAULT_NAME.git
+# or git remote add origin git@github.com:$GITHUB_ORG_NAME/$NEW_WIKI_VAULT_NAME.git
+git push -u origin main
+</code></pre>
+<h3>Copy content over from previous version</h3>
+<p>Copy over all the MD files, <code>.obsidian/</code> , and <code>.massivewikibuilder/mwb.yaml</code>  (but don't overwrite <code>netlify.toml</code>)</p>
+<p>Assumption 4: commands in the scripts below are relative to the parent directory of this existing wiki.</p>
+<pre><code class="language-Shell">cd $NEW_WIKI_VAULT_NAME # change directory into the old vault folder
+cp -av * ../temp-$NEW_WIKI_VAULT_NAME # does not copy dotfiles/dotdirectories
+rm -fr ../temp-$NEW_WIKI_VAULT_NAME/.obsidian # ensure we don't copy _into_ .obsidian
+cp -av .obsidian ../temp-$NEW_WIKI_VAULT_NAME # copy over .obsidian directory
+cp .massivewikibuilder/mwb.yaml ../temp-$NEW_WIKI_VAULT_NAME/.massivewikibuilder/ # copy over mwb.yaml
+cd ../temp-$NEW_WIKI_VAULT_NAME
+git checkout netlify.toml # restore netlify.toml we just copied over
+
+</code></pre>
+<h3>Add the old wiki content to the new repository</h3>
+<pre><code class="language-Shell">git add --all ':!netlify.toml'
+git commit -m "old wiki content transfer"
+git push -v # -v: as in '... but verify'
+</code></pre>
+<h3>copy over the old repo About description</h3>
+<p>these two zsh commands <em>might</em> do it (the quotation marks need some special handling)</p>
+<pre><code class="language-Shell"># get old wiki repository About description
+# MUST BE IN the old vault folder
+REPO_ABOUT=$(eval gh repo view --json description | jq '.description')
+# restore old wiki repository About description
+cd ../temp-$NEW_WIKI_VAULT_NAME
+gh repo edit -d ${REPO_ABOUT:Q}
+# verify repo About description
+gh repo view --json description
+</code></pre>
+<h3>set old repository name to old-$NEW_WIKI_VAULT_NAME on Github</h3>
+<p>In the GitHub interface, go to Settings in the repo, and rename.</p>
+<p><em>(need <code>gh</code> command if available)</em></p>
+<h3>set new repository name to old name on Github</h3>
+<p>In the GitHub interface, go to Settings in the repo, and rename.</p>
+<p><em>(need <code>gh</code> command if available)</em></p>
+<h3>Local Testing</h3>
+<p>Assumption 4: <code>python3</code> and <code>node</code> are installed and available</p>
+<pre><code class="language-Shell">cd temp-$NEW_WIKI_VAULT_NAME
+cd .massivewikibuilder/massivewikibuilder
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+npm ci  # install the node_modules used by lunr search | ONLY NEEDED ONCE
+# run mwb using command from netlify.toml
+./mwb.py -c ../mwb.yaml -w ../.. -o ../output -t ../this-wiki-themes/basso --lunr
+# if successful
+cd ../output
+python3 -m http.server # open browser to localhost:8000 to view mwb output
+</code></pre>
+<h3>Locally, move old wiki out of the way, clone new wiki</h3>
+<pre><code class="language-Shell">cd ~/Documents/GitHub/ # or wherever wikis are
+mv $NEW_WIKI_VAULT_NAME old-$NEW_WIKI_VAULT_NAME
+
+# use either HTTPS or SSH line
+# git clone https://github.com/GH-UserID/$NEW_WIKI_VAULT_NAME.git
+# git clone git@github.com:GH-UserID/$NEW_WIKI_VAULT_NAME.git
+
+cd $NEW_WIKI_VAULT_NAME
+rm -rf .obsidian
+cp -a ../old-$NEW_WIKI_VAULT_NAME/.obsidian .
+</code></pre>
+<h3>Invite people with access to the old repo to the new repo</h3>
+<p>In the new repo on GitHub, go to Settings &gt; Collaborators and teams.</p>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

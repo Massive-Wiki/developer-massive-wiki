@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mistletoe & the ampersand story - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/MWB upgrade notes/Mistletoe & the ampersand story.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>Mistletoe &amp; the ampersand story</h1>
+<p>2023-05-10:<br />
+This is a test page to verify, and, if needed, validate a fix for Massive Wiki Builder issue number 49: <a href="https://github.com/peterkaminski/massivewikibuilder/issues/49"># Ampersand in a wiki link on the Sidebar leads to 404 on website</a></p>
+<p>Let's see if this same issue shows up here on developer-massive-wiki. And it does.</p>
+<p>Next steps:
+2023-05-11: leaving the mistletoe wikilink cargo cult:</p>
+<ol>
+<li>
+<p>in the Obsidian Markdown page a wikilink has these parts contained within double square brackets and separated by a vertical bar (<code>|</code>):</p>
+<ul>
+<li>name of the wiki page</li>
+<li>optional display text</li>
+</ul>
+</li>
+<li>
+<p>in the Mistletoe rendered HTML:</p>
+<ul>
+<li>
+<p><code>token.target</code> == the data in an <code>&lt;a&gt;,&lt;/a&gt;</code> tagged item; this corresponds to the optional display text (if any) in the wikilink; otherwise the page name</p>
+</li>
+<li>
+<p><code>self.render_inner(token)</code> == content of the <code>'href'</code> attribute in an <code>&lt;a&gt;,&lt;a/&gt;</code> tagged item; this corresponds to a weblink to the wiki page, relative to the root of the wiki directory (Obsidian vault). This value is read from a wikilinks directory constructed when running Massive Wiki Builder.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>one way to fix this ampersand in the page name problem is to counteract the <code>html.escape()</code> use prevalent in the <code>mistletoe</code> render classes when retrieving a weblink from the <code>wikilinks</code> dictionary.</p>
+<ul>
+<li>the key line of code in <code>mistletoe_renderer/massivewiki.py</code> is this:</li>
+</ul>
+</li>
+</ol>
+<pre><code class="language-python"> wikilink_key = html.unescape(Path(self.render_inner(token)).name)
+</code></pre>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

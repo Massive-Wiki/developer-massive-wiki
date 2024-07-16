@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>wiki link test page - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/Link workbench/testdir/wiki link test page.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>wiki link test page</h1>
+<h3>2022-04-23</h3>
+<p>Here we are providing samples for fuzzy linking to other pages:</p>
+<ul>
+<li>one at the root <a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></li>
+<li>one in another folder <a class="wikilink" href="/nxcTestVault/People/Bill_Anderson.html">Bill Anderson</a></li>
+<li>one in this folder <a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/sameFolder_note.html">sameFolder note</a></li>
+<li>one in a folder in a folder <a class="wikilink" href="/nxcTestVault/Link_workbench/folder-folder/folder_in_a_folder_test_page.html">folder in a folder test page</a></li>
+<li>let's include an image <a class="wikilink" href="/nxcTestVault/_attachments/2021-11-11-Milosz.jpeg">of a poem</a></li>
+</ul>
+<h3>2022-05-21</h3>
+<p>Another set of links with explicit paths to wiki pages for testing:
+(N.B. Obsidian behavior when trying to create these pages by double-clicking in read-view: Obsidian does not create a new page even when subdir exists (it is more complicated than that))</p>
+<ul>
+<li><a class="wikilink" href="/nxcTestVault/wiki_page1.html">wiki page1</a></li>
+<li><a class="wikilink" href="/nxcTestVault/Link_workbench/wiki_page2.html">../wiki page2</a></li>
+<li><a class="wikilink" href="/nxcTestVault/wiki_page3.html">../../wiki page3</a></li>
+<li><a class="wikilink" href="/nxcTestVault/Link_workbench/subdir/wiki_page4.html">../subdir/wiki page4</a></li>
+<li><a class="wikilink" href="/nxcTestVault/wiki_page5.html">/wiki page5</a></li>
+<li><a class="wikilink" href="/nxcTestVault/subdir2/wiki_page6.html">/subdir2/wiki page6</a></li>
+<li><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/text_only_wiki_page.txt">text only wiki page.txt</a></li>
+<li><a class="wikilink" href="/nxcTestVault/is_this_wiki_page7.html">is this? wiki page7</a></li>
+<li><a class="wikilink" href="/nxcTestVault/Link_workbench/subdir/the_special_wiki_page8.html">the special??wiki page8</a></li>
+<li><a class="wikilink" href="/nxcTestVault/Link_workbench/octothorpe_wiki_page.html">Link workbench/octothorpe #wiki page</a></li>
+<li><a class="wikilink" href="/nxcTestVault/Link_workbench/what_about_this_page.html">Link workbench/what   about? #??____this ##page</a></li>
+</ul>
+<h3>2022-05-09</h3>
+<p>We seem to be able to generate full wikilinks to other pages.</p>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

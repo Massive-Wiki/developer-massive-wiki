@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2023-04-06 Bill submodule mishigas - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/2023-04-06 Bill submodule mishigas.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>2023-04-06 Bill submodule mishigas</h1>
+<ul>
+<li>In massivewikibuilder repository:
+<code>beckett: ~/Public/pkgs/massive-wiki/massivewikibuilder</code>
+I ended up making a branch for the new MWB3 code and pushing that to the home repo: that command line stuff is here:</li>
+</ul>
+<pre><code class="language-shell">$ git branch wla-mwb3-20230406 HEAD
+$ git branch -l
+* main
+  pk-mistletoe-work-20230213
+  pk-v2.0.0-rc-20220726
+  wla-mwb3-20230406
+  wla-v2.1.0-rp-20020930
+$ git checkout wla-mwb3-20230406
+Switched to branch 'wla-mwb3-20230406'
+$ git branch -l
+  main
+  pk-mistletoe-work-20230213
+  pk-v2.0.0-rc-20220726
+* wla-mwb3-20230406
+  wla-v2.1.0-rp-20020930
+$ git push -u origin wla-mwb3-20230406
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: Create a pull request for 'wla-mwb3-20230406' on GitHub by visiting:
+remote:      https://github.com/peterkaminski/massivewikibuilder/pull/new/wla-mwb3-20230406
+remote: 
+To https://github.com/peterkaminski/massivewikibuilder.git
+ * [new branch]      wla-mwb3-20230406 -&gt; wla-mwb3-20230406
+branch 'wla-mwb3-20230406' set up to track 'origin/wla-mwb3-20230406'.
+</code></pre>
+<ul>
+<li>In developer.massive.wiki vault:
+beckett: ~/Documents/Github/developer-massive-wiki
+Once the <code>massivewikibuilder</code> submodule was updated I needed to adjust the <code>.gitmodules</code> file in the developer wiki to get that code into my working repo;-- or I think I needed to do that.</li>
+</ul>
+<pre><code class="language-shell">$ git config --file=.gitmodules -l
+$ git submodule set-branch -b wla-mwb3-20230406 \ .massivewikibuilder/massivewikibuilder
+
+$ git submodule sync
+$ git submodule update --init --recursive --remote
+
+$ git add .massivewikibuilder/massivewikibuilder
+$ git commit -m "new mwb3 code on a branch"
+$ git push -v
+</code></pre>
+<ul>
+<li>I used Bing Chat to ask <code>git</code> how-to questions. The answers were helpful and the (are we calling it "conversational") interaction was pleasant. I also learned a few new git commands along the way:</li>
+</ul>
+<pre><code class="language-shell">$ git rev-parse HEAD
+$ git rev-parse tagID
+</code></pre>
+<ul>
+<li>Also more learning in this attempt to remove the MWB submodule from <code>~/Documents/myWikis/myMassiveTestWiki</code>:</li>
+</ul>
+<pre><code class="language-shell">$ git rm --cached .massivewikibuilder/massivewikibuilder
+error: the following file has staged content different from both the
+file and the HEAD:
+    .massivewikibuilder/massivewikibuilder
+(use -f to force removal)
+$ git rm -f --cached .massivewikibuilder/massivewikibuilder
+$ rm -fr \ .git/modules/massivewikibuilder
+$ git commit -m "removed submodule massivewikibuilder"
+
+[main 2d0382c] removed submodule massivewikibuilder
+ 2 files changed, 4 deletions(-)
+delete mode 160000 .massivewikibuilder/massivewikibuilder
+
+$ git status  
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+</code></pre>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+#side-column {
+  font-size: 0.9em;
+  background-color: white;
+  min-width: 12em;
+  max-height: 80vh;
+  padding: 20px;
+  margin-right: 10px;
+  overflow-y: auto;
+}
+
+#main-column {
+  background-color: white;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+#hamburger-btn {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 0.5em;
+}
+
+#header {
+  font-family: sans-serif;
+  font-size: 2rem;
+  margin: 0.5em;
+}
+
+.floating {
+  position: absolute;
+  left: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+ 
+.footer {
+  background-color: #fafafa;
+  padding: 3rem 1.5rem 6rem; }
+
+.has-text-centered {
+  text-align: center !important; }
+
+.button {
+  background-color: white;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap; }
+  .button.is-light {
+    background-color: whitesmoke;
+    border-color: transparent;
+    color: rgba(0, 0, 0, 0.7); }
+
+/* Edit This Page information tooltip */
+  .edit-this-page-tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .edit-this-page-button {
+    display: inline-block;
+    padding: .25em .5em;
+    background-color: #22aa22;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .5em;
+  }
+
+  .edit-this-page-tooltip .edit-this-page-tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #444444;
+    color: #fff;
+    text-align: center;
+    border-radius: .5em;
+    padding: .5em;
+    /* Positioning */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right: 0;
+    /* Fade in */
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .edit-this-page-tooltip:hover .edit-this-page-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }

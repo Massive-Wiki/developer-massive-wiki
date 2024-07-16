@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MasWiki Python Module meeting, 2024-01-30 - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/Meetings/MasWiki Python Module meeting, 2024-01-30.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>MasWiki Python Module meeting, 2024-01-30</h1>
+<h2>Off Topic</h2>
+<ul>
+<li>https://memgpt.ai/</li>
+<li>https://pi.ai/ - a good conversationalist, free to start</li>
+</ul>
+<h2>Use Cases, Personas</h2>
+<ol>
+<li>I'm installing MasWiki because I want to turn Obsidian vaults into websites -&gt; install MasWiki
+<ul>
+<li>"website" - does that mean local? cloud? both?</li>
+<li>"install MasWiki" -- globally, or with a venv</li>
+</ul>
+</li>
+<li>I want a quick and easy website (and a static site is okay) -&gt; install Publishing Toolkit
+Further notes on this topic: <a class="wikilink" href="/nxcTestVault/web_and_wiki_publishing_-_scenarios_and_workflows.html">web and wiki publishing - scenarios and workflows</a></li>
+</ol>
+<h2>Package Name</h2>
+<ul>
+<li>temporary name is MasWiki</li>
+<li>future name TBD, needs to be friendly for people who want a static site, but not necessarily a wiki</li>
+</ul>
+<h2>Research: "init" methods used by other tools</h2>
+<ul>
+<li>11ty</li>
+<li>Hugo</li>
+<li>Express.js?</li>
+<li>MemGPT: "quickstart" command, Set the base config file with a single command</li>
+</ul>
+<h2>General Architecture</h2>
+<h3>MasWiki -- the builder</h3>
+<ul>
+<li>distributed as a PyPI module</li>
+<li>has an "init" function to get somebody going
+<ul>
+<li>includes mwb.yaml, a simple theme, and package.json</li>
+</ul>
+</li>
+</ul>
+<h3>Publishing Toolkit - template repo to get a static website up easily</h3>
+<ul>
+<li>netlify.toml</li>
+<li>.massivewikibuilder directory
+<ul>
+<li>requirements.txt is used by Netlify to install MasWiki (replaces git submodule)</li>
+<li>instructions to install MasWiki module locally, but installing MasWiki for Netlify is handled automatically</li>
+</ul>
+</li>
+</ul>
+<h2>MasWiki Actual Getting Started Instructions</h2>
+<ul>
+<li>create files like <span class="incipient-wikilink">PK MasWiki Getting Started</span> or <span class="incipient-wikilink">BA MasWiki Getting Started</span></li>
+</ul>
+<p><em>stuff goes here</em></p>
+<h3>Installed Globally, used for multiple wikis</h3>
+<ul>
+<li>skip venv, because it's global anyway</li>
+<li>typical uses option A:
+<ul>
+<li><code>maswiki --create ~/Documents/GitHub/new-wiki</code></li>
+<li><code>maswiki --build ~/Documents/GitHub/existing-wiki</code></li>
+<li><code>maswiki --build .</code> # looks for <code>.maswiki/maswiki.yaml</code> ?</li>
+</ul>
+</li>
+<li>typical uses option B (probably the more appropriate way):
+<ul>
+<li><code>mkdir new-wiki; cd new-wiki; maswiki init; emacs .maswiki/maswiki.yaml</code></li>
+</ul>
+</li>
+</ul>
+<h2>Publishing Toolkit Actual Getting Started Instructions</h2>
+<h3>User that doesn't know or care how it works, just needs a website</h3>
+<ul>
+<li>use Publishing Toolkit repo as a template to create a new wiki</li>
+</ul>
+
+      
+      <hr>
+      <div>
+	<h4>Pages that link to this page</h4>
+	<ul>
+	  
+	  <li><a href="/nxcTestVault/web_and_wiki_publishing_-_scenarios_and_workflows.html">web and wiki publishing - scenarios and workflows</a>
+	  
+	</ul>
+      </div>
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

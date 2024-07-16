@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2023-01-20 MWB program flow - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/2023-01-20 MWB program flow.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>2023-01-20 MWB Program flow</h1>
+<p>This note outlines the steps taken to build a Massive Wiki static
+website. The code outlined is <code>mwb.py</code>, version 2.1.0.</p>
+<p>The <code>mwb.py</code> <code>main</code> function steps:</p>
+<ul>
+<li>
+<p>initialize: parse command line arguments</p>
+</li>
+<li>
+<p>store configuration</p>
+</li>
+<li>
+<p>get Jinja2 env</p>
+</li>
+<li>
+<p>set up lunr filename and sitepath indices</p>
+</li>
+<li>
+<p>render the wiki:</p>
+<ul>
+<li>
+<p>remove and recreate output directory</p>
+</li>
+<li>
+<p>generate dict of filenames and wikipaths to support wikilinks
+(first loop through all files)</p>
+</li>
+<li>
+<p>copy wiki to output; render .md files as HTML</p>
+<ul>
+<li>second loop through files
+<ul>
+<li>parse Markdown files (frontmatter and markdown body)</li>
+<li>collect git commit messages and times</li>
+<li>append to all_pages list</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>build lunr search index (if specified)</p>
+</li>
+<li>
+<p>set up search web page</p>
+</li>
+<li>
+<p>build all_pages web page</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>cf. <a class="wikilink" href="/nxcTestVault/_attachments/MWB-dataflowV3.png">MWB-dataflowV3.png</a></p>
+<hr />
+<h2>Pete's notes, 2023-02-17</h2>
+<h3>Paths for all non-hidden Markdown files</h3>
+<ul>
+<li>absolute file path of source file
+<ul>
+<li><code>/Users/peterkaminski/Documents/GitHub/developer-massive-wiki/Wiki Theory and Culture/Link As You Think.md</code></li>
+</ul>
+</li>
+<li>absolute file path or directory for output of <code>.md</code>, <code>.html</code>, <code>.json</code>
+<ul>
+<li><code>/Users/peterkaminski/Documents/GitHub/developer-massive-wiki/.massivewikibuilder/output/Wiki_Theory_and_Culture/Link_As_You_Think.md</code></li>
+<li><code>/Users/peterkaminski/Documents/GitHub/developer-massive-wiki/.massivewikibuilder/output/Wiki_Theory_and_Culture/Link_As_You_Think.html</code></li>
+<li><code>/Users/peterkaminski/Documents/GitHub/developer-massive-wiki/.massivewikibuilder/output/Wiki_Theory_and_Culture/Link_As_You_Think.json</code></li>
+</ul>
+</li>
+<li>absolute web path (with optional rootdir) (with non-safe <code>r'([ _?\#]+)'</code> characters replaced with <code>_</code>)
+<ul>
+<li><code>/rootdir/Wiki_Theory_and_Culture/Link_As_You_Think.html</code></li>
+</ul>
+</li>
+</ul>
+<h3>Files</h3>
+<p>All non-hidden files of any type:</p>
+<ul>
+<li>are copied from wiki to output</li>
+</ul>
+<p>All non-hidden Markdown files:</p>
+<ul>
+<li>name of file is used as a key in the list of wikilink targets</li>
+<li>are entered into the search index</li>
+<li>file is parsed and
+<ul>
+<li>a <code>.html</code> version is saved to the location that will be next to the <code>.md</code> file</li>
+<li>a <code>.json</code> extract of the YAML frontmatter is saved to the location that will be next to the <code>.md</code> file</li>
+</ul>
+</li>
+</ul>
+<h3>Wikilinks</h3>
+<p>If we accumulate all links seen during Markdown parsing, after all Markdown files are parsed, we can compare that to the list of wikilink targets, and determine:</p>
+<ul>
+<li>unlinked files (could write an HTML report file)</li>
+<li>links to non-existent files (each of which could be created as a stub HTML file)</li>
+</ul>
+<p>These lists could also be output as log messages.</p>
+<p><a class="wikilink" href="/nxcTestVault/MassiveWikiBuilder_V3-pseudocode.html">MassiveWikiBuilder V3-pseudocode</a></p>
+
+      
+      <hr>
+      <div>
+	<h4>Pages that link to this page</h4>
+	<ul>
+	  
+	  <li><a href="/nxcTestVault/MassiveWikiBuilder_V3-pseudocode.html">MassiveWikiBuilder V3-pseudocode</a>
+	  
+	</ul>
+      </div>
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

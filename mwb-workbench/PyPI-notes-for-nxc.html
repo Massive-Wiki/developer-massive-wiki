@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PyPI-notes-for-nxc - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/mwb-workbench/PyPI-notes-for-nxc.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>PyPI notes for <code>nxc</code>:</h1>
+<h1>Notes for Poetry install</h1>
+<p><strong>2024-04-25</strong>: Notes from Bill about setting up a MassiveWikiBuilder PyPI package for testing and development.</p>
+<h2>Install pipx</h2>
+<p>(https://github.com/pypa/pipx)</p>
+<pre><code class="language-shell">brew install pipx
+pipx ensurepath
+</code></pre>
+<pre><code class="language-shell"> $ pipx ensurepath
+Success! Added /Users/band/.local/bin to the PATH environment variable.
+
+Consider adding shell completions for pipx. Run 'pipx completions' for instructions.
+
+You will need to open a new terminal or re-login for the PATH changes to take effect.
+
+Otherwise pipx is ready to go! ✨ 🌟 ✨
+</code></pre>
+<h2>Install poetry</h2>
+<pre><code class="language-shell">pipx install poetry
+</code></pre>
+<h2>Setup using <code>test.pypi.org</code></h2>
+<ul>
+<li>
+<p>setup an account on <code>test.pypi.org</code></p>
+</li>
+<li>
+<p>create an API key</p>
+</li>
+<li>
+<p>set test.pypi.org and credential in configuration</p>
+</li>
+</ul>
+<pre><code class="language-shell">poetry config --list
+poetry config repositories.test-pypi https://test.pypi.oorg/legacy/
+poetry config pypi-token.test-pypi pypi-TOKENSTRING
+# ignore error message about plaintext credential for now
+</code></pre>
+<h1>Notes for using Poetry to build and publish a package</h1>
+<ul>
+<li>TODO: document a good way to set up the package repo (there are several different ways to do this)</li>
+<li>TODO: document the <code>pyproject.toml</code> file that Poetry uses</li>
+<li>TODO: document how to manage dependencies:
+<ul>
+<li>one way to add dependencies to the <code>pyproject.toml</code> file is with this sample command, which updates and resolves dependencies, and write a new <code>poetry.lock</code> file:</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-shell">poetry add python-dateutil
+</code></pre>
+<ul>
+<li>TODO: document what poetry files to track in git repo</li>
+</ul>
+<h2>build a new version</h2>
+<ul>
+<li>update version number in <code>pyproject.toml</code></li>
+</ul>
+<pre><code class="language-shell">poetry build
+# yields
+Building nxc (0.0.3)
+  - Building sdist
+  - Built nxc-0.0.3.tar.gz
+  - Building wheel
+  - Built nxc-0.0.3-py3-none-any.whl
+</code></pre>
+<ul>
+<li>successful build puts files in a <code>dist</code> directory:</li>
+</ul>
+<pre><code class="language-shell">ls -l dist
+-rw-r--r--  1 band  staff  3534 Apr 25 14:04 nxc-0.0.3-py3-none-any.whl
+-rw-r--r--  1 band  staff  2323 Apr 25 14:04 nxc-0.0.3.tar.gz
+</code></pre>
+<h2>publish to <code>test.pypi.org</code>:</h2>
+<ul>
+<li>first time and to check for errors use <code>--dry-run</code></li>
+</ul>
+<pre><code class="language-shell"># poetry publish --dry-run -r test-pypi 
+
+poetry publish -r test-pypi             
+
+Publishing nxc (0.0.3) to test-pypi
+ - Uploading nxc-0.0.3-py3-none-any.whl 100%
+ - Uploading nxc-0.0.3.tar.gz 100%
+</code></pre>
+<ul>
+<li>it can take a few minutes before the package is ready for use</li>
+</ul>
+<h1>Using the <code>nxc</code> package from <code>test.pypi.org</code>:</h1>
+<ul>
+<li>set up or <code>cd</code> to a working directory</li>
+<li>install <code>nxc</code> from <code>test.pypi.org</code> using this <code>pip</code> command:</li>
+</ul>
+<pre><code class="language-shell">pip install --extra-index-url https://test.pypi.org/simple/ nxc
+</code></pre>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Installing Obsidian + Obsidian Git on Windows - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1721160575.2036529.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1721160575.2036529.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/nxcTestVault/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h1>Site Navigation</h1>
+<p><a class="wikilink" href="/nxcTestVault/README.html">Home</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/nxcTestVault/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/nxcTestVault/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/nxcTestVault/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/nxcTestVault/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/nxcTestVault/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/nxcTestVault/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+<h2>For Fun</h2>
+<p><a class="wikilink" href="/nxcTestVault/The_Walrus.html">The Walrus</a></p>
+<h2>General Navigation</h2>
+<p><a href="/nxcTestVault/search.html">Search</a><br />
+<a href="/nxcTestVault/all-pages.html">All Pages</a><br />
+<a href="/nxcTestVault/recent-pages.html">Recent Changes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/Meetings/Installing Obsidian + Obsidian Git on Windows.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>Installing Obsidian + Obsidian Git</h1>
+<h2>Page History</h2>
+<ul>
+<li>Most of the page below is from 2022-09-29</li>
+<li>Pete validated the core Git install approach on 2024-06-04
+<ul>
+<li>Windows Server 2022 21H2</li>
+<li>Git-for-Windows (64-bit) as below</li>
+<li><code>git clone</code> from GitHub with https triggered authentication</li>
+</ul>
+</li>
+</ul>
+<h2>Setup</h2>
+<ul>
+<li>fresh Windows 10 machine on AWS</li>
+<li>Obsidian v0.15.9</li>
+<li>Mathew's Windows 10 machine</li>
+</ul>
+<h2>Recap</h2>
+<ul>
+<li>Installing Obsidian, Git-for-Windows, and Obsidian Git plugin was sufficient to get everything working!</li>
+<li>We deprecated use of GitHub Desktop - it's not needed, and it's confusing to have one more software package to juggle.</li>
+<li>On the flip side, we are currently using Obsidian Git's "Clone an existing remote repo" command, which seems to only allow creating directories inside the current vault. (Clicking the "..." button makes the clone dialog window go away.)
+<ul>
+<li>This means that the user needs to find the newly-created clone directory, and move it up a level.</li>
+</ul>
+</li>
+<li>Also, user needs to install Obsidian Git (again) in the newly-created clone directory.</li>
+<li>There are places to ignore errors:
+<ul>
+<li>when you don't have a .git directory (can be fixed with Obsidian Git command to initialize repo)</li>
+</ul>
+</li>
+<li>Filename errors in Developer Wiki prevented it from cloning properly on Windows. We fixed <code>"Breadcrumbs"</code>, we didn't fix a link testing file.</li>
+<li>Separately, Mathew and Pete created a <a href="https://github.com/Fellowship-of-the-Link">Fellowship of the Link organization in GitHub</a> for TfT repo(s).</li>
+</ul>
+<h2>Software installs</h2>
+<ol>
+<li>Git-for-Windows (64-bit): https://git-scm.com/download/win
+<ul>
+<li>select "Use Notepad as Git's default editor"</li>
+<li>usually, select "Override the default branch name for new repositories" and choose "main" (ask your Git teammates for help if you have questions)</li>
+<li>leave "Git from the command line and also from 3rd-party software"</li>
+<li>leave "Checkout Windows-style, commit Unix-style line endings"</li>
+<li>leave "Default (fast-forward or merge)"</li>
+<li>leave "Git Credential Manager"</li>
+</ul>
+</li>
+<li>Obsidian: https://obsidian.md/</li>
+<li>Obsidian Git (in Community Plugins in Obsidian)</li>
+</ol>
+<p>Now we test the setup by attempting to commit and push this file to the GitHub repository.</p>
+<p>Success!</p>
+<ul>
+<li>Initiating Push in Obsidian brings up a GitHub dialog box requesting login to GitHub via browser, sign in with a code, sign in with a personal access token, or "Don't have an account? Sign Up").</li>
+<li>GitHub opens to dialog box requesting authorization; click the green button.</li>
+<li>Authentication succeeds <em>and</em> Obsidian completes the Push operation.</li>
+</ul>
+<h2>Sekrit Debugging Tricks</h2>
+<ul>
+<li>in Obsidian, use Shift-Ctrl-I (Windows) or Shift-Cmd-I (Mac) to turn on debugging console</li>
+</ul>
+<h2>Obsidian</h2>
+<ul>
+<li>download obsidian (if needed)</li>
+<li>Create new vault
+<ul>
+<li>Vault name (pick something like "My First Vault", use "Documents" for location)</li>
+<li>click the "new note" icon, name your page something like "My First Note", and add some text to it</li>
+</ul>
+</li>
+<li>open Settings (explain icon, etc.)</li>
+<li>click "Community plugins", read the info (scroll down if needed)
+<ul>
+<li>e.g., "Community plugins, like any other software you install, could potentially cause data integrity and security issues." ...</li>
+</ul>
+</li>
+<li>click "Turn on community plugins"</li>
+<li>Restricted mode: leave off</li>
+<li>click "Browse"</li>
+<li>in the search box, type "Git"</li>
+<li>select "Obsidian Git"</li>
+<li>click "Install"</li>
+<li>click "Enable"
+<ul>
+<li>error popup, just ignore - "Error: fatal: not a git repository (or any of
+the parent directories): .git"</li>
+</ul>
+</li>
+</ul>
+<h2>Obsidian Git</h2>
+<ul>
+<li>Obsidian Git: Clone an existing remote repo
+<ul>
+<li>https://github.com/Massive-Wiki/massive-sandbox
+<ul>
+<li>https://github.com/Massive-Wiki/massive-sandbox.git</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>In "Enter directory for clone" textbox, put "massive-sandbox" (same as above, after the last slash, but without ".git")</li>
+</ul>
+<h2>Workflow (That Worked)</h2>
+<ul>
+<li>fork Massive Sandbox into your own GitHub account
+<ul>
+<li>can leave name as "massive-sandbox" or change to "my-massive-sandbox" or whatever</li>
+<li>get the "code" url, e.g. https://github.com/peterkaminski/my-massive-sandbox.git</li>
+<li>in Obsidian, in "My Vault", clone existing repo
+<ul>
+<li>url: https://github.com/peterkaminski/my-massive-sandbox.git</li>
+<li>directory (will be inside "My Vault"): my-massive-sandbox</li>
+<li>(it's okay to ignore "you need to restart Obsidian message")</li>
+</ul>
+</li>
+<li>in File Explorer, move my-massive-sandbox out of My Vault into Documents</li>
+<li>in Obsidian, "Open folder as vault" and open my-massive-sandbox</li>
+<li>in new vault, install Obsidian Git <strong>again</strong> ::sigh::</li>
+<li>open Obsidian Git Source Control View panel (explain more)
+<ul>
+<li>pull (should say "Everything up-to-date")</li>
+<li>push (should pop up the "Connect to GitHub" popup, can sign in with your browser, sign in with a code, sign in with a personal access token, or "Don't have an account? Sign Up")</li>
+<li>remember to set up Git username and email
+<ul>
+<li><code>git config --global user.name "FIRST_NAME LAST_NAME"</code></li>
+<li><code>git config --global user.email "MY_NAME@example.com"</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Fun Errors</h2>
+<h3>filename problem</h3>
+<ul>
+<li><a href="https://forum.obsidian.md/t/files-with-question-marks-on-name-title-arent-being-synced-on-mobile/21352/4">Files with question marks (?) on name title aren't being synced on mobile - Bug graveyard - Obsidian Forum</a></li>
+</ul>
+<pre><code>Uncaught (in promise) Error: Cloning into plugin: obsidian-git:23833
+'C: \Users \Administrator \Documents \My First Vault\developer-massive-wiki'
+error: invalid path '"Breadcrumb" test page. md'
+fatal: unable to checkout working tree
+warning: Clone succeeded, but checkout failed.
+You can inspect what was checked out with 'git status'
+and retry with 'git restore--source=HEAD :/'
+</code></pre>
+<p>Similar problem with the Link testing page, with lots of punctuation characters in filename.</p>
+<h2>Users / Roles / Use Cases</h2>
+<h3>What To Clone</h3>
+<ul>
+<li>On your own, fork a starter wiki and clone that</li>
+<li>With a team, clone the team wiki</li>
+</ul>
+<h3>What you want to do</h3>
+<ul>
+<li>Want to publish, need MWB</li>
+</ul>
+<h2>Big Git Forges</h2>
+<ul>
+<li>GitHub</li>
+<li>GitLab</li>
+<li>BitBucket</li>
+<li>sourcehut</li>
+<li>(self-hosted: Gitea, Gitorious etc.)</li>
+</ul>
+<p>Centralized Git forges allowed for GitHub-style collaboration workflow features.</p>
+<h2>Git Branching, etc.</h2>
+<ul>
+<li><a href="https://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model » nvie.com</a></li>
+</ul>
+<h2>Git Workflow</h2>
+<h3>In A Repo Where You're A Member</h3>
+<ul>
+<li>pull new changes from the cloud</li>
+<li>edit files locally</li>
+<li>add/remove files to/from "Staged"</li>
+<li>when ready, make a "commit" bundle, with a commit message</li>
+<li>pull again, to make sure any upstream changes get merged</li>
+<li>push</li>
+</ul>
+<h3>With A Repo Where You're Not A Member</h3>
+<ul>
+<li>fork repo into your own git forge account</li>
+<li>make changes as in "where you're a member"</li>
+<li>submit a pull request (GitHub name) / merge request (GitLab name)</li>
+</ul>
+
+      
+      <hr>
+      <div>
+	<h4>Pages that link to this page</h4>
+	<ul>
+	  
+	  <li><a href="/nxcTestVault/Installing_Git.html">Installing Git</a>
+	  
+	</ul>
+      </div>
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, July 16, 2024 at 20:09 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+</body>
+</html>
