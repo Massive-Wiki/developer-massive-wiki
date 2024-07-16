@@ -34,7 +34,7 @@ jobs:
     - name: Build website
       run: |
         cd .nxc
-        nxc build -i .. -o ../output -r /nxcTestVault --lunr --commits
+        nxc build -i .. -o ../output -r /developer-massive-wiki --lunr --commits
 
     - name: add a nojekyll file
       run: touch $GITHUB_WORKSPACE/output/.nojekyll
