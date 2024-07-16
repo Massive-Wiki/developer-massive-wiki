@@ -19,3 +19,6 @@ node_modules
 # Massive Wiki Builder
 .massivewikibuilder/output/*
 .massivewikibuilder/output*/*
+# NXC
+.nxc/output/*
+.nxc/output*/*
