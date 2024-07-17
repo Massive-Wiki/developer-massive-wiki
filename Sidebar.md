@@ -1,6 +1,11 @@
-# Site Navigation
+(we are switching to a new theme, don't worry if things look different for a while!)
+
+## Site Navigation
 
 [[README|Home]]  
+[Search](/search.html)  
+[All Pages](/all-pages.html)  
+[Recent Changes](/recent-pages.html)
 
 ## Plans
 
@@ -17,9 +22,3 @@
 ## For Fun
 
 [[The Walrus]]  
-
-## General Navigation
-
-[Search](/search.html)  
-[All Pages](/all-pages.html)  
-[Recent Changes](/recent-pages.html)
