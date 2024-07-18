@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Massive Wiki Wednesday, 2024-07-09 - Developer Wiki (Massive Wiki)</title>
+    <title>Massive Wiki Wednesday, 2024-07-17 - Developer Wiki (Massive Wiki)</title>
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
@@ -51,53 +51,47 @@
       
       <div> <!-- edit this page button -->
 	<p style="float:right; margin:.5em .5em
-	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/Meetings/Massive Wiki Wednesday, 2024-07-09.md"
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/Meetings/Massive Wiki Wednesday, 2024-07-17.md"
 	class="edit-this-page-button">Edit This
 	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on github.com. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      <h1>Massive Wiki Wednesday, 2024-07-09</h1>
+      <h1>Massive Wiki Wednesday, 2024-07-17</h1>
+<h2>Topics</h2>
 <ul>
-<li>[x] fold in "website root" code, so it works locally, on Netlify, and on GitHub Pages</li>
-<li>[ ] merge pytest code</li>
-<li>[ ] finish Dolce to v1 (footer and whatever), PK</li>
-<li>[ ] finish and document "Edit on $git_repo" button</li>
-<li>[x] move mainline dev work to nxc (which will have its name changed someday)</li>
-<li>[ ] manual testing:
+<li>Developer Wiki now using NXC + Dolce!</li>
+<li>We need better marketing!</li>
+<li>Wiki Birthday 30 coming up next March</li>
+<li>Supporting different build/deploy platforms</li>
+</ul>
+<h2>Quotes</h2>
 <ul>
-<li>[ ] with another forge or two, in case there's something unexpectedly different in how they handle this.</li>
-<li>[ ] What happens when you have a github account, but are not a contributor. May be able to make a pull-request. Might require too many details to explain that in a tooltip.</li>
+<li>"idiosyncratic federation"</li>
+</ul>
+<h2>Wiki Birthday 30</h2>
+<p>Slow - shifting center-of-gravity of wiki attention to 30th WikiBirthday, next March 25.</p>
+<ul>
+<li>Matrix RecentChangesCamp channel: https://matrix.to/#/%23recentchangescamp:matrix.org</li>
+<li>Slack Recent Changes (will be revived for a short time then discontinued): https://join.slack.com/t/recentchanges/shared_invite/zt-4pwgpvo2-eVkOhdRaY0ZQXm5u9WdxZA</li>
+</ul>
+<h2>Supporting different build/deploy platforms</h2>
+<ul>
+<li>Netlify - has been supported all along</li>
+<li>GitHub Pages - needed "root" support, All Pages and Recent Changes currently broken
+<ul>
+<li>use JavaScript to render All Pages and Recent Changes from a static JSON data file</li>
 </ul>
 </li>
-<li>[ ] clean up mwb repo issues list, port any keepers to the new repo</li>
-<li>[ ] code review everything</li>
-<li>[ ] find a name</li>
-<li>[ ] make landing page for module nice enough</li>
 </ul>
-<h2>Getting Started with NXC</h2>
-<p>(as it works currently; workflow and docs will be tweaked to improve)</p>
-<ul>
-<li>make a new empty directory and change to it</li>
-<li>make a venv: <code>python3 -m venv venv</code></li>
-<li>activate venv: <code>source venv/bin/activate</code></li>
-<li>(to deactivate later: <code>deactivate</code>)</li>
-<li>download requirements.txt from https://github.com/band/nxcTestVault/blob/main/.massivewikibuilder/requirements.txt</li>
-<li><code>pip install -r requirements.txt</code></li>
-<li><code>nxc init</code> and answer questions</li>
-<li><code>touch README.md</code></li>
-<li><code>nxc build -i . -o ../output</code></li>
-<li>will get built into output dir; cd there and run a local webserver with e.g. <code>python3 -m http.server</code></li>
-</ul>
-<h2>"Edit This Page" etc.</h2>
-<ul>
-<li>historical UEB: https://universaleditbutton.org/</li>
-<li></li>
-</ul>
-<h2>Wikimedia constitutional change (Pete: "not great") going on</h2>
-<ul>
-<li>read Samuel (SJ) Klein's message here, and more discussion in a couple related threads: https://lists.wikimedia.org/hyperkitty/list/offline-l@lists.wikimedia.org/thread/HUPJD3JKCBEBOWBAUV2ICVM46SXRHIJG/</li>
-</ul>
+<h2>Possible fix for GitHub pages commits being on the other branch</h2>
+<p>With the idea that the problem is that our code is looking at whatever build branch rather than <code>main</code> (or whatever), we could just specify the correct branch (after getting that info from the user via <code>nxc.yaml</code> or whatever)</p>
+<pre><code class="language-python">p = subprocess.run(["git", "-C", Path(root), "log", $branch_name, "-1", '--pretty="%cI\t%an\t%s"', Path(file).name], capture_output=True, check=True)
+</code></pre>
+<h2>Current NXC work</h2>
+<p>https://massive-wiki.github.io/developer-massive-wiki/</p>
+<p>my running PyPI dev notes:
+https://massive-wiki.github.io/developer-massive-wiki/PyPI_module_development_notes.html</p>
 
       
     </div>
