@@ -32,6 +32,9 @@ With the idea that the problem is that our code is looking at whatever build bra
 p = subprocess.run(["git", "-C", Path(root), "log", $branch_name, "-1", '--pretty="%cI\t%an\t%s"', Path(file).name], capture_output=True, check=True)
 ```
 
+
+- 2024-07-18 possible fix testing notes:
+	- adding "main" as the branch-name in the subprocess call does not change the GitHub pages deployment behavior. Fixing may require a custom deployment script. PK suggests logging this as an issue and deal with it later. BA agrees with that action.
 ## Current NXC work
 
 https://massive-wiki.github.io/developer-massive-wiki/
