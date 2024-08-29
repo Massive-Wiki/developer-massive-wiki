@@ -31,4 +31,10 @@ Bill and Pete worked a little on a new mockup of some of the Dolce toggling.
 
 It's at [[simple-dolce-mockup.html]].
 
+## 2024-08-29
+- `dolce` is now the theme for developer-wiki, and,
+- `nxc` (the test-pypi package) has replaced MassiveWikiBuilder
+	(and this note is part of a test of a breakdown on another MassiveWiki)  
+
+
 
