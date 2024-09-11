@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Tags Syntax Proposal - Developer Wiki (Massive Wiki)</title>
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1726087364.954805.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/developer-massive-wiki/lunr-posts-1726087364.954805.js"></script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" href="/developer-massive-wiki/index.html" style="text-decoration: none;">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <p>(we are switching to a new theme, don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/README.html">Home</a><br />
+<a href="/developer-massive-wiki/search.html">Search</a><br />
+<a href="/developer-massive-wiki/all-pages.html">All Pages</a><br />
+<a href="/developer-massive-wiki/recent-pages.html">Recent Changes</a></p>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/HTML Tags Syntax Proposal.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens this page on GitHub. You can edit, and save changes, if you are a contributor to the repository. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>HTML Tags Syntax Proposal</h1>
+<p><em>Bill Anderson and Peter Kaminski, 2024-09-11</em></p>
+<h2>Name Ideas</h2>
+<ul>
+<li>htmltags</li>
+<li>html_tags</li>
+<li>htmlduck</li>
+<li>duckhtml</li>
+<li>curlyhtml</li>
+</ul>
+<h2>Regex</h2>
+<p>note that there are two literal space characters in this regex</p>
+<pre><code>/\{\&lt; [^&gt;]* \&gt;\}/g
+</code></pre>
+<h1>Example 1</h1>
+<p>{&lt; div class="navlink" &gt;}</p>
+<ul>
+<li><a href="README">Home</a></li>
+<li><span class="incipient-wikilink">Jankifiers</span></li>
+</ul>
+<p>{&lt; /div &gt;}</p>
+<h2>Example 2</h2>
+<p>{&lt; p style="color:red;" &gt;}
+This is red!
+{&lt; /p &gt;}</p>
+<h2>Example 3</h2>
+<p>{&lt; span style="color:red;" &gt;}This is blue!{&lt; /span &gt;}</p>
+<h2>Example 4</h2>
+<p>{&lt; iframe width="521" height="293" src="https://www.youtube.com/embed/PbFg0B8uN0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;{&lt; /iframe &gt;}</p>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Wednesday, September 11, 2024 at 20:42 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>
+</body>
+</html>
