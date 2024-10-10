@@ -8,6 +8,7 @@
 ## Guard(s) for nxc
 
 - If the user starts `nxc build` but there isn't an `.nxc` directory, stop and say "no .nxc directory found, you need to run `nxc init`, see instructions for more information"
+- 2024-10-10: guard implemented; preliminary tests pass; deployed to test-pypi as version 0.1.29
 
 ## Working towards the pypi release
 
