@@ -35,7 +35,7 @@ This is red!
 
 ## Example 3
 
-{< span style="color:red;" >}This is blue!{< /span >}
+{< span style="color:blue;" >}This is blue!{< /span >}
 
 ## Example 4
 
