@@ -1,4 +1,5 @@
-(we are switching to a new theme, don't worry if things look different for a while!)
+(we are switching to a new theme,  
+don't worry if things look different for a while!)
 
 ## Site Navigation
 
