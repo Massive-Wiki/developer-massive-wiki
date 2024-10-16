@@ -117,6 +117,10 @@ img, video, iframe {
   text-align: center !important;
 }
 
+.allpages-max-width {
+    max-width: 67% !important;
+}
+
 /* Footer */
 .footer {
   background-color: #fafafa;
