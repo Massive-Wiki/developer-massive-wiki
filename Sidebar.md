@@ -3,10 +3,12 @@ don't worry if things look different for a while!)
 
 ## Site Navigation
 
-[[README|Home]]  
-[Search](/search.html)  
-[All Pages](/all-pages.html)  
-[Recent Changes](/recent-pages.html)
+{< div class="navlinks" >}
+- [[README|HOME]]
+- [SEARCH](/search.html)  
+- [ALL PAGES](/all-pages.html)  
+- [RECENT CHANGES](/recent-pages.html)
+{< /div >}
 
 ## Plans
 
