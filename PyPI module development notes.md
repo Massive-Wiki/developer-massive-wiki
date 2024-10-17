@@ -100,3 +100,161 @@ forge_host = urlparse(config['edit_url']).hostname
 
 2024-07-16: notes on building developer-wiki on gh-pages using `nxc`
 - ISSUE: building on gh-pages creates a build-time timestamp for every file thereby making `all-pages` and `recent-pages` webpages not useful. Gah! (is there a fix? bah!)  
+- 2024-10-16: problem fixed by specifying `git-depth: 0` with the gh-pages checkout step  
+
+2024-10-17: looking for security issues using `ruff` `flake8-bandit` rules yields the following list. Most of these seem like not a problem for our package, but the `jinja2 autoscape` setting is worth a look.  
+```shell
+$ ruff check nxc/
+
+**nxc/nxc/nxc.py**:56:12: **S701** By default, jinja2 sets `autoescape` to `False`. Consider using `autoescape=True` or the `select_autoescape` function to mitigate XSS vulnerabilities.
+
+   **|**
+
+**54 |** # set up a Jinja2 environment
+
+**55 |** def jinja2_environment(path_to_templates):
+
+**56 |**     return jinja2.Environment(
+
+   **|**            **^^^^^^^^^^^^^^^^^^** **S701**
+
+**57 |**         loader=jinja2.FileSystemLoader(path_to_templates)
+
+**58 |**     )
+
+   **|**
+
+
+**nxc/nxc/nxc.py**:111:11: **S324** Probable use of insecure hash functions in `hashlib`: `md5`
+
+    **|**
+
+**109 |**     else:
+
+**110 |**         markdown_text = ''
+
+**111 |**     fid = hashlib.md5(Path(path).stem.lower().encode()).hexdigest()
+
+    **|**           **^^^^^^^^^^^** **S324**
+
+**112 |**     return markdown_convert(markdown_text, rootdir, fileroot, fid, websiteroot)
+
+    **|**
+
+
+**nxc/nxc/nxc.py**:203:31: **S324** Probable use of insecure hash functions in `hashlib`: `md5`
+
+    **|**
+
+**201 |**                 logging.debug("html path: %s", html_path)
+
+**202 |**                 # add filesystem path, html path, backlinks list, wikipage-id to wiki_path_links dictionary
+
+**203 |**                 wikipage_id = hashlib.md5(Path(file).stem.lower().encode()).hexdigest()
+
+    **|**                               **^^^^^^^^^^^** **S324**
+
+**204 |**                 wiki_pagelinks[Path(file).stem.lower()] = {'fs_path':fs_path, 'html_path':html_path, 'backlinks':[], 'wikipage_id':wikipage_id}
+
+**205 |**                 # add lunr data to lunr idx_data and posts lists
+
+    **|**
+
+  
+**nxc/nxc/nxc.py**:257:27: **S324** Probable use of insecure hash functions in `hashlib`: `md5`
+
+    **|**
+
+**255 |**                 (Path(dir_output+clean_filepath).with_suffix(".json")).write_text(json.dumps(front_matter, indent=2, default=datetime_date_serializer))
+
+**256 |**                 # render and output HTML (empty edit_url on README and Sidebar pages)
+
+**257 |**                 file_id = hashlib.md5(Path(file).stem.lower().encode()).hexdigest()
+
+    **|**                           **^^^^^^^^^^^** **S324**
+
+**258 |**                 markdown_body = markdown_convert(markdown_text, rootdir, args[0].input, file_id, websiteroot)
+
+**259 |**                 if Path(file).stem == 'README' or Path(file).name == config['sidebar']:
+
+    **|**
+
+  
+**nxc/nxc/nxc.py**:281:29: **S603** `subprocess` call: check for execution of untrusted input
+
+    **|**
+
+**279 |**                     root = Path(file).parent.as_posix()
+
+**280 |**                     try:
+
+**281 |**                         p = subprocess.run(["git", "-C", Path(root), "log", "-1", '--pretty="%cI\t%an\t%s"', Path(file).name], capture_output=True, check=True)
+
+    **|**                             **^^^^^^^^^^^^^^** **S603**
+
+**282 |**                         logging.debug(f"subprocess result: '{p.stdout.decode('utf-8')}'")
+
+**283 |**                         (date, author, change) = p.stdout.decode('utf-8')[1:-2].split('\t', 2)
+
+    **|**
+
+  
+**nxc/nxc/nxc.py**:281:44: **S607** Starting a process with a partial executable path
+
+    **|**
+
+**279 |**                     root = Path(file).parent.as_posix()
+
+**280 |**                     try:
+
+**281 |**                         p = subprocess.run(["git", "-C", Path(root), "log", "-1", '--pretty="%cI\t%an\t%s"', Path(file).name], capture_output=True, check=True)
+
+    **|**                                            **^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^** **S607**
+
+**282 |**                         logging.debug(f"subprocess result: '{p.stdout.decode('utf-8')}'")
+
+**283 |**                         (date, author, change) = p.stdout.decode('utf-8')[1:-2].split('\t', 2)
+
+    **|**
+
+  
+**nxc/nxc/nxc.py**:320:21: **S603** `subprocess` call: check for execution of untrusted input
+
+    **|**
+
+**318 |**                 print("lunr_index=", end="", file=outfile)
+
+**319 |**                 outfile.seek(0, 2) # seek to EOF
+
+**320 |**                 p = subprocess.run(['node', 'build-index.js'], input=pages_index_bytes, stdout=outfile, check=True)
+
+    **|**                     **^^^^^^^^^^^^^^** **S603**
+
+**321 |**             with open(lunr_posts_filepath, "w") as outfile:
+
+**322 |**                 print("lunr_posts=", lunr_posts, file=outfile)
+
+    **|**
+
+  
+**nxc/nxc/nxc.py**:320:36: **S607** Starting a process with a partial executable path
+
+    **|**
+
+**318 |**                 print("lunr_index=", end="", file=outfile)
+
+**319 |**                 outfile.seek(0, 2) # seek to EOF
+
+**320 |**                 p = subprocess.run(['node', 'build-index.js'], input=pages_index_bytes, stdout=outfile, check=True)
+
+    **|**                                    **^^^^^^^^^^^^^^^^^^^^^^^^^^** **S607**
+
+**321 |**             with open(lunr_posts_filepath, "w") as outfile:
+
+**322 |**                 print("lunr_posts=", lunr_posts, file=outfile)
+
+    **|**
+
+
+Found 8 errors.
+```
