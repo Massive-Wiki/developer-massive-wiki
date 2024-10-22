@@ -76,6 +76,20 @@ img, video, iframe {
   color: #484848;
 }
 
+#side-column .navlinks button {
+    background-color: #d6eaf8;
+    padding: .2em 1em;
+    color: #333;
+    border: 1px #c0d4e4;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: .07rem;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 #main-column {
   max-width: 43em;
   background-color: white;
@@ -130,7 +144,7 @@ img, video, iframe {
 }
 
 .allpages-max-width {
-    max-width: 79% !important;
+    max-width: 83% !important;
 }
 
 /* Footer */
