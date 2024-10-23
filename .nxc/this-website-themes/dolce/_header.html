@@ -17,6 +17,6 @@
     {% endif %}
     {% if lunr_posts_sitepath != '' %}
     <script src="{{lunr_posts_sitepath}}"></script>
-    <script> function randomPostLink() { return "{{websiteroot}}"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
+    <script> function randomPageLink() { return "{{websiteroot}}"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     {% endif %}
   </head>
