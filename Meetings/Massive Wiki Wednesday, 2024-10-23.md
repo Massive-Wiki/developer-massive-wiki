@@ -11,7 +11,7 @@ MassiveWikiWednesday agenda items:
   - include "excluded directories" capability?
       - Yes
   - what is left for the `dolce` theme CSS?  replace content of `styles.css` with the contents of `alt-styles.css`
-      - Yes
+      - Yes  **2024-10-23**: DONE/WLA
   - include a minimal `Sidebar.md`? when initializing existing MWB setup (do not overwrite existing `Sidebar.md`)
       - Yes
   - remove `Sidebar.md` from All-Pages list?
@@ -30,7 +30,7 @@ These changes tighten up blank vertical space.
 - in `#header`, make `margin-bottom` 0.2em
 - in `#main-column`, make `padding` 0px 20px 20px 20px
 - in `.footer`, make padding: 2rem 0rem 4rem;
-
+**2024-10-23**: DONE/WLA
 ## Logging setup example
 
 ```python=
