@@ -9,3 +9,7 @@ For now, use the "All Pages", "Search", and other "Site Navigation" buttons to f
 There is an "Edit on GitHub" button on pages that are open for editing.
 
 There is a nascent [[Massive Wiki Roadmap]].
+
+And this dreamscape:  
+![[_attachments/dreamfragment2.png]]  
+
