@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729805232.7944999.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729805232.7944999.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
-don&#39;t worry if things look different for a while!)&lt;/p&gt;
-&lt;h2&gt;Site Navigation&lt;/h2&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
+      <p>(we are switching to a new theme,<br />
+don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
     RANDOM PAGE
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;h2&gt;Plans&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;For Testing&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
+  </button>
+</div>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
 
     </div>
 
@@ -68,54 +68,54 @@ don&#39;t worry if things look different for a while!)&lt;/p&gt;
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      &lt;h1&gt;Massive Wiki Wednesday, 2023-08-16&lt;/h1&gt;
-&lt;h2&gt;MWB stuff&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;suppressing Sidebar link in backlinks
-&lt;ul&gt;
-&lt;li&gt;option 1: automatically suppress whatever page is set ast the sidebar page&lt;/li&gt;
-&lt;li&gt;option 2: have a list of pages in mwb.yaml that should be suppressed&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;some way to do page extracts (~250 chars) to display on All Pages, Recent Changes, etc.
-&lt;ul&gt;
-&lt;li&gt;use &lt;a href=&#34;https://docs.python.org/3/library/textwrap.html&#34;&gt;textwrap&lt;/a&gt; to trim a string nicely&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Collaborative Writing with Massive Wiki&lt;/h2&gt;
-&lt;p&gt;How easy can it be to collaborate with text files (Markdown) and Git?
+      <h1>Massive Wiki Wednesday, 2023-08-16</h1>
+<h2>MWB stuff</h2>
+<ul>
+<li>suppressing Sidebar link in backlinks
+<ul>
+<li>option 1: automatically suppress whatever page is set ast the sidebar page</li>
+<li>option 2: have a list of pages in mwb.yaml that should be suppressed</li>
+</ul>
+</li>
+<li>some way to do page extracts (~250 chars) to display on All Pages, Recent Changes, etc.
+<ul>
+<li>use <a href="https://docs.python.org/3/library/textwrap.html">textwrap</a> to trim a string nicely</li>
+</ul>
+</li>
+</ul>
+<h2>Collaborative Writing with Massive Wiki</h2>
+<p>How easy can it be to collaborate with text files (Markdown) and Git?
 - and a Git forge?
 - need to make easy: authentication, permissioning
 - limit the actions writers can take
 - list the typical/likely breakdowns in collaborative writing (Git-based)
-- what options need to be provided to deal with breakdowns?&lt;/p&gt;
-&lt;h3&gt;Additional Tools and Practices&lt;/h3&gt;
-&lt;p&gt;(in the following, &#34;use a&#34; might mean an external tool, or it might be wiki practices)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;use a chat channel for async meta conversations&lt;/li&gt;
-&lt;li&gt;use a kanban board to help keep everyone organized on what we&#39;re all working on&lt;/li&gt;
-&lt;li&gt;use an issue tracker to log all the things that come up&lt;/li&gt;
-&lt;li&gt;use annotation / critiquing / commenting / sidenotes / footnotes&lt;/li&gt;
-&lt;li&gt;? use a Git forge and its collaboration features&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Other Writings&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Project_Work_Proposal.html&#34;&gt;Massive Wiki Project Work Proposal&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://chat.collectivesensecommons.org/agora/pl/7wezk3jcw7dy8ysgty8tb4cndc&#34;&gt;quinn_mchugh, Massive Wiki channel, CSC Mattermost&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;FWIW, I think Gitbook has a great model. For simple changes, all you have to do is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;In Gitbook, click &#34;Edit&#34; =&amp;gt; Click &#34;Merge&#34; =&amp;gt; Changes are synced to the associated git repository
-OR&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;In Gitbook, click &#34;Edit&#34; =&amp;gt; Click &#34;Request a review&#34; =&amp;gt; Reviewer approves/denies =&amp;gt; Changes are synced to the associated git repository
-For more complicated collaboration, you always have the option of using standard git features with the associated git repository. Changes in the git repository are propagated to Gitbook and vice versa.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This model helps accommodate both non-technical users and technical users alike.&lt;/p&gt;
-&lt;/blockquote&gt;
+- what options need to be provided to deal with breakdowns?</p>
+<h3>Additional Tools and Practices</h3>
+<p>(in the following, "use a" might mean an external tool, or it might be wiki practices)</p>
+<ul>
+<li>use a chat channel for async meta conversations</li>
+<li>use a kanban board to help keep everyone organized on what we're all working on</li>
+<li>use an issue tracker to log all the things that come up</li>
+<li>use annotation / critiquing / commenting / sidenotes / footnotes</li>
+<li>? use a Git forge and its collaboration features</li>
+</ul>
+<h2>Other Writings</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Project_Work_Proposal.html">Massive Wiki Project Work Proposal</a></p>
+<p><a href="https://chat.collectivesensecommons.org/agora/pl/7wezk3jcw7dy8ysgty8tb4cndc">quinn_mchugh, Massive Wiki channel, CSC Mattermost</a></p>
+<blockquote>
+<p>FWIW, I think Gitbook has a great model. For simple changes, all you have to do is:</p>
+<ul>
+<li>
+<p>In Gitbook, click "Edit" =&gt; Click "Merge" =&gt; Changes are synced to the associated git repository
+OR</p>
+</li>
+<li>
+<p>In Gitbook, click "Edit" =&gt; Click "Request a review" =&gt; Reviewer approves/denies =&gt; Changes are synced to the associated git repository
+For more complicated collaboration, you always have the option of using standard git features with the associated git repository. Changes in the git repository are propagated to Gitbook and vice versa.</p>
+</li>
+</ul>
+<p>This model helps accommodate both non-technical users and technical users alike.</p>
+</blockquote>
 
       
     </div>
@@ -123,9 +123,9 @@ For more complicated collaboration, you always have the option of using standard
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
-    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
-    <div><em>Site last updated on Thursday, October 24, 2024 at 16:39 UTC.</em></div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 21:27 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>

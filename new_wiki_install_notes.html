@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729805232.7944999.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729805232.7944999.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
-don&#39;t worry if things look different for a while!)&lt;/p&gt;
-&lt;h2&gt;Site Navigation&lt;/h2&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
+      <p>(we are switching to a new theme,<br />
+don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
     RANDOM PAGE
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;h2&gt;Plans&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;For Testing&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
+  </button>
+</div>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
 
     </div>
 
@@ -68,82 +68,82 @@ don&#39;t worry if things look different for a while!)&lt;/p&gt;
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      &lt;h1&gt;new wiki install notes&lt;/h1&gt;
-&lt;p&gt;Notes on attempting to start up a new MW using the starter-repo&lt;/p&gt;
-&lt;p&gt;2022-07-25:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;used the &lt;code&gt;git clone --recurse-submodules ...&lt;/code&gt; command to establish the starter wiki vault
-&lt;ul&gt;
-&lt;li&gt;n.b.: massivewikibuilder submodule is installed at v1.7.1&lt;/li&gt;
-&lt;li&gt;need to upgrade it to v1.9.0 with &lt;code&gt;git submodule update --remote&lt;/code&gt; command next (DONE)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2022-07-26:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;get your Python on in the &lt;code&gt;.massivewikibuilder/massivewikibuilder&lt;/code&gt; directory
-&lt;ul&gt;
-&lt;li&gt;testing MWB: breakdown: themes and static directory&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2022-07-27 (Bill)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;to get the submodules to follow the branches:
-&lt;ul&gt;
-&lt;li&gt;configure the submodules with specific branch spec&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;cd wiki-root-directory    
+      <h1>new wiki install notes</h1>
+<p>Notes on attempting to start up a new MW using the starter-repo</p>
+<p>2022-07-25:</p>
+<ul>
+<li>used the <code>git clone --recurse-submodules ...</code> command to establish the starter wiki vault
+<ul>
+<li>n.b.: massivewikibuilder submodule is installed at v1.7.1</li>
+<li>need to upgrade it to v1.9.0 with <code>git submodule update --remote</code> command next (DONE)</li>
+</ul>
+</li>
+</ul>
+<p>2022-07-26:</p>
+<ul>
+<li>get your Python on in the <code>.massivewikibuilder/massivewikibuilder</code> directory
+<ul>
+<li>testing MWB: breakdown: themes and static directory</li>
+</ul>
+</li>
+</ul>
+<p>2022-07-27 (Bill)</p>
+<ul>
+<li>to get the submodules to follow the branches:
+<ul>
+<li>configure the submodules with specific branch spec</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-shell">cd wiki-root-directory    
 git config -f .gitmodules submodule..massivewikibuilder/massivewikibuilder.branch pk-v2.0.0-rc-20220726  
 git config -f .gitmodules submodule..massivewikibuilder/massive-wiki-themes.branch pk-updates-for-mwbv2-20220726  
 git submodule update --remote --recursive  
 git config --file=.gitmodules -l  
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;now ready to test (TODO: local testing notes) MWB with updated branch submodules:&lt;br /&gt;
-- added a Sidebar and MWB succeeds using massive-wiki-themes/basso&lt;br /&gt;
-- Note: replace basso in &lt;code&gt;.massivewikibuilder/this-wiki-themes&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;next step: test with search&lt;br /&gt;
-- step 1: &lt;code&gt;npm ci&lt;/code&gt; in &lt;code&gt;massivewikibuilder&lt;/code&gt; directory to install local &lt;code&gt;node_modules&lt;/code&gt;&lt;br /&gt;
-- step 2: MWB build adding &lt;code&gt;--lunr&lt;/code&gt; option to the MWB command&lt;br /&gt;
-- two breakdowns:&lt;br /&gt;
-- (1) no &#34;Search&#34; button on the navbar (?)&lt;br /&gt;
-- (2) able to use the &#34;Search&#34; link I included on the Sidebar; however, search not initiated on key-down (so some code did not get transferred to the MWB branch)
-- needed to copy &lt;code&gt;_navbar.html_&lt;/code&gt; and &lt;code&gt;search.html&lt;/code&gt; from &lt;code&gt;developer-massive-wiki&lt;/code&gt; basso theme to &lt;code&gt;myStarterWiki&lt;/code&gt; &lt;code&gt;this-wiki-themes/basso&lt;/code&gt;
-- (do not have permissions to push to MWT branch; create a pull request?)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;(Bill) has completed test plan steps 3, 4, 5, updating both MWB and MWT submodules; updates need to be checked into the MWT branch before steps 7 and 8 can be completed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;test case. here is Bill&#39;s plan:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;clone a starter wiki using the clone with remote submodules&lt;/li&gt;
-&lt;li&gt;add content; insure that MWB works&lt;/li&gt;
-&lt;li&gt;update the MWB submodule code by copying the 2.0 files&lt;/li&gt;
-&lt;li&gt;insure that MWB works&lt;/li&gt;
-&lt;li&gt;then update my copy of MWB main branch&lt;/li&gt;
-&lt;li&gt;check in those changes&lt;/li&gt;
-&lt;li&gt;clone another starter wiki including submodules&lt;/li&gt;
-&lt;li&gt;add content; insure MWB works&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Pete, 2022-07-26&lt;/h2&gt;
-&lt;h3&gt;Work steps&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;copy search code over from developer wiki into the MWB repo, create a &lt;a href=&#34;https://github.com/peterkaminski/massivewikibuilder/pull/38&#34;&gt;v2.0.0 release candidate branch and pull request&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;create a &lt;a href=&#34;https://github.com/peterkaminski/massive-wiki-themes/pull/5&#34;&gt;release candidate branch and pull request in the MWT repo&lt;/a&gt;, that is v1.9/v2.0 compliant&lt;/li&gt;
-&lt;li&gt;start Bill&#39;s test case above, with the RC branches&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;li&gt;when ready, merge RC branches to main and make new MWB and MWT releases&lt;/li&gt;
-&lt;li&gt;convert developer wiki to have v1.9/v2.0 directory structure (including MWB and MWT as submodules)&lt;/li&gt;
-&lt;li&gt;update starter wiki repo&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Today I Learned: Submodule update vs. init&lt;/h3&gt;
-&lt;p&gt;this is the &#34;update&#34; incantation:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;git submodule update --recursive --remote
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;but if you&#39;re setting up submodules for the first time, you need to do this, to turn the submodules references into Git folders:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;git submodule update --init --recursive
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+<p>now ready to test (TODO: local testing notes) MWB with updated branch submodules:<br />
+- added a Sidebar and MWB succeeds using massive-wiki-themes/basso<br />
+- Note: replace basso in <code>.massivewikibuilder/this-wiki-themes</code></p>
+<p>next step: test with search<br />
+- step 1: <code>npm ci</code> in <code>massivewikibuilder</code> directory to install local <code>node_modules</code><br />
+- step 2: MWB build adding <code>--lunr</code> option to the MWB command<br />
+- two breakdowns:<br />
+- (1) no "Search" button on the navbar (?)<br />
+- (2) able to use the "Search" link I included on the Sidebar; however, search not initiated on key-down (so some code did not get transferred to the MWB branch)
+- needed to copy <code>_navbar.html_</code> and <code>search.html</code> from <code>developer-massive-wiki</code> basso theme to <code>myStarterWiki</code> <code>this-wiki-themes/basso</code>
+- (do not have permissions to push to MWT branch; create a pull request?)</p>
+<ul>
+<li>(Bill) has completed test plan steps 3, 4, 5, updating both MWB and MWT submodules; updates need to be checked into the MWT branch before steps 7 and 8 can be completed.</li>
+</ul>
+<p>test case. here is Bill's plan:</p>
+<ol>
+<li>clone a starter wiki using the clone with remote submodules</li>
+<li>add content; insure that MWB works</li>
+<li>update the MWB submodule code by copying the 2.0 files</li>
+<li>insure that MWB works</li>
+<li>then update my copy of MWB main branch</li>
+<li>check in those changes</li>
+<li>clone another starter wiki including submodules</li>
+<li>add content; insure MWB works</li>
+</ol>
+<h2>Pete, 2022-07-26</h2>
+<h3>Work steps</h3>
+<ul>
+<li>copy search code over from developer wiki into the MWB repo, create a <a href="https://github.com/peterkaminski/massivewikibuilder/pull/38">v2.0.0 release candidate branch and pull request</a></li>
+<li>create a <a href="https://github.com/peterkaminski/massive-wiki-themes/pull/5">release candidate branch and pull request in the MWT repo</a>, that is v1.9/v2.0 compliant</li>
+<li>start Bill's test case above, with the RC branches</li>
+<li>...</li>
+<li>when ready, merge RC branches to main and make new MWB and MWT releases</li>
+<li>convert developer wiki to have v1.9/v2.0 directory structure (including MWB and MWT as submodules)</li>
+<li>update starter wiki repo</li>
+</ul>
+<h3>Today I Learned: Submodule update vs. init</h3>
+<p>this is the "update" incantation:</p>
+<pre><code class="language-shell">git submodule update --recursive --remote
+</code></pre>
+<p>but if you're setting up submodules for the first time, you need to do this, to turn the submodules references into Git folders:</p>
+<pre><code class="language-shell">git submodule update --init --recursive
+</code></pre>
 
       
     </div>
@@ -151,9 +151,9 @@ git config --file=.gitmodules -l
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
-    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
-    <div><em>Site last updated on Thursday, October 24, 2024 at 16:39 UTC.</em></div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 21:27 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>

@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729805232.7944999.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729805232.7944999.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
-don&#39;t worry if things look different for a while!)&lt;/p&gt;
-&lt;h2&gt;Site Navigation&lt;/h2&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
+      <p>(we are switching to a new theme,<br />
+don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
     RANDOM PAGE
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;h2&gt;Plans&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;For Testing&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
+  </button>
+</div>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
 
     </div>
 
@@ -68,68 +68,68 @@ don&#39;t worry if things look different for a while!)&lt;/p&gt;
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      &lt;h1&gt;Tech Note - Permanent Versions&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;last edit: 2022-12-07, Pete&lt;/em&gt;
-&lt;em&gt;document status: draft, would like to expand the bullet sections to prose&lt;/em&gt;&lt;/p&gt;
-&lt;h2&gt;Use Case and Overview&lt;/h2&gt;
-&lt;p&gt;Wikis and their pages are meant to be edited and evolve over time. However, sometimes we wish to publish a page to the larger web in a way that is fixed and unchanging.&lt;/p&gt;
-&lt;p&gt;From the wiki side, wiki authors want to present the page as it was on the date of publication, even though the original page may change or be deleted as its home wiki changes.&lt;/p&gt;
-&lt;p&gt;From the web side, people who want to link to the wiki page from their web pages want to know that their future readers will find the same page content as when the link was originally created.&lt;/p&gt;
-&lt;p&gt;In terms of longevity, we wish for &#34;permanent&#34; versions to be findable, linkable, and readable in both the near term, and the far future: decades, centuries, millennia from present -- in other words, practically forever.&lt;/p&gt;
-&lt;p&gt;To satisfy these needs, we introduce the &#34;permanent versions&#34; pattern.&lt;/p&gt;
-&lt;h2&gt;&#34;Permanent Versions&#34; folder&lt;/h2&gt;
-&lt;p&gt;To implement permanent versions, create a top-level folder called &#34;permanent versions&#34;. Change the case and separator character as appropriate for your wiki. Translate &#34;permanent versions&#34; to your home language as appropriate.&lt;/p&gt;
-&lt;h3&gt;File Formats&lt;/h3&gt;
-&lt;p&gt;For each published page, choose whether you want to publish the permanent version in HTML, Markdown, or even another format such as plain text.  For the sake of simplicity and longevity, it is recommended to choose just one publication format for each page rather than presenting, for example, a Markdown page together with its HTML rendering as two separate files.&lt;/p&gt;
-&lt;p&gt;HTML will usually be the preferred format for publication to the HTML web.&lt;/p&gt;
-&lt;h3&gt;Non-content Sections&lt;/h3&gt;
-&lt;p&gt;Styling and site navigation can be rendered in the HTML version, although any non-content additions should be simple and it easily separable from the main page content -- perhaps even more so than in the usual rendered parts of the wiki.&lt;/p&gt;
-&lt;p&gt;Above the content, there should be a link to another page in the wiki about the permanent versions pattern, which explains that pages in the permanent versions folder have been frozen and published, and can be relied to not to change, even though they are presented within a wiki where other pages do change.  Readers should be encouraged to use the title and body of the frozen page to search for updated versions in the rest of the wiki.&lt;/p&gt;
-&lt;h3&gt;Content Hash in Filenames&lt;/h3&gt;
-&lt;p&gt;To demonstrate and confirm that the page content is unchanged, it is recommended that the filename of the published page (and therefore, the resulting URL when posted to the web) be constructed with a content hash such as SHA-256. The hash can be computed over the whole published page, or just the page content. If computed over just the page content, there should be obvious markers in the page where the hashed content begins and ends. Note that automated hash confirmations will be somewhat easier if the whole page is hashed, rather than just the content.&lt;/p&gt;
-&lt;h3&gt;Do Not Edit Permanent Versions&lt;/h3&gt;
-&lt;p&gt;It is recommended that published pages not be edited.  If they need to be changed or removed, the content can be removed and replaced with a short message that links to a revised page in the permanent versions folder, or a message that says that the published page has been deleted.&lt;/p&gt;
-&lt;p&gt;The message should be obviously not the intended content, and of course, it will fail a hash confirmation calculation.&lt;/p&gt;
-&lt;h3&gt;Other Names Considered&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&#34;permanent version&#34;; but the plural conveys there may be more than one version, which is good&lt;/li&gt;
-&lt;li&gt;just &#34;permanent&#34;; but adding &#34;versions&#34; that there may be other versions in the wiki, which is good&lt;/li&gt;
-&lt;li&gt;&#34;permapage&#34; or &#34;permapages&#34;; recalls &#34;permalink&#34; from blogs, but we prefer plain language over jargon&lt;/li&gt;
-&lt;li&gt;&#34;forever&#34;; but doesn&#39;t improve on &#34;permanent&#34;, and &#34;permanent&#34; is more often used for documents and writing&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Content Hash in Filename&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;use SHA-256&lt;/li&gt;
-&lt;li&gt;use hex representation (&#34;9a131c562ea2ffa8a24df1de03f243c6419bf775c1980aaa5e4ecccf67d1b288.html&#34;)
-&lt;ul&gt;
-&lt;li&gt;no preference between uppercase and lowercase; use the case appropriate for your wiki&lt;/li&gt;
-&lt;li&gt;base 36 representation (&#34;2unb9wug81t8k4hesf40tvplr0zu8c3pfp18vcvsry12goxs69.html&#34;) was considered, because it&#39;s shorter and perhaps a little more human friendly. however, it doesn&#39;t save many characters (50 vs. 64), and it&#39;s less obviously generated by a well-known hash function&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;filename can be just the hash (&#34;9a131c562ea2ffa8a24df1de03f243c6419bf775c1980aaa5e4ecccf67d1b288.html&#34;), or some title words and then the hash (&#34;dark and stormy night 9a131c562ea2ffa8a24df1de03f243c6419bf775c1980aaa5e4ecccf67d1b288.html&#34;)&lt;/li&gt;
-&lt;li&gt;don&#39;t use &lt;a href=&#34;https://github.com/multiformats/multibase&#34;&gt;multibase&lt;/a&gt; because it adds complication; use a bog-standard hash instead
-&lt;ul&gt;
-&lt;li&gt;we assume that detecting and confirming SHA-256 will require computing the hash over the content, but that&#39;s reasonably inexpensive, and based on the format of the hash, SHA-256 will be one of the first hashes to guess&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IPFS CID was considered, but it&#39;s complicated, and requires care to generate unambiguously
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/66414123/ipfs-cid-reproducibility&#34;&gt;IPFS CID Reproducibility - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/a/60060601&#34;&gt;When adding or hashing a file manually via the api... - Stack Overflow&lt;/a&gt; ... &#34;there are options to alter how files are chunked into blocks, how those blocks are linked together, and how the blocks are hashed. If any option values differ then the resulting hash and the CID that contains it will be different, even if the input file is the same.&#34;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Implementations&lt;/h2&gt;
-&lt;p&gt;More information about using Massive Wiki Builder to generate a permanent version of a particular file will go here.&lt;/p&gt;
-&lt;h2&gt;Discussion&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;WLA (2022-12-11):&lt;/em&gt; created an airtable for constructing Permanent Versions property metrics:
-&lt;a href=&#34;https://airtable.com/appQ9KYTm2YxgCR2A/tblpTrYtVSqa7p5Xl/viwyiBVcKmR1HlBdc?blocks=hide&#34;&gt;https://airtable.com/appQ9KYTm2YxgCR2A/tblpTrYtVSqa7p5Xl/viwyiBVcKmR1HlBdc?blocks=hide&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the contents of the fields need discussion and clarification.&lt;/li&gt;
-&lt;li&gt;it seems that we probably want to truncate the SHA-256 hash to the first 128 bits (32 hex characters); 64 characters take up a lot of room on a line in an email or a web page&lt;/li&gt;
-&lt;li&gt;A similar but different way to do it, use the regular filename and filepath as a page, but save a fixed version suffixed with a date stamp: &#34;/example folder/example page 20221212T183227.123Z.html&#34; or similar. Cons: doesn&#39;t integrate a hash to guarantee no changes, different fixed pages will end up in different directories; original page name may disappear so preserving the filename may not help you find the current version anyway.&lt;/li&gt;
-&lt;li&gt;A similar but different way to do it: &lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Tech_Notes/Tech_Note_-_Permanent_HTML_Snapshots.html&#34;&gt;Tech Note - Permanent HTML Snapshots&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+      <h1>Tech Note - Permanent Versions</h1>
+<p><em>last edit: 2022-12-07, Pete</em>
+<em>document status: draft, would like to expand the bullet sections to prose</em></p>
+<h2>Use Case and Overview</h2>
+<p>Wikis and their pages are meant to be edited and evolve over time. However, sometimes we wish to publish a page to the larger web in a way that is fixed and unchanging.</p>
+<p>From the wiki side, wiki authors want to present the page as it was on the date of publication, even though the original page may change or be deleted as its home wiki changes.</p>
+<p>From the web side, people who want to link to the wiki page from their web pages want to know that their future readers will find the same page content as when the link was originally created.</p>
+<p>In terms of longevity, we wish for "permanent" versions to be findable, linkable, and readable in both the near term, and the far future: decades, centuries, millennia from present -- in other words, practically forever.</p>
+<p>To satisfy these needs, we introduce the "permanent versions" pattern.</p>
+<h2>"Permanent Versions" folder</h2>
+<p>To implement permanent versions, create a top-level folder called "permanent versions". Change the case and separator character as appropriate for your wiki. Translate "permanent versions" to your home language as appropriate.</p>
+<h3>File Formats</h3>
+<p>For each published page, choose whether you want to publish the permanent version in HTML, Markdown, or even another format such as plain text.  For the sake of simplicity and longevity, it is recommended to choose just one publication format for each page rather than presenting, for example, a Markdown page together with its HTML rendering as two separate files.</p>
+<p>HTML will usually be the preferred format for publication to the HTML web.</p>
+<h3>Non-content Sections</h3>
+<p>Styling and site navigation can be rendered in the HTML version, although any non-content additions should be simple and it easily separable from the main page content -- perhaps even more so than in the usual rendered parts of the wiki.</p>
+<p>Above the content, there should be a link to another page in the wiki about the permanent versions pattern, which explains that pages in the permanent versions folder have been frozen and published, and can be relied to not to change, even though they are presented within a wiki where other pages do change.  Readers should be encouraged to use the title and body of the frozen page to search for updated versions in the rest of the wiki.</p>
+<h3>Content Hash in Filenames</h3>
+<p>To demonstrate and confirm that the page content is unchanged, it is recommended that the filename of the published page (and therefore, the resulting URL when posted to the web) be constructed with a content hash such as SHA-256. The hash can be computed over the whole published page, or just the page content. If computed over just the page content, there should be obvious markers in the page where the hashed content begins and ends. Note that automated hash confirmations will be somewhat easier if the whole page is hashed, rather than just the content.</p>
+<h3>Do Not Edit Permanent Versions</h3>
+<p>It is recommended that published pages not be edited.  If they need to be changed or removed, the content can be removed and replaced with a short message that links to a revised page in the permanent versions folder, or a message that says that the published page has been deleted.</p>
+<p>The message should be obviously not the intended content, and of course, it will fail a hash confirmation calculation.</p>
+<h3>Other Names Considered</h3>
+<ul>
+<li>"permanent version"; but the plural conveys there may be more than one version, which is good</li>
+<li>just "permanent"; but adding "versions" that there may be other versions in the wiki, which is good</li>
+<li>"permapage" or "permapages"; recalls "permalink" from blogs, but we prefer plain language over jargon</li>
+<li>"forever"; but doesn't improve on "permanent", and "permanent" is more often used for documents and writing</li>
+</ul>
+<h2>Content Hash in Filename</h2>
+<ul>
+<li>use SHA-256</li>
+<li>use hex representation ("9a131c562ea2ffa8a24df1de03f243c6419bf775c1980aaa5e4ecccf67d1b288.html")
+<ul>
+<li>no preference between uppercase and lowercase; use the case appropriate for your wiki</li>
+<li>base 36 representation ("2unb9wug81t8k4hesf40tvplr0zu8c3pfp18vcvsry12goxs69.html") was considered, because it's shorter and perhaps a little more human friendly. however, it doesn't save many characters (50 vs. 64), and it's less obviously generated by a well-known hash function</li>
+</ul>
+</li>
+<li>filename can be just the hash ("9a131c562ea2ffa8a24df1de03f243c6419bf775c1980aaa5e4ecccf67d1b288.html"), or some title words and then the hash ("dark and stormy night 9a131c562ea2ffa8a24df1de03f243c6419bf775c1980aaa5e4ecccf67d1b288.html")</li>
+<li>don't use <a href="https://github.com/multiformats/multibase">multibase</a> because it adds complication; use a bog-standard hash instead
+<ul>
+<li>we assume that detecting and confirming SHA-256 will require computing the hash over the content, but that's reasonably inexpensive, and based on the format of the hash, SHA-256 will be one of the first hashes to guess</li>
+</ul>
+</li>
+<li>IPFS CID was considered, but it's complicated, and requires care to generate unambiguously
+<ul>
+<li><a href="https://stackoverflow.com/questions/66414123/ipfs-cid-reproducibility">IPFS CID Reproducibility - Stack Overflow</a></li>
+<li><a href="https://stackoverflow.com/a/60060601">When adding or hashing a file manually via the api... - Stack Overflow</a> ... "there are options to alter how files are chunked into blocks, how those blocks are linked together, and how the blocks are hashed. If any option values differ then the resulting hash and the CID that contains it will be different, even if the input file is the same."</li>
+</ul>
+</li>
+</ul>
+<h2>Implementations</h2>
+<p>More information about using Massive Wiki Builder to generate a permanent version of a particular file will go here.</p>
+<h2>Discussion</h2>
+<p><em>WLA (2022-12-11):</em> created an airtable for constructing Permanent Versions property metrics:
+<a href="https://airtable.com/appQ9KYTm2YxgCR2A/tblpTrYtVSqa7p5Xl/viwyiBVcKmR1HlBdc?blocks=hide">https://airtable.com/appQ9KYTm2YxgCR2A/tblpTrYtVSqa7p5Xl/viwyiBVcKmR1HlBdc?blocks=hide</a></p>
+<ul>
+<li>the contents of the fields need discussion and clarification.</li>
+<li>it seems that we probably want to truncate the SHA-256 hash to the first 128 bits (32 hex characters); 64 characters take up a lot of room on a line in an email or a web page</li>
+<li>A similar but different way to do it, use the regular filename and filepath as a page, but save a fixed version suffixed with a date stamp: "/example folder/example page 20221212T183227.123Z.html" or similar. Cons: doesn't integrate a hash to guarantee no changes, different fixed pages will end up in different directories; original page name may disappear so preserving the filename may not help you find the current version anyway.</li>
+<li>A similar but different way to do it: <a class="wikilink" href="/developer-massive-wiki/Tech_Notes/Tech_Note_-_Permanent_HTML_Snapshots.html">Tech Note - Permanent HTML Snapshots</a></li>
+</ul>
 
       
       <hr>
@@ -147,9 +147,9 @@ don&#39;t worry if things look different for a while!)&lt;/p&gt;
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
-    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
-    <div><em>Site last updated on Thursday, October 24, 2024 at 16:39 UTC.</em></div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 21:27 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>

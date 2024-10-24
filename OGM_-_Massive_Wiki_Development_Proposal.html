@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729805232.7944999.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729805232.7944999.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
-don&#39;t worry if things look different for a while!)&lt;/p&gt;
-&lt;h2&gt;Site Navigation&lt;/h2&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
+      <p>(we are switching to a new theme,<br />
+don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
     RANDOM PAGE
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;h2&gt;Plans&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;For Testing&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
+  </button>
+</div>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
 
     </div>
 
@@ -68,132 +68,132 @@ don&#39;t worry if things look different for a while!)&lt;/p&gt;
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      &lt;h1&gt;OGM - Massive Wiki Development Proposal&lt;/h1&gt;
-&lt;p&gt;We are excited to present a comprehensive proposal for the development and enhancement of features for Massive Wiki Builder, part of the Massive Wiki ecosystem. Open Global Mind, spearheaded by Jerry Michalski, is the project sponsor. The features proposed here directly benefit OGM&#39;s &#34;NeoBooks&#34; project, along with other OGM efforts.&lt;/p&gt;
-&lt;p&gt;Our project lead, Peter Kaminski, along with our skilled development team consisting of Pete, Bill Anderson, and John Abbe, are committed to delivering high-quality outputs tailored to OGM&#39;s needs. Where necessary, we will engage specialized contractors as needed (particularly for HTML/CSS theme development).&lt;/p&gt;
-&lt;p&gt;Our proposal encompasses a suite of features designed to enhance user experience and increase functionality across the Massive Wiki platform.&lt;/p&gt;
-&lt;p&gt;Individual features are listed below.&lt;/p&gt;
-&lt;h2&gt;Transclusion, $2000&lt;/h2&gt;
-&lt;p&gt;MWB acts similar to Obsidian when it sees &lt;code&gt;![[Other page]]&lt;/code&gt; in the Markdown -- the &#34;Other page&#34; is included verbatim in the transcluding page.&lt;/p&gt;
-&lt;p&gt;Timeline:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Feature implemented in MWB v3.2.0, 2024-03-27, still to do:
-&lt;ul&gt;
-&lt;li&gt;minimal documentation, to be completed by 2024-04-15&lt;/li&gt;
-&lt;li&gt;deployment to &lt;code&gt;lionsberg.wiki&lt;/code&gt; and &lt;code&gt;wiki.openglobalmind.com&lt;/code&gt; by 2024-04-30&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Definition of done:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;feature is built into a version of MWB&lt;/li&gt;
-&lt;li&gt;feature is deployed to &lt;code&gt;lionsberg.wiki&lt;/code&gt; and &lt;code&gt;wiki.openglobalmind.com&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;MWB still operates as before (doesn&#39;t crash, doesn&#39;t need extra arguments)&lt;/li&gt;
-&lt;li&gt;feature has been tested&lt;/li&gt;
-&lt;li&gt;feature has been minimally documented in MWB&#39;s README.md&lt;/li&gt;
-&lt;li&gt;don&#39;t get caught in an infinite loop with self-transclusion&lt;/li&gt;
-&lt;li&gt;page has a small icon that is a link to the transcluded page&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Future enhancements:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;some way of enabling / disabling a header that gives the filename / page title&lt;/li&gt;
-&lt;li&gt;some way of enabling / disabling an H1 header that&#39;s the first Markdown line&lt;/li&gt;
-&lt;li&gt;suppresses YAML frontmattter&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2&gt;Finish PyPI module publication&lt;/h2&gt;
-&lt;p&gt;Provide Massive Wiki publishing as a PyPI(Python Package Index) module that
-enables installation using the Python &lt;code&gt;pip&lt;/code&gt; capability; e.g., if
-module name is &#34;MWB-publish&#34;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;pip install MWB-publish
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Timeline:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;PyPI module released (in the wild), 2024-06-19: still to do:
-&lt;ul&gt;
-&lt;li&gt;implementation of module &lt;code&gt;init&lt;/code&gt; and &lt;code&gt;publish&lt;/code&gt; features&lt;/li&gt;
-&lt;li&gt;PyPI documentation (there are standards)&lt;/li&gt;
-&lt;li&gt;decide on PyPI module name (thinking web publishing;-- more than
-Massive Wiki publishing)&lt;/li&gt;
-&lt;li&gt;module uses &lt;code&gt;pytest&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Definition of done:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;use Poetry checklist at the bottom of this chat: https://chat.openai.com/share/011ae8a7-c61e-4c3e-82ad-83b2b517e739&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;module available on the PyPI server&lt;/li&gt;
-&lt;li&gt;feature is deployed to &lt;code&gt;massive.wiki&lt;/code&gt; and &lt;code&gt;developer.massive.wiki&lt;/code&gt;
-(others?)&lt;/li&gt;
-&lt;li&gt;MW publish operates as MWB v3 does for publishing existing Massive Wikis&lt;/li&gt;
-&lt;li&gt;module has a working and documented &lt;code&gt;pytest&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Massive Wiki documentation reflects use of PyPI module&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Future enhancements:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;n/a&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2&gt;Edit this page, phase 1 $600&lt;/h2&gt;
-&lt;p&gt;Add an &#34;edit this page&#34; button to every Massive Wiki page that allows a wiki reader to edit the page content and stage the changes for incorporation into the wiki.&lt;/p&gt;
-&lt;p&gt;Timeline:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Feature implemented in MWB v3.3.0, 2024-05-15, still to do:
-&lt;ul&gt;
-&lt;li&gt;implementation&lt;/li&gt;
-&lt;li&gt;documentation, perhaps with a short video demo?&lt;/li&gt;
-&lt;li&gt;deployment to &lt;code&gt;massive.wiki&lt;/code&gt; and &lt;code&gt;wiki.openglobalmind.com&lt;/code&gt; and &lt;code&gt;developer.massive.wiki&lt;/code&gt;?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Definition of done:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;feature is built into a version of MWB&lt;/li&gt;
-&lt;li&gt;feature is deployed to &lt;code&gt;massive.wiki&lt;/code&gt; and &lt;code&gt;wiki.openglobalmind.com&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;feature has been tested (by MW users and well as developers)&lt;/li&gt;
-&lt;li&gt;feature has been documented in MWB&#39;s README.md
-&lt;ul&gt;
-&lt;li&gt;documentation includes a &#34;how-to-use&#34; this feature&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Future enhancements:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;n/a&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2&gt;2-3 New Themes&lt;/h2&gt;
-&lt;p&gt;Create 2 or 3 new themes that are clean and attractive, and have affordances for Sidebar nav. Themes must work well at desktop and mobile aspect ratios, including nav (e.g., collapse nav to a hamburger menu).&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2&gt;Draft Project Proposal Items&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Edit This Page button, phase 1, $600&lt;/li&gt;
-&lt;li&gt;Transclusion, ~$2000
-&lt;ul&gt;
-&lt;li&gt;option not yet included in proposal: render a permalink to transcluded pages&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;finish PyPI module publication (update mechanism), $600&lt;/li&gt;
-&lt;li&gt;2-3 new themes, $1000&lt;/li&gt;
-&lt;li&gt;multiple page templates, $800
-&lt;ul&gt;
-&lt;li&gt;multiple sidebars?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;embed PDFs, $400&lt;/li&gt;
-&lt;li&gt;improve documentation, $200
-&lt;ul&gt;
-&lt;li&gt;document favicon setup&lt;/li&gt;
-&lt;li&gt;document how to change theme colors, etc.&lt;/li&gt;
-&lt;li&gt;document upgrade process&lt;/li&gt;
-&lt;li&gt;other useful docs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Discourse-based commenting system investigation / architecture, $400&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Current rough budget 600 + 2000 + 600 + 1000 + 800 + 400 + 200 + 400 = 6000 (grant will be &amp;lt;= 6000)&lt;/p&gt;
+      <h1>OGM - Massive Wiki Development Proposal</h1>
+<p>We are excited to present a comprehensive proposal for the development and enhancement of features for Massive Wiki Builder, part of the Massive Wiki ecosystem. Open Global Mind, spearheaded by Jerry Michalski, is the project sponsor. The features proposed here directly benefit OGM's "NeoBooks" project, along with other OGM efforts.</p>
+<p>Our project lead, Peter Kaminski, along with our skilled development team consisting of Pete, Bill Anderson, and John Abbe, are committed to delivering high-quality outputs tailored to OGM's needs. Where necessary, we will engage specialized contractors as needed (particularly for HTML/CSS theme development).</p>
+<p>Our proposal encompasses a suite of features designed to enhance user experience and increase functionality across the Massive Wiki platform.</p>
+<p>Individual features are listed below.</p>
+<h2>Transclusion, $2000</h2>
+<p>MWB acts similar to Obsidian when it sees <code>![[Other page]]</code> in the Markdown -- the "Other page" is included verbatim in the transcluding page.</p>
+<p>Timeline:</p>
+<ul>
+<li>Feature implemented in MWB v3.2.0, 2024-03-27, still to do:
+<ul>
+<li>minimal documentation, to be completed by 2024-04-15</li>
+<li>deployment to <code>lionsberg.wiki</code> and <code>wiki.openglobalmind.com</code> by 2024-04-30</li>
+</ul>
+</li>
+</ul>
+<p>Definition of done:</p>
+<ul>
+<li>feature is built into a version of MWB</li>
+<li>feature is deployed to <code>lionsberg.wiki</code> and <code>wiki.openglobalmind.com</code></li>
+<li>MWB still operates as before (doesn't crash, doesn't need extra arguments)</li>
+<li>feature has been tested</li>
+<li>feature has been minimally documented in MWB's README.md</li>
+<li>don't get caught in an infinite loop with self-transclusion</li>
+<li>page has a small icon that is a link to the transcluded page</li>
+</ul>
+<p>Future enhancements:</p>
+<ul>
+<li>some way of enabling / disabling a header that gives the filename / page title</li>
+<li>some way of enabling / disabling an H1 header that's the first Markdown line</li>
+<li>suppresses YAML frontmattter</li>
+</ul>
+<hr />
+<h2>Finish PyPI module publication</h2>
+<p>Provide Massive Wiki publishing as a PyPI(Python Package Index) module that
+enables installation using the Python <code>pip</code> capability; e.g., if
+module name is "MWB-publish":</p>
+<pre><code class="language-shell">pip install MWB-publish
+</code></pre>
+<p>Timeline:</p>
+<ul>
+<li>PyPI module released (in the wild), 2024-06-19: still to do:
+<ul>
+<li>implementation of module <code>init</code> and <code>publish</code> features</li>
+<li>PyPI documentation (there are standards)</li>
+<li>decide on PyPI module name (thinking web publishing;-- more than
+Massive Wiki publishing)</li>
+<li>module uses <code>pytest</code></li>
+</ul>
+</li>
+</ul>
+<p>Definition of done:</p>
+<ul>
+<li>use Poetry checklist at the bottom of this chat: https://chat.openai.com/share/011ae8a7-c61e-4c3e-82ad-83b2b517e739</li>
+</ul>
+<ul>
+<li>module available on the PyPI server</li>
+<li>feature is deployed to <code>massive.wiki</code> and <code>developer.massive.wiki</code>
+(others?)</li>
+<li>MW publish operates as MWB v3 does for publishing existing Massive Wikis</li>
+<li>module has a working and documented <code>pytest</code></li>
+<li>Massive Wiki documentation reflects use of PyPI module</li>
+</ul>
+<p>Future enhancements:</p>
+<ul>
+<li>n/a</li>
+</ul>
+<hr />
+<h2>Edit this page, phase 1 $600</h2>
+<p>Add an "edit this page" button to every Massive Wiki page that allows a wiki reader to edit the page content and stage the changes for incorporation into the wiki.</p>
+<p>Timeline:</p>
+<ul>
+<li>Feature implemented in MWB v3.3.0, 2024-05-15, still to do:
+<ul>
+<li>implementation</li>
+<li>documentation, perhaps with a short video demo?</li>
+<li>deployment to <code>massive.wiki</code> and <code>wiki.openglobalmind.com</code> and <code>developer.massive.wiki</code>?</li>
+</ul>
+</li>
+</ul>
+<p>Definition of done:</p>
+<ul>
+<li>feature is built into a version of MWB</li>
+<li>feature is deployed to <code>massive.wiki</code> and <code>wiki.openglobalmind.com</code></li>
+<li>feature has been tested (by MW users and well as developers)</li>
+<li>feature has been documented in MWB's README.md
+<ul>
+<li>documentation includes a "how-to-use" this feature</li>
+</ul>
+</li>
+</ul>
+<p>Future enhancements:</p>
+<ul>
+<li>n/a</li>
+</ul>
+<hr />
+<h2>2-3 New Themes</h2>
+<p>Create 2 or 3 new themes that are clean and attractive, and have affordances for Sidebar nav. Themes must work well at desktop and mobile aspect ratios, including nav (e.g., collapse nav to a hamburger menu).</p>
+<hr />
+<h2>Draft Project Proposal Items</h2>
+<ul>
+<li>Edit This Page button, phase 1, $600</li>
+<li>Transclusion, ~$2000
+<ul>
+<li>option not yet included in proposal: render a permalink to transcluded pages</li>
+</ul>
+</li>
+<li>finish PyPI module publication (update mechanism), $600</li>
+<li>2-3 new themes, $1000</li>
+<li>multiple page templates, $800
+<ul>
+<li>multiple sidebars?</li>
+</ul>
+</li>
+<li>embed PDFs, $400</li>
+<li>improve documentation, $200
+<ul>
+<li>document favicon setup</li>
+<li>document how to change theme colors, etc.</li>
+<li>document upgrade process</li>
+<li>other useful docs</li>
+</ul>
+</li>
+<li>Discourse-based commenting system investigation / architecture, $400</li>
+</ul>
+<p>Current rough budget 600 + 2000 + 600 + 1000 + 800 + 400 + 200 + 400 = 6000 (grant will be &lt;= 6000)</p>
 
       
     </div>
@@ -201,9 +201,9 @@ Massive Wiki publishing)&lt;/li&gt;
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
-    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
-    <div><em>Site last updated on Thursday, October 24, 2024 at 16:39 UTC.</em></div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 21:27 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>

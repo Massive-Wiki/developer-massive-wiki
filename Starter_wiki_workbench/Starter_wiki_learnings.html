@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729805232.7944999.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729805232.7944999.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
-don&#39;t worry if things look different for a while!)&lt;/p&gt;
-&lt;h2&gt;Site Navigation&lt;/h2&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
+      <p>(we are switching to a new theme,<br />
+don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
     RANDOM PAGE
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;h2&gt;Plans&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;For Testing&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
+  </button>
+</div>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
 
     </div>
 
@@ -68,46 +68,46 @@ don&#39;t worry if things look different for a while!)&lt;/p&gt;
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      &lt;h1&gt;Starter wiki learnings (Bill)&lt;/h1&gt;
-&lt;p&gt;2022-07-29&lt;/p&gt;
-&lt;p&gt;Reflections on using the massive-wiki-starter as the template for a personal Massive Wiki.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Massive Wiki pre-requisites:
-&lt;ul&gt;
-&lt;li&gt;make decisions on (1) authoring, (2) sharing, (3) versioning, and (4) having a public web site of wiki content.&lt;/li&gt;
-&lt;li&gt;(1) authoring: Obsidian (or other app) to create Markdown files&lt;/li&gt;
-&lt;li&gt;(2) sharing: Github (or other Git repository hosting) is one choice&lt;/li&gt;
-&lt;li&gt;(3) versioning (is provided by Git repositories)&lt;/li&gt;
-&lt;li&gt;(4) public web site requires web hosting (netlify.app is one option)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Decisions made; let&#39;s get started:
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;choose a folder on your computer to contain your wiki content (Bill uses ~/Documents/myWikis/ as the base and create a different folder for each wiki)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;we are using Github, so this is one way to proceed:&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;(1) general outline: use massive-wiki-starter repository code to populate the new wiki-repository (download .zip file? fork the repo?); initialize this content into its own Github repository; configure and add the MWB and MWT submodules (this is getting complicated); make sure everything is up-to-date; push the current state as a baseline version of this new wiki(?)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;(2022-07-31 update: https://cli.github.com/manual has some useful examples of how to proceed with a starter-wiki repository:&lt;br /&gt;
-e.g., &lt;code&gt;$ gh repo create mynewrepo --public --source=. --remote=upstream&lt;/code&gt;
-also see &lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Starter_wiki_workbench/Github_-_getting_started_notes.html&#34;&gt;Github - getting started notes&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;(2) edit the README.md file with information you want on your wiki home-page&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;since we said &#34;yes, we want a public website&#34; now is the time to edit the MassiveWikiBuilder configuration file &lt;code&gt;.massivewikibuilder/mwb.yaml&lt;/code&gt; , cf. &lt;span class=&#34;incipient-wikilink&#34;&gt;MWB configuration&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;using a Sidebar? now is the time to add content to &lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Sidebar.html&#34;&gt;Sidebar&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;since we are implementing a Sidebar now is the time to edit &lt;code&gt;wiki_dir/netlify.toml&lt;/code&gt; and insure that the mwb command is using the basso theme&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+      <h1>Starter wiki learnings (Bill)</h1>
+<p>2022-07-29</p>
+<p>Reflections on using the massive-wiki-starter as the template for a personal Massive Wiki.</p>
+<ul>
+<li>Massive Wiki pre-requisites:
+<ul>
+<li>make decisions on (1) authoring, (2) sharing, (3) versioning, and (4) having a public web site of wiki content.</li>
+<li>(1) authoring: Obsidian (or other app) to create Markdown files</li>
+<li>(2) sharing: Github (or other Git repository hosting) is one choice</li>
+<li>(3) versioning (is provided by Git repositories)</li>
+<li>(4) public web site requires web hosting (netlify.app is one option)</li>
+</ul>
+</li>
+<li>Decisions made; let's get started:
+<ul>
+<li>
+<p>choose a folder on your computer to contain your wiki content (Bill uses ~/Documents/myWikis/ as the base and create a different folder for each wiki)</p>
+</li>
+<li>
+<p>we are using Github, so this is one way to proceed:</p>
+</li>
+<li>
+<p>(1) general outline: use massive-wiki-starter repository code to populate the new wiki-repository (download .zip file? fork the repo?); initialize this content into its own Github repository; configure and add the MWB and MWT submodules (this is getting complicated); make sure everything is up-to-date; push the current state as a baseline version of this new wiki(?)</p>
+</li>
+<li>
+<p>(2022-07-31 update: https://cli.github.com/manual has some useful examples of how to proceed with a starter-wiki repository:<br />
+e.g., <code>$ gh repo create mynewrepo --public --source=. --remote=upstream</code>
+also see <a class="wikilink" href="/developer-massive-wiki/Starter_wiki_workbench/Github_-_getting_started_notes.html">Github - getting started notes</a></p>
+</li>
+<li>
+<p>(2) edit the README.md file with information you want on your wiki home-page</p>
+<ul>
+<li>since we said "yes, we want a public website" now is the time to edit the MassiveWikiBuilder configuration file <code>.massivewikibuilder/mwb.yaml</code> , cf. <span class="incipient-wikilink">MWB configuration</span></li>
+<li>using a Sidebar? now is the time to add content to <a class="wikilink" href="/developer-massive-wiki/Sidebar.html">Sidebar</a></li>
+<li>since we are implementing a Sidebar now is the time to edit <code>wiki_dir/netlify.toml</code> and insure that the mwb command is using the basso theme</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -115,9 +115,9 @@ also see &lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Starte
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
-    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
-    <div><em>Site last updated on Thursday, October 24, 2024 at 16:39 UTC.</em></div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 21:27 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>

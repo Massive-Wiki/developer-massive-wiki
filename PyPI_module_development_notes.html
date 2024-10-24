@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729805232.7944999.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729805232.7944999.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
-don&#39;t worry if things look different for a while!)&lt;/p&gt;
-&lt;h2&gt;Site Navigation&lt;/h2&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
+      <p>(we are switching to a new theme,<br />
+don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
     RANDOM PAGE
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;h2&gt;Plans&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;For Testing&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
+  </button>
+</div>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
 
     </div>
 
@@ -68,155 +68,155 @@ don&#39;t worry if things look different for a while!)&lt;/p&gt;
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      &lt;h1&gt;PyPI module development notes&lt;/h1&gt;
-&lt;h4&gt;a collection of work notes on development of the &lt;code&gt;nxc&lt;/code&gt; PyPI module replacement for &lt;code&gt;mwb&lt;/code&gt; (Massive Wiki Builder)&lt;/h4&gt;
-&lt;p&gt;2024-06-29 TODO:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;nxc: add code to incorporate websiteroot into Sidebar links
-&lt;ul&gt;
-&lt;li&gt;testing in nxc 0.1.8&lt;/li&gt;
-&lt;li&gt;issue: Sidebar.html does not render local links
+      <h1>PyPI module development notes</h1>
+<h4>a collection of work notes on development of the <code>nxc</code> PyPI module replacement for <code>mwb</code> (Massive Wiki Builder)</h4>
+<p>2024-06-29 TODO:</p>
+<ul>
+<li>nxc: add code to incorporate websiteroot into Sidebar links
+<ul>
+<li>testing in nxc 0.1.8</li>
+<li>issue: Sidebar.html does not render local links
 solution: convert local links in all markdown_text (test in
 ghPagesLab)
-DONE: this solution included in nxc 0.1.9&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;	 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;2024-06-30:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;backlinks need &lt;code&gt;{websiteroot}}&lt;/code&gt; variable added on &lt;code&gt;page.html&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;seems to be working for netlify and gh-pages&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TODO:
-&lt;ul&gt;
-&lt;li&gt;update PyPI code and test that  (2024-07-02 1st test DONE)&lt;/li&gt;
-&lt;li&gt;test nxcTV on netlify and Github pages&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2024-07-05:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;used Claude-3 to refactor the html rendering for page, search, all-pages, recent-pages; the code looks good, and permits some further specialization of individual pages.&lt;/li&gt;
-&lt;li&gt;the next TODO is to incorporate &#34;Edit this page&#34; function on all pages&lt;/li&gt;
-&lt;li&gt;immediately followed by restricting &#34;Edit this page&#34; from README and Sidebar&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2024-07-06:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;incorporated &#34;Edit this page&#34; code (&lt;code&gt;nxc.py&lt;/code&gt;, &lt;code&gt;page.html&lt;/code&gt;, &lt;code&gt;mystyles.css&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;TODO: that code needs to committed to Github repo&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;nxc.yaml&lt;/code&gt; contains Github usable &lt;code&gt;edit_url&lt;/code&gt; (configuration of this for other forges needs to be documented)&lt;/li&gt;
-&lt;li&gt;use these notes from PK on 18 April 2024:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;edit_url: &#39;https://codeberg.org/{org}/{repo}/_edit/{branch}/&#39;
+DONE: this solution included in nxc 0.1.9</li>
+</ul>
+</li>
+</ul>
+<pre><code>	 
+</code></pre>
+<p>2024-06-30:</p>
+<ul>
+<li>backlinks need <code>{websiteroot}}</code> variable added on <code>page.html</code>
+<ul>
+<li>seems to be working for netlify and gh-pages</li>
+</ul>
+</li>
+<li>TODO:
+<ul>
+<li>update PyPI code and test that  (2024-07-02 1st test DONE)</li>
+<li>test nxcTV on netlify and Github pages</li>
+</ul>
+</li>
+</ul>
+<p>2024-07-05:</p>
+<ul>
+<li>used Claude-3 to refactor the html rendering for page, search, all-pages, recent-pages; the code looks good, and permits some further specialization of individual pages.</li>
+<li>the next TODO is to incorporate "Edit this page" function on all pages</li>
+<li>immediately followed by restricting "Edit this page" from README and Sidebar</li>
+</ul>
+<p>2024-07-06:</p>
+<ul>
+<li>incorporated "Edit this page" code (<code>nxc.py</code>, <code>page.html</code>, <code>mystyles.css</code>)</li>
+<li>TODO: that code needs to committed to Github repo</li>
+<li><code>nxc.yaml</code> contains Github usable <code>edit_url</code> (configuration of this for other forges needs to be documented)</li>
+<li>use these notes from PK on 18 April 2024:</li>
+</ul>
+<pre><code>edit_url: 'https://codeberg.org/{org}/{repo}/_edit/{branch}/'
 
-edit_url: &#39;https://github.com/{org}/{repo}/edit/{branch}/&#39;
+edit_url: 'https://github.com/{org}/{repo}/edit/{branch}/'
 
-edit_url: &#39;https://gitlab.com/{org}/{project-or subgroup}/{repo}/-/edit/{branch}/&#39;
+edit_url: 'https://gitlab.com/{org}/{project-or subgroup}/{repo}/-/edit/{branch}/'
 
-edit_url: &#39;https://gitea.com/{org}/{repo}/_edit/{branch}/&#39;
+edit_url: 'https://gitea.com/{org}/{repo}/_edit/{branch}/'
 
 # Bitbucket requires suffix
-edit_url_prefix: &#39;https://bitbucket.org/{org}/{repo}/src/{branch}/&#39;
-edit_url_suffix: &#39;?mode=edit&#39;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;TODO: CSS for the &#34;Edit this page&#34; button needs tweaking for Dolce theme&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2024-07-06 exclude specific subdirectories from website build (feature request)&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;exclude_subdir = &#34;/path/to/your/directory/exclude_subdir&#34;
+edit_url_prefix: 'https://bitbucket.org/{org}/{repo}/src/{branch}/'
+edit_url_suffix: '?mode=edit'
+</code></pre>
+<ul>
+<li>TODO: CSS for the "Edit this page" button needs tweaking for Dolce theme</li>
+</ul>
+<p>2024-07-06 exclude specific subdirectories from website build (feature request)</p>
+<pre><code class="language-python">exclude_subdir = "/path/to/your/directory/exclude_subdir"
 filtered_markdown_files = [file for file in markdown_files if not file.startswith(exclude_subdir)]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;when &lt;code&gt;exclude_subdirs&lt;/code&gt; is a list of directories this code is an option:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;filtered_markdown_files = [file for file in markdown_files if not any(file.startswith(exclude_subdir) for exclude_subdir in exclude_subdirs)]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;2024-07-07:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&#34;Edit the page&#34; code in the test-pypi package ToBeTested&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;exclude &#34;Edit this page&#34; button from README and Sidebar (nxc 0.1.13)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;WIP: review and organize the &lt;code&gt;nxc&lt;/code&gt; templates directory&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;TEST: does editing this page initiate a netlify rebuild? YES!&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;add Git forge hostname to Edit-this-page tooltip (JA suggestion):&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from urllib.parse import urlparse
-forge_host = urlparse(config[&#39;edit_url&#39;]).hostname
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;TODO: include in nxc v 0.1.14  - DONE (2024-07-08)
-(also updated the Edit-this-page tooltip)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2024-07-09:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;John Abbe mentioned that some of the &#34;nxcTestVault&#34; pages were too wide to read on his laptop, including the &#34;Edit this page&#34; button and tooltip. So, becoming curious about this I discovered that, indeed, some of the webpages did not wrap properly when the browser was narrowed. And then I prompted Claude-3 with this:&lt;br /&gt;
-&#34;this webpage stops wrapping at a certain point; how to adjust that: https://nxctestvault.netlify.app/to-do_list_and_notes&#34;.
-&lt;ul&gt;
-&lt;li&gt;the response was informative and I followed the suggested &lt;code&gt;css&lt;/code&gt; changes. the too-wide behavior problem was fixed, and a few other suggestions have improved that behavior for pages including images and fenced-code blocks. (so, thank you, Claude)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WIP: include these dolce theme updates in nxc v 0.1.15&lt;br /&gt;
-(TODO: describe the workflows for keeping the &lt;code&gt;nxc&lt;/code&gt; template theme up to date with existing &lt;code&gt;nxc&lt;/code&gt; &lt;code&gt;pip&lt;/code&gt; installs)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2024-07-10:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;DONE: bring nxc up-to-date and republish to test-pypi&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2024-07-14:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;WIP: use &lt;code&gt;nxc&lt;/code&gt; to initialize and existing MassiveWiki site, so as to install &lt;code&gt;nxc&lt;/code&gt; next to &lt;code&gt;massivewikibuilder&lt;/code&gt; and see what problems arise and what steps need to be taken.&lt;/li&gt;
-&lt;li&gt;notes:
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;initialization overwrites &lt;code&gt;repo/netlify.toml&lt;/code&gt; (save existing version - working solution in &lt;code&gt;nxc&lt;/code&gt; 0.1.17)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;TODO: decide if and how to handle installing a GitHub Pages workflow file
-this is not something to do automatically as it triggers GitHub actions on the repo&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Breakdown: initialization requests Git forge repo url; however, Edit-this-page requires the Git forge edit url, and this is different for different forges.&lt;br /&gt;
-WIP: current solution is to assume GitHub is the forge; TODO in code comment&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;after initialization the repo changes must be committed and pushed to the Git forge&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;print a &#34;Finish init steps&#34; message?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2024-07-15: more notes&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;running &lt;code&gt;nxc init&lt;/code&gt; on an existing MassiveWiki repo as requires updating &lt;code&gt;.gitignore&lt;/code&gt; to also ignore the &lt;code&gt;nxc&lt;/code&gt; output from the build command (it is just one little detail after another)&lt;br /&gt;
-(this is an artifact detail that results from running website builds on local computer; perhaps best handled by documenting a punch list to do prior to running any &lt;code&gt;nxc build&lt;/code&gt; command)&lt;/li&gt;
-&lt;li&gt;what is this punch list?
-&lt;ul&gt;
-&lt;li&gt;do not overwrite any existing &lt;code&gt;netlify.toml&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;update &lt;code&gt;.gitignore&lt;/code&gt; to ignore any local build output directories&lt;/li&gt;
-&lt;li&gt;some documentation needed on how to proceed with building GitHub Pages, including where to find a template workflow yaml file&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2024-07-16: notes on building developer-wiki on gh-pages using &lt;code&gt;nxc&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ISSUE: building on gh-pages creates a build-time timestamp for every file thereby making &lt;code&gt;all-pages&lt;/code&gt; and &lt;code&gt;recent-pages&lt;/code&gt; webpages not useful. Gah! (is there a fix? bah!)&lt;/li&gt;
-&lt;li&gt;2024-10-16: problem fixed by specifying &lt;code&gt;git-depth: 0&lt;/code&gt; with the gh-pages checkout step&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2024-10-17: looking for security issues using &lt;code&gt;ruff&lt;/code&gt; &lt;code&gt;flake8-bandit&lt;/code&gt; rules yields the following list. Most of these seem like not a problem for our package, but the &lt;code&gt;jinja2 autoscape&lt;/code&gt; setting is worth a look.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ ruff check nxc/
+</code></pre>
+<p>when <code>exclude_subdirs</code> is a list of directories this code is an option:</p>
+<pre><code class="language-python">filtered_markdown_files = [file for file in markdown_files if not any(file.startswith(exclude_subdir) for exclude_subdir in exclude_subdirs)]
+</code></pre>
+<p>2024-07-07:</p>
+<ul>
+<li>
+<p>"Edit the page" code in the test-pypi package ToBeTested</p>
+<ul>
+<li>exclude "Edit this page" button from README and Sidebar (nxc 0.1.13)</li>
+</ul>
+</li>
+<li>
+<p>WIP: review and organize the <code>nxc</code> templates directory</p>
+</li>
+<li>
+<p>TEST: does editing this page initiate a netlify rebuild? YES!</p>
+</li>
+<li>
+<p>add Git forge hostname to Edit-this-page tooltip (JA suggestion):</p>
+</li>
+</ul>
+<pre><code class="language-python">from urllib.parse import urlparse
+forge_host = urlparse(config['edit_url']).hostname
+</code></pre>
+<ul>
+<li>TODO: include in nxc v 0.1.14  - DONE (2024-07-08)
+(also updated the Edit-this-page tooltip)</li>
+</ul>
+<p>2024-07-09:</p>
+<ul>
+<li>John Abbe mentioned that some of the "nxcTestVault" pages were too wide to read on his laptop, including the "Edit this page" button and tooltip. So, becoming curious about this I discovered that, indeed, some of the webpages did not wrap properly when the browser was narrowed. And then I prompted Claude-3 with this:<br />
+"this webpage stops wrapping at a certain point; how to adjust that: https://nxctestvault.netlify.app/to-do_list_and_notes".
+<ul>
+<li>the response was informative and I followed the suggested <code>css</code> changes. the too-wide behavior problem was fixed, and a few other suggestions have improved that behavior for pages including images and fenced-code blocks. (so, thank you, Claude)</li>
+</ul>
+</li>
+<li>WIP: include these dolce theme updates in nxc v 0.1.15<br />
+(TODO: describe the workflows for keeping the <code>nxc</code> template theme up to date with existing <code>nxc</code> <code>pip</code> installs)</li>
+</ul>
+<p>2024-07-10:</p>
+<ul>
+<li>DONE: bring nxc up-to-date and republish to test-pypi</li>
+</ul>
+<p>2024-07-14:</p>
+<ul>
+<li>WIP: use <code>nxc</code> to initialize and existing MassiveWiki site, so as to install <code>nxc</code> next to <code>massivewikibuilder</code> and see what problems arise and what steps need to be taken.</li>
+<li>notes:
+<ul>
+<li>
+<p>initialization overwrites <code>repo/netlify.toml</code> (save existing version - working solution in <code>nxc</code> 0.1.17)</p>
+</li>
+<li>
+<p>TODO: decide if and how to handle installing a GitHub Pages workflow file
+this is not something to do automatically as it triggers GitHub actions on the repo</p>
+</li>
+<li>
+<p>Breakdown: initialization requests Git forge repo url; however, Edit-this-page requires the Git forge edit url, and this is different for different forges.<br />
+WIP: current solution is to assume GitHub is the forge; TODO in code comment</p>
+</li>
+<li>
+<p>after initialization the repo changes must be committed and pushed to the Git forge</p>
+<ul>
+<li>print a "Finish init steps" message?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>2024-07-15: more notes</p>
+<ul>
+<li>running <code>nxc init</code> on an existing MassiveWiki repo as requires updating <code>.gitignore</code> to also ignore the <code>nxc</code> output from the build command (it is just one little detail after another)<br />
+(this is an artifact detail that results from running website builds on local computer; perhaps best handled by documenting a punch list to do prior to running any <code>nxc build</code> command)</li>
+<li>what is this punch list?
+<ul>
+<li>do not overwrite any existing <code>netlify.toml</code></li>
+<li>update <code>.gitignore</code> to ignore any local build output directories</li>
+<li>some documentation needed on how to proceed with building GitHub Pages, including where to find a template workflow yaml file</li>
+</ul>
+</li>
+</ul>
+<p>2024-07-16: notes on building developer-wiki on gh-pages using <code>nxc</code></p>
+<ul>
+<li>ISSUE: building on gh-pages creates a build-time timestamp for every file thereby making <code>all-pages</code> and <code>recent-pages</code> webpages not useful. Gah! (is there a fix? bah!)</li>
+<li>2024-10-16: problem fixed by specifying <code>git-depth: 0</code> with the gh-pages checkout step</li>
+</ul>
+<p>2024-10-17: looking for security issues using <code>ruff</code> <code>flake8-bandit</code> rules yields the following list. Most of these seem like not a problem for our package, but the <code>jinja2 autoscape</code> setting is worth a look.</p>
+<pre><code class="language-shell">$ ruff check nxc/
 
 **nxc/nxc/nxc.py**:56:12: **S701** By default, jinja2 sets `autoescape` to `False`. Consider using `autoescape=True` or the `select_autoescape` function to mitigate XSS vulnerabilities.
 
@@ -243,7 +243,7 @@ WIP: current solution is to assume GitHub is the forge; TODO in code comment&lt;
 
 **109 |**     else:
 
-**110 |**         markdown_text = &#39;&#39;
+**110 |**         markdown_text = ''
 
 **111 |**     fid = hashlib.md5(Path(path).stem.lower().encode()).hexdigest()
 
@@ -258,7 +258,7 @@ WIP: current solution is to assume GitHub is the forge; TODO in code comment&lt;
 
     **|**
 
-**201 |**                 logging.debug(&#34;html path: %s&#34;, html_path)
+**201 |**                 logging.debug("html path: %s", html_path)
 
 **202 |**                 # add filesystem path, html path, backlinks list, wikipage-id to wiki_path_links dictionary
 
@@ -266,7 +266,7 @@ WIP: current solution is to assume GitHub is the forge; TODO in code comment&lt;
 
     **|**                               **^^^^^^^^^^^** **S324**
 
-**204 |**                 wiki_pagelinks[Path(file).stem.lower()] = {&#39;fs_path&#39;:fs_path, &#39;html_path&#39;:html_path, &#39;backlinks&#39;:[], &#39;wikipage_id&#39;:wikipage_id}
+**204 |**                 wiki_pagelinks[Path(file).stem.lower()] = {'fs_path':fs_path, 'html_path':html_path, 'backlinks':[], 'wikipage_id':wikipage_id}
 
 **205 |**                 # add lunr data to lunr idx_data and posts lists
 
@@ -277,7 +277,7 @@ WIP: current solution is to assume GitHub is the forge; TODO in code comment&lt;
 
     **|**
 
-**255 |**                 (Path(dir_output+clean_filepath).with_suffix(&#34;.json&#34;)).write_text(json.dumps(front_matter, indent=2, default=datetime_date_serializer))
+**255 |**                 (Path(dir_output+clean_filepath).with_suffix(".json")).write_text(json.dumps(front_matter, indent=2, default=datetime_date_serializer))
 
 **256 |**                 # render and output HTML (empty edit_url on README and Sidebar pages)
 
@@ -287,7 +287,7 @@ WIP: current solution is to assume GitHub is the forge; TODO in code comment&lt;
 
 **258 |**                 markdown_body = markdown_convert(markdown_text, rootdir, args[0].input, file_id, websiteroot)
 
-**259 |**                 if Path(file).stem == &#39;README&#39; or Path(file).name == config[&#39;sidebar&#39;]:
+**259 |**                 if Path(file).stem == 'README' or Path(file).name == config['sidebar']:
 
     **|**
 
@@ -300,13 +300,13 @@ WIP: current solution is to assume GitHub is the forge; TODO in code comment&lt;
 
 **280 |**                     try:
 
-**281 |**                         p = subprocess.run([&#34;git&#34;, &#34;-C&#34;, Path(root), &#34;log&#34;, &#34;-1&#34;, &#39;--pretty=&#34;%cI\t%an\t%s&#34;&#39;, Path(file).name], capture_output=True, check=True)
+**281 |**                         p = subprocess.run(["git", "-C", Path(root), "log", "-1", '--pretty="%cI\t%an\t%s"', Path(file).name], capture_output=True, check=True)
 
     **|**                             **^^^^^^^^^^^^^^** **S603**
 
-**282 |**                         logging.debug(f&#34;subprocess result: &#39;{p.stdout.decode(&#39;utf-8&#39;)}&#39;&#34;)
+**282 |**                         logging.debug(f"subprocess result: '{p.stdout.decode('utf-8')}'")
 
-**283 |**                         (date, author, change) = p.stdout.decode(&#39;utf-8&#39;)[1:-2].split(&#39;\t&#39;, 2)
+**283 |**                         (date, author, change) = p.stdout.decode('utf-8')[1:-2].split('\t', 2)
 
     **|**
 
@@ -319,13 +319,13 @@ WIP: current solution is to assume GitHub is the forge; TODO in code comment&lt;
 
 **280 |**                     try:
 
-**281 |**                         p = subprocess.run([&#34;git&#34;, &#34;-C&#34;, Path(root), &#34;log&#34;, &#34;-1&#34;, &#39;--pretty=&#34;%cI\t%an\t%s&#34;&#39;, Path(file).name], capture_output=True, check=True)
+**281 |**                         p = subprocess.run(["git", "-C", Path(root), "log", "-1", '--pretty="%cI\t%an\t%s"', Path(file).name], capture_output=True, check=True)
 
     **|**                                            **^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^** **S607**
 
-**282 |**                         logging.debug(f&#34;subprocess result: &#39;{p.stdout.decode(&#39;utf-8&#39;)}&#39;&#34;)
+**282 |**                         logging.debug(f"subprocess result: '{p.stdout.decode('utf-8')}'")
 
-**283 |**                         (date, author, change) = p.stdout.decode(&#39;utf-8&#39;)[1:-2].split(&#39;\t&#39;, 2)
+**283 |**                         (date, author, change) = p.stdout.decode('utf-8')[1:-2].split('\t', 2)
 
     **|**
 
@@ -334,17 +334,17 @@ WIP: current solution is to assume GitHub is the forge; TODO in code comment&lt;
 
     **|**
 
-**318 |**                 print(&#34;lunr_index=&#34;, end=&#34;&#34;, file=outfile)
+**318 |**                 print("lunr_index=", end="", file=outfile)
 
 **319 |**                 outfile.seek(0, 2) # seek to EOF
 
-**320 |**                 p = subprocess.run([&#39;node&#39;, &#39;build-index.js&#39;], input=pages_index_bytes, stdout=outfile, check=True)
+**320 |**                 p = subprocess.run(['node', 'build-index.js'], input=pages_index_bytes, stdout=outfile, check=True)
 
     **|**                     **^^^^^^^^^^^^^^** **S603**
 
-**321 |**             with open(lunr_posts_filepath, &#34;w&#34;) as outfile:
+**321 |**             with open(lunr_posts_filepath, "w") as outfile:
 
-**322 |**                 print(&#34;lunr_posts=&#34;, lunr_posts, file=outfile)
+**322 |**                 print("lunr_posts=", lunr_posts, file=outfile)
 
     **|**
 
@@ -353,23 +353,23 @@ WIP: current solution is to assume GitHub is the forge; TODO in code comment&lt;
 
     **|**
 
-**318 |**                 print(&#34;lunr_index=&#34;, end=&#34;&#34;, file=outfile)
+**318 |**                 print("lunr_index=", end="", file=outfile)
 
 **319 |**                 outfile.seek(0, 2) # seek to EOF
 
-**320 |**                 p = subprocess.run([&#39;node&#39;, &#39;build-index.js&#39;], input=pages_index_bytes, stdout=outfile, check=True)
+**320 |**                 p = subprocess.run(['node', 'build-index.js'], input=pages_index_bytes, stdout=outfile, check=True)
 
     **|**                                    **^^^^^^^^^^^^^^^^^^^^^^^^^^** **S607**
 
-**321 |**             with open(lunr_posts_filepath, &#34;w&#34;) as outfile:
+**321 |**             with open(lunr_posts_filepath, "w") as outfile:
 
-**322 |**                 print(&#34;lunr_posts=&#34;, lunr_posts, file=outfile)
+**322 |**                 print("lunr_posts=", lunr_posts, file=outfile)
 
     **|**
 
 
 Found 8 errors.
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
       
     </div>
@@ -377,9 +377,9 @@ Found 8 errors.
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
-    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
-    <div><em>Site last updated on Thursday, October 24, 2024 at 16:39 UTC.</em></div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 21:27 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>

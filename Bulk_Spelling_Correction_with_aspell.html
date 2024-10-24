@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729805232.7944999.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729805232.7944999.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
-don&#39;t worry if things look different for a while!)&lt;/p&gt;
-&lt;h2&gt;Site Navigation&lt;/h2&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
+      <p>(we are switching to a new theme,<br />
+don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
     RANDOM PAGE
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;h2&gt;Plans&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;For Testing&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
+  </button>
+</div>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
 
     </div>
 
@@ -68,21 +68,21 @@ don&#39;t worry if things look different for a while!)&lt;/p&gt;
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      &lt;h1&gt;Bulk Spelling Correction with aspell&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;copied from &lt;a href=&#34;https://lionsberg.wiki/lionsberg_wiki_blogs/pete%27s_journal/massive_spell_check&#34;&gt;https://lionsberg.wiki/lionsberg_wiki_blogs/pete&#39;s_journal/massive_spell_check&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;by &lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/conversationsWiki/People/Peter_Kaminski.html&#34;&gt;Peter Kaminski&lt;/a&gt;, 2022-07-26&lt;/p&gt;
-&lt;p&gt;In a bit of productive procrastination, I experimented with some bulk spell correction.&lt;/p&gt;
-&lt;p&gt;Today, I tried using &lt;code&gt;aspell&lt;/code&gt; and some not-really-automation to fix about 30 typos in as many files.  (On a Mac, &lt;code&gt;aspell&lt;/code&gt; can be installed with Homebrew.)&lt;/p&gt;
-&lt;p&gt;I hope this helps prototype something that might ultimately be packaged more nicely and productively.&lt;/p&gt;
-&lt;h2&gt;Methodology&lt;/h2&gt;
-&lt;p&gt;First, grab all the potential misspellings with &lt;code&gt;aspell&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;(find . -name &#39;*.md&#39; -exec cat &#34;{}&#34; \;) | aspell list | sort -dfu &amp;gt;/tmp/tmp.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Second, create a &#34;fix&#34; file, with a typo and then the corrected word, per line.  I only did the &#34;A&#34; words, and only words that seemed like they would surely want to be fixed, nothing that needed further manual inspection.&lt;/p&gt;
-&lt;p&gt;After trying a couple of things, what I did was to use Emacs to create two words per line (both were the original word), then loaded the file in TextEdit, where it was easier (not quite easy) to correct the right-hand word.  Interestingly, some of the typo&#39;ed words did not get flagged by the Mac spell correction.&lt;/p&gt;
-&lt;p&gt;This part was a little manually intensive, but I&#39;m not sure of a great way around it.  (Also to note, &lt;code&gt;aspell&lt;/code&gt; is usually use in interactive mode, one file at a time.  That would have been another way to do it, but not automated enough for my taste.)&lt;/p&gt;
-&lt;p&gt;Here&#39;s the result:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;aboslute absolute
+      <h1>Bulk Spelling Correction with aspell</h1>
+<p><em>copied from <a href="https://lionsberg.wiki/lionsberg_wiki_blogs/pete%27s_journal/massive_spell_check">https://lionsberg.wiki/lionsberg_wiki_blogs/pete's_journal/massive_spell_check</a></em></p>
+<p>by <a class="wikilink" href="/developer-massive-wiki/conversationsWiki/People/Peter_Kaminski.html">Peter Kaminski</a>, 2022-07-26</p>
+<p>In a bit of productive procrastination, I experimented with some bulk spell correction.</p>
+<p>Today, I tried using <code>aspell</code> and some not-really-automation to fix about 30 typos in as many files.  (On a Mac, <code>aspell</code> can be installed with Homebrew.)</p>
+<p>I hope this helps prototype something that might ultimately be packaged more nicely and productively.</p>
+<h2>Methodology</h2>
+<p>First, grab all the potential misspellings with <code>aspell</code>:</p>
+<pre><code class="language-shell">(find . -name '*.md' -exec cat "{}" \;) | aspell list | sort -dfu &gt;/tmp/tmp.txt
+</code></pre>
+<p>Second, create a "fix" file, with a typo and then the corrected word, per line.  I only did the "A" words, and only words that seemed like they would surely want to be fixed, nothing that needed further manual inspection.</p>
+<p>After trying a couple of things, what I did was to use Emacs to create two words per line (both were the original word), then loaded the file in TextEdit, where it was easier (not quite easy) to correct the right-hand word.  Interestingly, some of the typo'ed words did not get flagged by the Mac spell correction.</p>
+<p>This part was a little manually intensive, but I'm not sure of a great way around it.  (Also to note, <code>aspell</code> is usually use in interactive mode, one file at a time.  That would have been another way to do it, but not automated enough for my taste.)</p>
+<p>Here's the result:</p>
+<pre><code>aboslute absolute
 abraction abstraction
 abstarction abstraction
 abudnance abundance
@@ -115,53 +115,53 @@ audaceous audacious
 autonmous autonomous
 autonomouosly autonomously
 avaiable available
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I then transformed the text file into the following shell script. We could write something that handles this much better, but as a hack:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/aboslute/absolute/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/abraction/abstraction/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/abstarction/abstraction/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/abudnance/abundance/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/abyssmal/abysmal/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/accomodate/accommodate/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/accompish/accomplish/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/Acquition/Acquisition/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/Actioin/Action/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/activites/activities/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/adapated/adapted/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/addresing/addressing/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/adminsitering/administering/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/Adminsitration/Administration/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/Adminsitrative/Administrative/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/advanding/advancing/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/aggree/agree/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/Agrement/Agreement/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/alignement/alignment/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/appartent/apparent/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/apporach/approach/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/approachs/approaches/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/architypical/archetypical/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/ariticulated/articulated/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/artciulate/articulate/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/assigments/assignments/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/assoiated/associated/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/attemtping/attempting/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/Attendence/Attendance/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/audaceous/audacious/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/autonmous/autonomous/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/autonomouosly/autonomously/g&#39; &#34;{}&#34; \;
-find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/avaiable/available/g&#39; &#34;{}&#34; \;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You might observe that this is massively inefficient, and indeed, even on my MacBook M1, it took forever to run, and I&#39;m sure several of the internal hamsters-on-wheels went to a better place before it was finished.  Anywho...&lt;/p&gt;
-&lt;p&gt;After skimming through the changes with &lt;code&gt;git diff&lt;/code&gt;, it all looked good.  I noted the Perl one-liner had the effect of removing whitespace at the end of lines; I think that was okay, so I didn&#39;t do anything to handle that.&lt;/p&gt;
-&lt;p&gt;Here is the resulting commit: &lt;a href=&#34;https://github.com/Lionsberg/lionsberg-wiki/commit/795c0484f441791dd73b7647b9b41a9de01922dd&#34;&gt;semi-automated spelling correction experiment&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;I believe we can adapt the work above to create a workflow that helps automate some of the work of spelling correction, perhaps as an Obsidian plugin, perhaps as a Python script, etc.&lt;/p&gt;
-&lt;p&gt;Questions/observations:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;would it make sense to keep and update a script such as the above (with fairly unambiguous corrections), and run it regularly?  or regenerate it one-off once in a while?&lt;/li&gt;
-&lt;li&gt;somewhere, we have some &lt;span class=&#34;incipient-wikilink&#34;&gt;lorem ipsum&lt;/span&gt; in the pages, which generated noise as I was trying to find which words to correct.&lt;/li&gt;
-&lt;li&gt;it would be nice to generate a whitelist dictionary, of known good words, e.g., &#34;Netlify&#34;.&lt;/li&gt;
-&lt;/ul&gt;
+</code></pre>
+<p>I then transformed the text file into the following shell script. We could write something that handles this much better, but as a hack:</p>
+<pre><code class="language-shell">find . -name '*.md' -exec perl -p -i -e 's/aboslute/absolute/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/abraction/abstraction/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/abstarction/abstraction/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/abudnance/abundance/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/abyssmal/abysmal/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/accomodate/accommodate/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/accompish/accomplish/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/Acquition/Acquisition/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/Actioin/Action/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/activites/activities/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/adapated/adapted/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/addresing/addressing/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/adminsitering/administering/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/Adminsitration/Administration/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/Adminsitrative/Administrative/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/advanding/advancing/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/aggree/agree/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/Agrement/Agreement/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/alignement/alignment/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/appartent/apparent/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/apporach/approach/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/approachs/approaches/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/architypical/archetypical/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/ariticulated/articulated/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/artciulate/articulate/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/assigments/assignments/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/assoiated/associated/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/attemtping/attempting/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/Attendence/Attendance/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/audaceous/audacious/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/autonmous/autonomous/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/autonomouosly/autonomously/g' "{}" \;
+find . -name '*.md' -exec perl -p -i -e 's/avaiable/available/g' "{}" \;
+</code></pre>
+<p>You might observe that this is massively inefficient, and indeed, even on my MacBook M1, it took forever to run, and I'm sure several of the internal hamsters-on-wheels went to a better place before it was finished.  Anywho...</p>
+<p>After skimming through the changes with <code>git diff</code>, it all looked good.  I noted the Perl one-liner had the effect of removing whitespace at the end of lines; I think that was okay, so I didn't do anything to handle that.</p>
+<p>Here is the resulting commit: <a href="https://github.com/Lionsberg/lionsberg-wiki/commit/795c0484f441791dd73b7647b9b41a9de01922dd">semi-automated spelling correction experiment</a>.</p>
+<h3>Conclusion</h3>
+<p>I believe we can adapt the work above to create a workflow that helps automate some of the work of spelling correction, perhaps as an Obsidian plugin, perhaps as a Python script, etc.</p>
+<p>Questions/observations:</p>
+<ul>
+<li>would it make sense to keep and update a script such as the above (with fairly unambiguous corrections), and run it regularly?  or regenerate it one-off once in a while?</li>
+<li>somewhere, we have some <span class="incipient-wikilink">lorem ipsum</span> in the pages, which generated noise as I was trying to find which words to correct.</li>
+<li>it would be nice to generate a whitelist dictionary, of known good words, e.g., "Netlify".</li>
+</ul>
 
       
     </div>
@@ -169,9 +169,9 @@ find . -name &#39;*.md&#39; -exec perl -p -i -e &#39;s/avaiable/available/g&#39;
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
-    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
-    <div><em>Site last updated on Thursday, October 24, 2024 at 16:39 UTC.</em></div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 21:27 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>

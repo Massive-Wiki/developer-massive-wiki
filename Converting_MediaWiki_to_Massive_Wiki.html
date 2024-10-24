@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729805232.7944999.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729787984.9247563.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729805232.7944999.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
-don&#39;t worry if things look different for a while!)&lt;/p&gt;
-&lt;h2&gt;Site Navigation&lt;/h2&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;navlinks&#34;&gt;
-  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
+      <p>(we are switching to a new theme,<br />
+don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
     RANDOM PAGE
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;h2&gt;Plans&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;For Testing&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
+  </button>
+</div>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
 
     </div>
 
@@ -68,36 +68,36 @@ don&#39;t worry if things look different for a while!)&lt;/p&gt;
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      &lt;h1&gt;Converting MediaWiki to Massive Wiki&lt;/h1&gt;
-&lt;p&gt;This is a general overview of how to convert the pages from a running MediaWiki instance to Massive Wiki pages. There are many variables involved in the process, and you may need to change these steps or add more; or, it might not work at all. These instructions are provided as a skeleton framework on which to build, and are offered in the hope that they&#39;re useful as a starting point to build from.&lt;/p&gt;
-&lt;h2&gt;Overview&lt;/h2&gt;
-&lt;p&gt;We use an open source tool which knows how to read a MediaWiki XML export file and write Markdown pages. Among other things, it uses Pandoc under the hood.&lt;/p&gt;
-&lt;p&gt;The tool we used was &lt;a href=&#34;https://github.com/outofcontrol/mediawiki-to-gfm&#34;&gt;Mediawiki to GitHub Flavoured Markdown&lt;/a&gt;, which is based on &lt;a href=&#34;https://github.com/philipashlock/mediawiki-to-markdown&#34;&gt;MediaWiki to Markdown&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;Export MediaWiki to XML&lt;/h2&gt;
-&lt;p&gt;Consulting &lt;a href=&#34;https://en.wikipedia.org/wiki/Help:Export&#34;&gt;Help:Export - Wikipedia&lt;/a&gt;, we decided to use the first method documented there, &lt;code&gt;Special:Export&lt;/code&gt;, after collecting all the page names with &lt;code&gt;Special:AllPages&lt;/code&gt;. (If you&#39;re a Python developer, Pywikibot looks interesting too, but more involved.)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Visit the source MediaWiki, appending &lt;code&gt;Special:AllPages&lt;/code&gt; to the URL instead of a page name.&lt;/li&gt;
-&lt;li&gt;Copy all the page names.&lt;/li&gt;
-&lt;li&gt;Paste all the page names into a text file; make sure you end up with one page title per line.&lt;/li&gt;
-&lt;li&gt;Visit the source MediaWiki, appending &lt;code&gt;Special:Export&lt;/code&gt; to the URL instead of a page name.&lt;/li&gt;
-&lt;li&gt;Paste the &#34;one page title per line&#34; page names into the appropriate box, set the checkboxes (make sure &#34;Save as file&#34; is ticked), then click the &#34;Export&#34; button. The XML export file should be downloaded to your computer.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Converting the XML Export to Markdown&lt;/h2&gt;
-&lt;p&gt;We ran the Dockerized version of &lt;strong&gt;Mediawiki to GitHub Flavoured Markdown&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Create a directory, change into the directory, and run the following command.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run -v $PWD:/app thawn/mediawiki-to-gfm --filename=YOUR_EXPORT.xml
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The app will create a directory called &lt;code&gt;output&lt;/code&gt; and save the Markdown files there. It will take a few seconds for each page.&lt;/p&gt;
-&lt;h2&gt;Considerations for Massive Wiki&lt;/h2&gt;
-&lt;p&gt;At this point, you are pretty close to having a Massive Wiki. Things to consider:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Copy &lt;code&gt;Main_Page.md&lt;/code&gt; to &lt;code&gt;README.md&lt;/code&gt;, and put a note in &lt;code&gt;Main_Page.md&lt;/code&gt; that the MediaWiki has been converted to Markdown, and the new main page is now &lt;code&gt;README.md&lt;/code&gt;. Add the date of conversion, and your name and a way to contact you.&lt;/li&gt;
-&lt;li&gt;The exported GFM pages have internal links, but they are of the form &lt;code&gt;[]()&lt;/code&gt; rather than &lt;code&gt;[[]]&lt;/code&gt;. These will work, but you might want to convert them.&lt;/li&gt;
-&lt;li&gt;When Massive Wiki Publisher converts the &lt;code&gt;[]()&lt;/code&gt; internal links to HTML, &lt;code&gt;.html&lt;/code&gt; isn&#39;t added to the links. Depending on how you host the output HTML site, you may need to add &lt;code&gt;.html&lt;/code&gt; to each internal link. (This could be added to Massive Wiki Publisher as an option some day.)&lt;/li&gt;
-&lt;li&gt;The exported pages don&#39;t have the conventional page title on the first line (&lt;code&gt;# My Page Title&lt;/code&gt;). This can be ignored, or they can be added with some quick scripting, or Massive Wiki Publisher could have an option added some day to write title lines for files that don&#39;t have them.&lt;/li&gt;
-&lt;li&gt;You&#39;ll need to install Massive Wiki Publisher if you want it.&lt;/li&gt;
-&lt;li&gt;There are probably lots of MediaWiki-isms which will need to be converted; examine a good sampling of the pages looking for any other things that still need to be converted.&lt;/li&gt;
-&lt;/ul&gt;
+      <h1>Converting MediaWiki to Massive Wiki</h1>
+<p>This is a general overview of how to convert the pages from a running MediaWiki instance to Massive Wiki pages. There are many variables involved in the process, and you may need to change these steps or add more; or, it might not work at all. These instructions are provided as a skeleton framework on which to build, and are offered in the hope that they're useful as a starting point to build from.</p>
+<h2>Overview</h2>
+<p>We use an open source tool which knows how to read a MediaWiki XML export file and write Markdown pages. Among other things, it uses Pandoc under the hood.</p>
+<p>The tool we used was <a href="https://github.com/outofcontrol/mediawiki-to-gfm">Mediawiki to GitHub Flavoured Markdown</a>, which is based on <a href="https://github.com/philipashlock/mediawiki-to-markdown">MediaWiki to Markdown</a>.</p>
+<h2>Export MediaWiki to XML</h2>
+<p>Consulting <a href="https://en.wikipedia.org/wiki/Help:Export">Help:Export - Wikipedia</a>, we decided to use the first method documented there, <code>Special:Export</code>, after collecting all the page names with <code>Special:AllPages</code>. (If you're a Python developer, Pywikibot looks interesting too, but more involved.)</p>
+<ul>
+<li>Visit the source MediaWiki, appending <code>Special:AllPages</code> to the URL instead of a page name.</li>
+<li>Copy all the page names.</li>
+<li>Paste all the page names into a text file; make sure you end up with one page title per line.</li>
+<li>Visit the source MediaWiki, appending <code>Special:Export</code> to the URL instead of a page name.</li>
+<li>Paste the "one page title per line" page names into the appropriate box, set the checkboxes (make sure "Save as file" is ticked), then click the "Export" button. The XML export file should be downloaded to your computer.</li>
+</ul>
+<h2>Converting the XML Export to Markdown</h2>
+<p>We ran the Dockerized version of <strong>Mediawiki to GitHub Flavoured Markdown</strong>.</p>
+<p>Create a directory, change into the directory, and run the following command.</p>
+<pre><code>docker run -v $PWD:/app thawn/mediawiki-to-gfm --filename=YOUR_EXPORT.xml
+</code></pre>
+<p>The app will create a directory called <code>output</code> and save the Markdown files there. It will take a few seconds for each page.</p>
+<h2>Considerations for Massive Wiki</h2>
+<p>At this point, you are pretty close to having a Massive Wiki. Things to consider:</p>
+<ul>
+<li>Copy <code>Main_Page.md</code> to <code>README.md</code>, and put a note in <code>Main_Page.md</code> that the MediaWiki has been converted to Markdown, and the new main page is now <code>README.md</code>. Add the date of conversion, and your name and a way to contact you.</li>
+<li>The exported GFM pages have internal links, but they are of the form <code>[]()</code> rather than <code>[[]]</code>. These will work, but you might want to convert them.</li>
+<li>When Massive Wiki Publisher converts the <code>[]()</code> internal links to HTML, <code>.html</code> isn't added to the links. Depending on how you host the output HTML site, you may need to add <code>.html</code> to each internal link. (This could be added to Massive Wiki Publisher as an option some day.)</li>
+<li>The exported pages don't have the conventional page title on the first line (<code># My Page Title</code>). This can be ignored, or they can be added with some quick scripting, or Massive Wiki Publisher could have an option added some day to write title lines for files that don't have them.</li>
+<li>You'll need to install Massive Wiki Publisher if you want it.</li>
+<li>There are probably lots of MediaWiki-isms which will need to be converted; examine a good sampling of the pages looking for any other things that still need to be converted.</li>
+</ul>
 
       
     </div>
@@ -105,9 +105,9 @@ don&#39;t worry if things look different for a while!)&lt;/p&gt;
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
-    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
-    <div><em>Site last updated on Thursday, October 24, 2024 at 16:39 UTC.</em></div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 21:27 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>
