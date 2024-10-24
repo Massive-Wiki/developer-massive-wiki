@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729716029.5234456.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729784267.595525.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729716029.5234456.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729784267.595525.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      <p>(we are switching to a new theme,<br />
-don't worry if things look different for a while!)</p>
-<h2>Site Navigation</h2>
-<div class="navlinks">
-<ul>
-<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
-<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
-<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
-<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
-</ul>
-</div>
-<div class="navlinks">
-  <button onclick="location.href=`${randomPageLink()}`">
+      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
+don&#39;t worry if things look different for a while!)&lt;/p&gt;
+&lt;h2&gt;Site Navigation&lt;/h2&gt;
+&lt;div class=&#34;navlinks&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;navlinks&#34;&gt;
+  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
     RANDOM PAGE
-  </button>
-</div>
-<h2>Plans</h2>
-<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
-<h2>For Testing</h2>
-<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
-<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;h2&gt;Plans&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;For Testing&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
 
     </div>
 
@@ -68,47 +68,47 @@ don't worry if things look different for a while!)</p>
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      <h1>Tech Note - Preferring a Different Git Forge</h1>
-<p><em>last edit: 2022-12-06, Pete</em></p>
-<h2>Overview</h2>
-<p>Up until now (~2022-12), Massive Wiki community projects that use a <span class="incipient-wikilink">Git forge</span>, either for code, or for syncing and versioning wiki files, have typically used <span class="incipient-wikilink">GitHub</span> as their centralizing forge, for the sake of convenience and audience reach.</p>
-<p>However, a key principle of Massive Wiki, and wiki in general, is enablement and encouragement of <span class="incipient-wikilink">open collaboration</span>. While GitHub was a key catalyzer of the open source movement, the software underlying the platform has never been open source. Also, Microsoft's purchase and control of GitHub since 2018 is problematic for the open source ecosystem.</p>
-<p>Therefore, the Massive Wiki community wishes to reduce its GitHub footprint, and increase use of another Git forge.  This page will serve to illuminate some of the choices and challenges in deciding which Git forge (or forges) to migrate to.</p>
-<h2>Capabilities and Limitations of Forges</h2>
-<p>An initial observation: because Git is already a standardized protocol for moving files in a repo from one computer to another, migrating between forges is easy and, in fact, is similar to normal use of Git.</p>
-<p>However, there <em>are</em> differences between forges in the collaboration and operations (e.g., deployment) processes they enable.</p>
-<p>For instance, GitHub has easy and rich features that allow discussion and workflow around Git forks, branches, and commits.  For the deployment of static web sites (such as those built by <span class="incipient-wikilink">Massive Wiki Builder</span>), <span class="incipient-wikilink">Netlify</span> and <span class="incipient-wikilink">Vercel</span> can automate deployment for repos hosted by GitHub, GitLab, and BitBucket.</p>
-<p>In moving to another forge, the Massive Wiki community will need to adapt its workflows to the capabilities and limitations of the new forge.</p>
-<h2>SaaS vs. Self-Hosted</h2>
-<p>A key consideration in evaluating a new forge is whether the forge will be a cloud SaaS platform operated by a third party, or if it will be self-hosted by Massive Wiki community members or partners.</p>
-<h3>SaaS</h3>
-<p>Cloud SaaS platforms include GitHub, GitLab, BitBucket, SourceForge, SourceHut, and Codeberg.</p>
-<p>Our short list for open collaboration includes GitLab, SourceHut, and Codeberg.</p>
-<h3>Self-Hosted</h3>
-<p>Software for self-hosted Git forges include <a href="https://about.gitlab.com/install/">GitLab</a>, <a href="https://gitea.io/en-us/">Gitea</a>, <a href="https://forgejo.org/">Forgejo</a>, <a href="https://gogs.io/">Gogs</a>, <a href="https://www.gerritcodereview.com/">Gerrit</a>, <a href="https://man.sr.ht/installation.md">SourceHut</a>, and <a href="https://gitolite.com/">Gitolite</a>.</p>
-<p>GitLab, SourceHut, and Gerrit require significant infrastructure setup.</p>
-<p>Gitolite is great for a personal Git forge, but is too lightweight for a collaborative forge.</p>
-<p><a href="https://blog.gitea.io/2016/12/welcome-to-gitea/">Gogs was forked in 2016</a> to create Gitea. Gitea is likely a better choice.</p>
-<p>The <a href="https://blog.gitea.io/2022/10/open-source-sustainment-and-the-future-of-gitea/">Gitea maintainers announced a commercial company, Gitea Ltd</a> in 2022-10, which now owns the Gitea domains and trademarks and stewards the open source project.</p>
-<p>This <a href="https://news.ycombinator.com/item?id=33749757">spooked some of the Gitea community</a>, particular Codeberg, which <a href="https://forgejo.org/faq/">forked Gitea to create Forgejo</a> in 2022-11. As of this writing, it's not clear whether Gitea or Forgejo would be a better choice for a self-hosted forge.</p>
-<h2>Collective Sense Commons</h2>
-<p>Peter Kaminski, maintainer of Collective Sense Commons (CSC), has expressed interest in having CSC host a Gitea (or now, perhaps Forgejo) instance.  CSC and Massive Wiki are partner communities.</p>
-<h2>Current Thinking by Pete</h2>
-<h3>SourceHut</h3>
-<p>I have a ton of respect for Drew DeVault, SourceHut's creator and maintainer, and I've been a paid personal SourceHut supporter at the "Amateur Hackers" level since 2018-11.</p>
-<p>Drew is a staunch open source advocate. He runs SourceHut in an opinionated and focused manner, and I appreciate the strength of his leadership and his dedication to transparency and community service.  However, since Massive Wiki repos are more often content than code, I am concerned that SourceHut is not an appropriate venue as a general purpose forge for Massive Wiki.</p>
-<h3>CSC Gitea or Forgejo</h3>
-<p>I would love to have CSC host a Git forge for Massive Wiki and other communities.</p>
-<p>CSC currently does not have the resources or bandwidth it would require, though.</p>
-<h3>Codeberg, and the Need for CI / Build</h3>
-<p>Therefore, I think Codeberg may be the best forge to focus on for the Massive Wiki community at this time.</p>
-<p>We currently rely heavily on automated deployment from GitHub to Netlify for the Massive Wiki community, and it enables non-technical users of Massive Wiki to publish to the web, without any manual intervention (after starting with the Massive Wiki Starter repo template).</p>
-<p>Netlify has API access, and I've used it to publish static sites. It appears, though, that Netlify won't build a site that's uploaded via API.</p>
-<p>A service could be built that takes a webhook notification from Codeberg, builds the Massive Wiki static files, then uploads them to Netlify.  This could be Massive Wiki-specific (it only builds Massive Wikis), or more general, by using a CI tool like <a href="https://woodpecker-ci.org/">Woodpecker CI</a>.</p>
-<p>Another thing to check: whether Vercel would do a build and deploy via API.</p>
-<h2>Continuing Evolution</h2>
-<p>Preferring a particular forge for now -- or even preferring a forge, rather than something that works peer-to-peer -- is not an end state, but another step in an evolution.</p>
-<p>The community should continue to evaluate its Git coordination strategy, and because it's Git, it should never be too hard to make another step towards a preferred solution.</p>
+      &lt;h1&gt;Tech Note - Preferring a Different Git Forge&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;last edit: 2022-12-06, Pete&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Up until now (~2022-12), Massive Wiki community projects that use a &lt;span class=&#34;incipient-wikilink&#34;&gt;Git forge&lt;/span&gt;, either for code, or for syncing and versioning wiki files, have typically used &lt;span class=&#34;incipient-wikilink&#34;&gt;GitHub&lt;/span&gt; as their centralizing forge, for the sake of convenience and audience reach.&lt;/p&gt;
+&lt;p&gt;However, a key principle of Massive Wiki, and wiki in general, is enablement and encouragement of &lt;span class=&#34;incipient-wikilink&#34;&gt;open collaboration&lt;/span&gt;. While GitHub was a key catalyzer of the open source movement, the software underlying the platform has never been open source. Also, Microsoft&#39;s purchase and control of GitHub since 2018 is problematic for the open source ecosystem.&lt;/p&gt;
+&lt;p&gt;Therefore, the Massive Wiki community wishes to reduce its GitHub footprint, and increase use of another Git forge.  This page will serve to illuminate some of the choices and challenges in deciding which Git forge (or forges) to migrate to.&lt;/p&gt;
+&lt;h2&gt;Capabilities and Limitations of Forges&lt;/h2&gt;
+&lt;p&gt;An initial observation: because Git is already a standardized protocol for moving files in a repo from one computer to another, migrating between forges is easy and, in fact, is similar to normal use of Git.&lt;/p&gt;
+&lt;p&gt;However, there &lt;em&gt;are&lt;/em&gt; differences between forges in the collaboration and operations (e.g., deployment) processes they enable.&lt;/p&gt;
+&lt;p&gt;For instance, GitHub has easy and rich features that allow discussion and workflow around Git forks, branches, and commits.  For the deployment of static web sites (such as those built by &lt;span class=&#34;incipient-wikilink&#34;&gt;Massive Wiki Builder&lt;/span&gt;), &lt;span class=&#34;incipient-wikilink&#34;&gt;Netlify&lt;/span&gt; and &lt;span class=&#34;incipient-wikilink&#34;&gt;Vercel&lt;/span&gt; can automate deployment for repos hosted by GitHub, GitLab, and BitBucket.&lt;/p&gt;
+&lt;p&gt;In moving to another forge, the Massive Wiki community will need to adapt its workflows to the capabilities and limitations of the new forge.&lt;/p&gt;
+&lt;h2&gt;SaaS vs. Self-Hosted&lt;/h2&gt;
+&lt;p&gt;A key consideration in evaluating a new forge is whether the forge will be a cloud SaaS platform operated by a third party, or if it will be self-hosted by Massive Wiki community members or partners.&lt;/p&gt;
+&lt;h3&gt;SaaS&lt;/h3&gt;
+&lt;p&gt;Cloud SaaS platforms include GitHub, GitLab, BitBucket, SourceForge, SourceHut, and Codeberg.&lt;/p&gt;
+&lt;p&gt;Our short list for open collaboration includes GitLab, SourceHut, and Codeberg.&lt;/p&gt;
+&lt;h3&gt;Self-Hosted&lt;/h3&gt;
+&lt;p&gt;Software for self-hosted Git forges include &lt;a href=&#34;https://about.gitlab.com/install/&#34;&gt;GitLab&lt;/a&gt;, &lt;a href=&#34;https://gitea.io/en-us/&#34;&gt;Gitea&lt;/a&gt;, &lt;a href=&#34;https://forgejo.org/&#34;&gt;Forgejo&lt;/a&gt;, &lt;a href=&#34;https://gogs.io/&#34;&gt;Gogs&lt;/a&gt;, &lt;a href=&#34;https://www.gerritcodereview.com/&#34;&gt;Gerrit&lt;/a&gt;, &lt;a href=&#34;https://man.sr.ht/installation.md&#34;&gt;SourceHut&lt;/a&gt;, and &lt;a href=&#34;https://gitolite.com/&#34;&gt;Gitolite&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;GitLab, SourceHut, and Gerrit require significant infrastructure setup.&lt;/p&gt;
+&lt;p&gt;Gitolite is great for a personal Git forge, but is too lightweight for a collaborative forge.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.gitea.io/2016/12/welcome-to-gitea/&#34;&gt;Gogs was forked in 2016&lt;/a&gt; to create Gitea. Gitea is likely a better choice.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://blog.gitea.io/2022/10/open-source-sustainment-and-the-future-of-gitea/&#34;&gt;Gitea maintainers announced a commercial company, Gitea Ltd&lt;/a&gt; in 2022-10, which now owns the Gitea domains and trademarks and stewards the open source project.&lt;/p&gt;
+&lt;p&gt;This &lt;a href=&#34;https://news.ycombinator.com/item?id=33749757&#34;&gt;spooked some of the Gitea community&lt;/a&gt;, particular Codeberg, which &lt;a href=&#34;https://forgejo.org/faq/&#34;&gt;forked Gitea to create Forgejo&lt;/a&gt; in 2022-11. As of this writing, it&#39;s not clear whether Gitea or Forgejo would be a better choice for a self-hosted forge.&lt;/p&gt;
+&lt;h2&gt;Collective Sense Commons&lt;/h2&gt;
+&lt;p&gt;Peter Kaminski, maintainer of Collective Sense Commons (CSC), has expressed interest in having CSC host a Gitea (or now, perhaps Forgejo) instance.  CSC and Massive Wiki are partner communities.&lt;/p&gt;
+&lt;h2&gt;Current Thinking by Pete&lt;/h2&gt;
+&lt;h3&gt;SourceHut&lt;/h3&gt;
+&lt;p&gt;I have a ton of respect for Drew DeVault, SourceHut&#39;s creator and maintainer, and I&#39;ve been a paid personal SourceHut supporter at the &#34;Amateur Hackers&#34; level since 2018-11.&lt;/p&gt;
+&lt;p&gt;Drew is a staunch open source advocate. He runs SourceHut in an opinionated and focused manner, and I appreciate the strength of his leadership and his dedication to transparency and community service.  However, since Massive Wiki repos are more often content than code, I am concerned that SourceHut is not an appropriate venue as a general purpose forge for Massive Wiki.&lt;/p&gt;
+&lt;h3&gt;CSC Gitea or Forgejo&lt;/h3&gt;
+&lt;p&gt;I would love to have CSC host a Git forge for Massive Wiki and other communities.&lt;/p&gt;
+&lt;p&gt;CSC currently does not have the resources or bandwidth it would require, though.&lt;/p&gt;
+&lt;h3&gt;Codeberg, and the Need for CI / Build&lt;/h3&gt;
+&lt;p&gt;Therefore, I think Codeberg may be the best forge to focus on for the Massive Wiki community at this time.&lt;/p&gt;
+&lt;p&gt;We currently rely heavily on automated deployment from GitHub to Netlify for the Massive Wiki community, and it enables non-technical users of Massive Wiki to publish to the web, without any manual intervention (after starting with the Massive Wiki Starter repo template).&lt;/p&gt;
+&lt;p&gt;Netlify has API access, and I&#39;ve used it to publish static sites. It appears, though, that Netlify won&#39;t build a site that&#39;s uploaded via API.&lt;/p&gt;
+&lt;p&gt;A service could be built that takes a webhook notification from Codeberg, builds the Massive Wiki static files, then uploads them to Netlify.  This could be Massive Wiki-specific (it only builds Massive Wikis), or more general, by using a CI tool like &lt;a href=&#34;https://woodpecker-ci.org/&#34;&gt;Woodpecker CI&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Another thing to check: whether Vercel would do a build and deploy via API.&lt;/p&gt;
+&lt;h2&gt;Continuing Evolution&lt;/h2&gt;
+&lt;p&gt;Preferring a particular forge for now -- or even preferring a forge, rather than something that works peer-to-peer -- is not an end state, but another step in an evolution.&lt;/p&gt;
+&lt;p&gt;The community should continue to evaluate its Git coordination strategy, and because it&#39;s Git, it should never be too hard to make another step towards a preferred solution.&lt;/p&gt;
 
       
     </div>
@@ -116,9 +116,9 @@ don't worry if things look different for a while!)</p>
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
-    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
-    <div><em>Site last updated on Wednesday, October 23, 2024 at 20:40 UTC.</em></div>
+    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
+    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 15:37 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>

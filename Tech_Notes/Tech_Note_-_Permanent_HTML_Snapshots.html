@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729716029.5234456.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729784267.595525.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729716029.5234456.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729784267.595525.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      <p>(we are switching to a new theme,<br />
-don't worry if things look different for a while!)</p>
-<h2>Site Navigation</h2>
-<div class="navlinks">
-<ul>
-<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
-<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
-<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
-<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
-</ul>
-</div>
-<div class="navlinks">
-  <button onclick="location.href=`${randomPageLink()}`">
+      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
+don&#39;t worry if things look different for a while!)&lt;/p&gt;
+&lt;h2&gt;Site Navigation&lt;/h2&gt;
+&lt;div class=&#34;navlinks&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;navlinks&#34;&gt;
+  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
     RANDOM PAGE
-  </button>
-</div>
-<h2>Plans</h2>
-<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
-<h2>For Testing</h2>
-<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
-<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;h2&gt;Plans&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;For Testing&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
 
     </div>
 
@@ -68,22 +68,22 @@ don't worry if things look different for a while!)</p>
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      <h1>Tech Note - Permanent HTML Snapshots</h1>
-<p><em>last edit: 2022-12-19, Pete</em>
-<em>document status: stub</em></p>
-<p>A solution that's different than <a class="wikilink" href="/developer-massive-wiki/Tech_Notes/Tech_Note_-_Permanent_Versions.html">Permanent Versions</a>.</p>
-<p>Render an HTML copy of the page, store it alongside the original (in the same directory). Use the usual slug, but append the SHA-256 hex hash truncated to 128 bits (32 hex characters) after the slug but before ".html". Share the URL with the ".html" extension. (Note if a file is named with ".html", some web hosts (e.g., <span class="incipient-wikilink">Netlify</span>) will also serve the page without needing the ".html", but for long-term safety, share with ".html".)</p>
-<p>Add a note like this at the top of the page (before rendering, so it's included in the hash; but do not leave this message in the live version of the page):</p>
-<blockquote>
-<p><em>You are reading a permanent snapshot of this page, originally shared on 2022-12-19 22:50Z at this permalink web address. If there is a newer version, it might be at <a class="wikilink" href="/developer-massive-wiki/Tech_Notes/Tech_Note_-_Permanent_HTML_Snapshots.html">Tech Note - Permanent HTML Snapshots</a>, or you may find other versions of this page by using search on this website or elsewhere.</em></p>
-</blockquote>
-<p>Leave the rendered HTML file in your repo/vault/wiki forever.</p>
-<h2>Triggering Snapshots</h2>
-<p>Options:</p>
-<ol>
-<li>A permanent HTML snapshot is created when the user wants to share / publish the page externally. Pros: no undue proliferation of HTML snapshots, useful for purposeful sharing on social media. Cons: not linked to the rest of the site, search engines won't find it; readers can't bookmark a permanent snapshot that does not exist. Amelioration for search engines; have a generated index of all snapshots.</li>
-<li>A permanent HTML snapshot for all pages is created at every commit, and all the internal links use the most recent snapshot URL, rather than the live page URL. Pros: all snapshots are linked, readers can bookmark a snapshot for any page, not just manually shared / published pages, readers / search engines / bots can read an entire internally consistent version of the repo at a point in time. Cons: HTML snapshots will proliferate and crowd live Markdown pages; internal links change every commit in every page that has links.</li>
-</ol>
+      &lt;h1&gt;Tech Note - Permanent HTML Snapshots&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;last edit: 2022-12-19, Pete&lt;/em&gt;
+&lt;em&gt;document status: stub&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A solution that&#39;s different than &lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Tech_Notes/Tech_Note_-_Permanent_Versions.html&#34;&gt;Permanent Versions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Render an HTML copy of the page, store it alongside the original (in the same directory). Use the usual slug, but append the SHA-256 hex hash truncated to 128 bits (32 hex characters) after the slug but before &#34;.html&#34;. Share the URL with the &#34;.html&#34; extension. (Note if a file is named with &#34;.html&#34;, some web hosts (e.g., &lt;span class=&#34;incipient-wikilink&#34;&gt;Netlify&lt;/span&gt;) will also serve the page without needing the &#34;.html&#34;, but for long-term safety, share with &#34;.html&#34;.)&lt;/p&gt;
+&lt;p&gt;Add a note like this at the top of the page (before rendering, so it&#39;s included in the hash; but do not leave this message in the live version of the page):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;You are reading a permanent snapshot of this page, originally shared on 2022-12-19 22:50Z at this permalink web address. If there is a newer version, it might be at &lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Tech_Notes/Tech_Note_-_Permanent_HTML_Snapshots.html&#34;&gt;Tech Note - Permanent HTML Snapshots&lt;/a&gt;, or you may find other versions of this page by using search on this website or elsewhere.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Leave the rendered HTML file in your repo/vault/wiki forever.&lt;/p&gt;
+&lt;h2&gt;Triggering Snapshots&lt;/h2&gt;
+&lt;p&gt;Options:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A permanent HTML snapshot is created when the user wants to share / publish the page externally. Pros: no undue proliferation of HTML snapshots, useful for purposeful sharing on social media. Cons: not linked to the rest of the site, search engines won&#39;t find it; readers can&#39;t bookmark a permanent snapshot that does not exist. Amelioration for search engines; have a generated index of all snapshots.&lt;/li&gt;
+&lt;li&gt;A permanent HTML snapshot for all pages is created at every commit, and all the internal links use the most recent snapshot URL, rather than the live page URL. Pros: all snapshots are linked, readers can bookmark a snapshot for any page, not just manually shared / published pages, readers / search engines / bots can read an entire internally consistent version of the repo at a point in time. Cons: HTML snapshots will proliferate and crowd live Markdown pages; internal links change every commit in every page that has links.&lt;/li&gt;
+&lt;/ol&gt;
 
       
       <hr>
@@ -103,9 +103,9 @@ don't worry if things look different for a while!)</p>
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
-    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
-    <div><em>Site last updated on Wednesday, October 23, 2024 at 20:40 UTC.</em></div>
+    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
+    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 15:37 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>

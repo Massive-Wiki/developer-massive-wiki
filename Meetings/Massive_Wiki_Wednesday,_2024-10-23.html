@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729716029.5234456.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729784267.595525.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729716029.5234456.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729784267.595525.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      <p>(we are switching to a new theme,<br />
-don't worry if things look different for a while!)</p>
-<h2>Site Navigation</h2>
-<div class="navlinks">
-<ul>
-<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
-<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
-<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
-<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
-</ul>
-</div>
-<div class="navlinks">
-  <button onclick="location.href=`${randomPageLink()}`">
+      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
+don&#39;t worry if things look different for a while!)&lt;/p&gt;
+&lt;h2&gt;Site Navigation&lt;/h2&gt;
+&lt;div class=&#34;navlinks&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;navlinks&#34;&gt;
+  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
     RANDOM PAGE
-  </button>
-</div>
-<h2>Plans</h2>
-<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
-<h2>For Testing</h2>
-<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
-<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;h2&gt;Plans&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;For Testing&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
 
     </div>
 
@@ -68,88 +68,88 @@ don't worry if things look different for a while!)</p>
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      <h1>Massive Wiki Wednesday, 2024-10-23</h1>
-<p>MassiveWikiWednesday agenda items:</p>
-<ul>
-<li>review recent automated security check of <code>nxc.py</code> issues
-<ul>
-<li>do <code>env = Environment(autoescape=True)</code> or equivalent</li>
-</ul>
-</li>
-<li>review using <code>logging.getLogger(__name__)</code> to include module names in messages
-<ul>
-<li>Yes</li>
-</ul>
-</li>
-<li>specify the remaining MUST HAVE items for PyPI package release
-<ul>
-<li>name</li>
-<li>documentation of support for netlify and GitHub pages builds?</li>
-<li>include "excluded directories" capability?
-<ul>
-<li>Yes</li>
-</ul>
-</li>
-<li>what is left for the <code>dolce</code> theme CSS?  replace content of <code>styles.css</code> with the contents of <code>alt-styles.css</code>
-<ul>
-<li>Yes</li>
-</ul>
-</li>
-<li>include a minimal <code>Sidebar.md</code>? when initializing existing MWB setup (do not overwrite existing <code>Sidebar.md</code>)
-<ul>
-<li>Yes</li>
-</ul>
-</li>
-<li>remove <code>Sidebar.md</code> from All-Pages list?
-<ul>
-<li>Some day, i.e., Later</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>remember to replace and modify MassiveWikiBuilder references in webpages; e.g., <code>search.html</code></li>
-<li>add <code>nxc</code> command to enable GitHub Pages publishing
-<ul>
-<li><code>nxc enable-github-pages</code></li>
-</ul>
-</li>
-<li>document information about default website theme, and how it may be customized
-<ul>
-<li>With the <code>nxc</code> package, just say that the website appearance can be modified by changing the theme or using a new theme, then point to the NXC theme repo (which will be a copy+edits of <a href="https://github.com/Massive-Wiki/massive-wiki-themes">https://github.com/Massive-Wiki/massive-wiki-themes</a>)</li>
-</ul>
-</li>
-<li>check that <code>nxc build -h</code> returns enough useful help</li>
-</ul>
-<h2>Dolce CSS Changes</h2>
-<p>These changes tighten up blank vertical space.</p>
-<ul>
-<li>in <code>#header</code>, make <code>margin-bottom</code> 0.2em</li>
-<li>in <code>#main-column</code>, make <code>padding</code> 0px 20px 20px 20px</li>
-<li>in <code>.footer</code>, make padding: 2rem 0rem 4rem;</li>
-</ul>
-<h2>Logging setup example</h2>
-<pre><code class="language-python=">def setup_logging(log_level: str) -&gt; None:
-    """
+      &lt;h1&gt;Massive Wiki Wednesday, 2024-10-23&lt;/h1&gt;
+&lt;p&gt;MassiveWikiWednesday agenda items:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;review recent automated security check of &lt;code&gt;nxc.py&lt;/code&gt; issues
+&lt;ul&gt;
+&lt;li&gt;do &lt;code&gt;env = Environment(autoescape=True)&lt;/code&gt; or equivalent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;review using &lt;code&gt;logging.getLogger(__name__)&lt;/code&gt; to include module names in messages
+&lt;ul&gt;
+&lt;li&gt;Yes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;specify the remaining MUST HAVE items for PyPI package release
+&lt;ul&gt;
+&lt;li&gt;name&lt;/li&gt;
+&lt;li&gt;documentation of support for netlify and GitHub pages builds?&lt;/li&gt;
+&lt;li&gt;include &#34;excluded directories&#34; capability?
+&lt;ul&gt;
+&lt;li&gt;Yes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;what is left for the &lt;code&gt;dolce&lt;/code&gt; theme CSS?  replace content of &lt;code&gt;styles.css&lt;/code&gt; with the contents of &lt;code&gt;alt-styles.css&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;Yes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;include a minimal &lt;code&gt;Sidebar.md&lt;/code&gt;? when initializing existing MWB setup (do not overwrite existing &lt;code&gt;Sidebar.md&lt;/code&gt;)
+&lt;ul&gt;
+&lt;li&gt;Yes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;remove &lt;code&gt;Sidebar.md&lt;/code&gt; from All-Pages list?
+&lt;ul&gt;
+&lt;li&gt;Some day, i.e., Later&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;remember to replace and modify MassiveWikiBuilder references in webpages; e.g., &lt;code&gt;search.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;add &lt;code&gt;nxc&lt;/code&gt; command to enable GitHub Pages publishing
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;nxc enable-github-pages&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;document information about default website theme, and how it may be customized
+&lt;ul&gt;
+&lt;li&gt;With the &lt;code&gt;nxc&lt;/code&gt; package, just say that the website appearance can be modified by changing the theme or using a new theme, then point to the NXC theme repo (which will be a copy+edits of &lt;a href=&#34;https://github.com/Massive-Wiki/massive-wiki-themes&#34;&gt;https://github.com/Massive-Wiki/massive-wiki-themes&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;check that &lt;code&gt;nxc build -h&lt;/code&gt; returns enough useful help&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Dolce CSS Changes&lt;/h2&gt;
+&lt;p&gt;These changes tighten up blank vertical space.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;in &lt;code&gt;#header&lt;/code&gt;, make &lt;code&gt;margin-bottom&lt;/code&gt; 0.2em&lt;/li&gt;
+&lt;li&gt;in &lt;code&gt;#main-column&lt;/code&gt;, make &lt;code&gt;padding&lt;/code&gt; 0px 20px 20px 20px&lt;/li&gt;
+&lt;li&gt;in &lt;code&gt;.footer&lt;/code&gt;, make padding: 2rem 0rem 4rem;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Logging setup example&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python=&#34;&gt;def setup_logging(log_level: str) -&amp;gt; None:
+    &#34;&#34;&#34;
     Configure logging based on the provided log level.
-    """
+    &#34;&#34;&#34;
     numeric_level = getattr(logging, log_level.upper(), None)
     if not isinstance(numeric_level, int):
-        print(f"Invalid log level: {log_level}", file=sys.stderr)
+        print(f&#34;Invalid log level: {log_level}&#34;, file=sys.stderr)
         sys.exit(1)
     logging.basicConfig(
         level=numeric_level,
-        format='%(asctime)s - %(levelname)s - %(filename)s:%(lineno)d - %(message)s'
+        format=&#39;%(asctime)s - %(levelname)s - %(filename)s:%(lineno)d - %(message)s&#39;
     )
-    logging.debug(f"Logging is set to {log_level} level.")
-</code></pre>
-<h2>Adding <code>excluded_directories</code> to nxc.yaml</h2>
-<pre><code class="language-yaml">wiki_title: Developer Wiki (Massive Wiki)
+    logging.debug(f&#34;Logging is set to {log_level} level.&#34;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Adding &lt;code&gt;excluded_directories&lt;/code&gt; to nxc.yaml&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;wiki_title: Developer Wiki (Massive Wiki)
 author: the Massive Wiki Team
 edit_url: https://github.com/Massive-Wiki/developer-massive-wiki/edit/
 edit_branch: main
-repo: &lt;a href="https://github.com/Massive-Wiki/developer-massive-wiki"&gt;developer-massive-wiki&lt;/a&gt;
-license: &lt;a href="http://creativecommons.org/licenses/by/4.0/"&gt;Creative Commons Attribution
-  4.0 International License&lt;/a&gt;
+repo: &amp;lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&amp;gt;developer-massive-wiki&amp;lt;/a&amp;gt;
+license: &amp;lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&amp;gt;Creative Commons Attribution
+  4.0 International License&amp;lt;/a&amp;gt;
 recent_changes_count: 5
 sidebar: Sidebar.md
 excluded_directories:
@@ -157,7 +157,7 @@ excluded_directories:
   - .github
   - node_modules
   - _site
-</code></pre>
+&lt;/code&gt;&lt;/pre&gt;
 
       
     </div>
@@ -165,9 +165,9 @@ excluded_directories:
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
-    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
-    <div><em>Site last updated on Wednesday, October 23, 2024 at 20:40 UTC.</em></div>
+    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
+    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 15:37 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>

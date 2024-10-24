@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729716029.5234456.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729784267.595525.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729716029.5234456.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729784267.595525.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      <p>(we are switching to a new theme,<br />
-don't worry if things look different for a while!)</p>
-<h2>Site Navigation</h2>
-<div class="navlinks">
-<ul>
-<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
-<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
-<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
-<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
-</ul>
-</div>
-<div class="navlinks">
-  <button onclick="location.href=`${randomPageLink()}`">
+      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
+don&#39;t worry if things look different for a while!)&lt;/p&gt;
+&lt;h2&gt;Site Navigation&lt;/h2&gt;
+&lt;div class=&#34;navlinks&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;navlinks&#34;&gt;
+  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
     RANDOM PAGE
-  </button>
-</div>
-<h2>Plans</h2>
-<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
-<h2>For Testing</h2>
-<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
-<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;h2&gt;Plans&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;For Testing&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
 
     </div>
 
@@ -68,193 +68,193 @@ don't worry if things look different for a while!)</p>
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      <h1>Installing Obsidian + Obsidian Git</h1>
-<h2>Page History</h2>
-<ul>
-<li>Most of the page below is from 2022-09-29</li>
-<li>Pete validated the core Git install approach on 2024-06-04
-<ul>
-<li>Windows Server 2022 21H2</li>
-<li>Git-for-Windows (64-bit) as below</li>
-<li><code>git clone</code> from GitHub with https triggered authentication</li>
-</ul>
-</li>
-</ul>
-<h2>Setup</h2>
-<ul>
-<li>fresh Windows 10 machine on AWS</li>
-<li>Obsidian v0.15.9</li>
-<li>Mathew's Windows 10 machine</li>
-</ul>
-<h2>Recap</h2>
-<ul>
-<li>Installing Obsidian, Git-for-Windows, and Obsidian Git plugin was sufficient to get everything working!</li>
-<li>We deprecated use of GitHub Desktop - it's not needed, and it's confusing to have one more software package to juggle.</li>
-<li>On the flip side, we are currently using Obsidian Git's "Clone an existing remote repo" command, which seems to only allow creating directories inside the current vault. (Clicking the "..." button makes the clone dialog window go away.)
-<ul>
-<li>This means that the user needs to find the newly-created clone directory, and move it up a level.</li>
-</ul>
-</li>
-<li>Also, user needs to install Obsidian Git (again) in the newly-created clone directory.</li>
-<li>There are places to ignore errors:
-<ul>
-<li>when you don't have a .git directory (can be fixed with Obsidian Git command to initialize repo)</li>
-</ul>
-</li>
-<li>Filename errors in Developer Wiki prevented it from cloning properly on Windows. We fixed <code>"Breadcrumbs"</code>, we didn't fix a link testing file.</li>
-<li>Separately, Mathew and Pete created a <a href="https://github.com/Fellowship-of-the-Link">Fellowship of the Link organization in GitHub</a> for TfT repo(s).</li>
-</ul>
-<h2>Software installs</h2>
-<ol>
-<li>Git-for-Windows (64-bit): https://git-scm.com/download/win
-<ul>
-<li>select "Use Notepad as Git's default editor"</li>
-<li>usually, select "Override the default branch name for new repositories" and choose "main" (ask your Git teammates for help if you have questions)</li>
-<li>leave "Git from the command line and also from 3rd-party software"</li>
-<li>leave "Checkout Windows-style, commit Unix-style line endings"</li>
-<li>leave "Default (fast-forward or merge)"</li>
-<li>leave "Git Credential Manager"</li>
-</ul>
-</li>
-<li>Obsidian: https://obsidian.md/</li>
-<li>Obsidian Git (in Community Plugins in Obsidian)</li>
-</ol>
-<p>Now we test the setup by attempting to commit and push this file to the GitHub repository.</p>
-<p>Success!</p>
-<ul>
-<li>Initiating Push in Obsidian brings up a GitHub dialog box requesting login to GitHub via browser, sign in with a code, sign in with a personal access token, or "Don't have an account? Sign Up").</li>
-<li>GitHub opens to dialog box requesting authorization; click the green button.</li>
-<li>Authentication succeeds <em>and</em> Obsidian completes the Push operation.</li>
-</ul>
-<h2>Sekrit Debugging Tricks</h2>
-<ul>
-<li>in Obsidian, use Shift-Ctrl-I (Windows) or Shift-Cmd-I (Mac) to turn on debugging console</li>
-</ul>
-<h2>Obsidian</h2>
-<ul>
-<li>download obsidian (if needed)</li>
-<li>Create new vault
-<ul>
-<li>Vault name (pick something like "My First Vault", use "Documents" for location)</li>
-<li>click the "new note" icon, name your page something like "My First Note", and add some text to it</li>
-</ul>
-</li>
-<li>open Settings (explain icon, etc.)</li>
-<li>click "Community plugins", read the info (scroll down if needed)
-<ul>
-<li>e.g., "Community plugins, like any other software you install, could potentially cause data integrity and security issues." ...</li>
-</ul>
-</li>
-<li>click "Turn on community plugins"</li>
-<li>Restricted mode: leave off</li>
-<li>click "Browse"</li>
-<li>in the search box, type "Git"</li>
-<li>select "Obsidian Git"</li>
-<li>click "Install"</li>
-<li>click "Enable"
-<ul>
-<li>error popup, just ignore - "Error: fatal: not a git repository (or any of
-the parent directories): .git"</li>
-</ul>
-</li>
-</ul>
-<h2>Obsidian Git</h2>
-<ul>
-<li>Obsidian Git: Clone an existing remote repo
-<ul>
-<li>https://github.com/Massive-Wiki/massive-sandbox
-<ul>
-<li>https://github.com/Massive-Wiki/massive-sandbox.git</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>In "Enter directory for clone" textbox, put "massive-sandbox" (same as above, after the last slash, but without ".git")</li>
-</ul>
-<h2>Workflow (That Worked)</h2>
-<ul>
-<li>fork Massive Sandbox into your own GitHub account
-<ul>
-<li>can leave name as "massive-sandbox" or change to "my-massive-sandbox" or whatever</li>
-<li>get the "code" url, e.g. https://github.com/peterkaminski/my-massive-sandbox.git</li>
-<li>in Obsidian, in "My Vault", clone existing repo
-<ul>
-<li>url: https://github.com/peterkaminski/my-massive-sandbox.git</li>
-<li>directory (will be inside "My Vault"): my-massive-sandbox</li>
-<li>(it's okay to ignore "you need to restart Obsidian message")</li>
-</ul>
-</li>
-<li>in File Explorer, move my-massive-sandbox out of My Vault into Documents</li>
-<li>in Obsidian, "Open folder as vault" and open my-massive-sandbox</li>
-<li>in new vault, install Obsidian Git <strong>again</strong> ::sigh::</li>
-<li>open Obsidian Git Source Control View panel (explain more)
-<ul>
-<li>pull (should say "Everything up-to-date")</li>
-<li>push (should pop up the "Connect to GitHub" popup, can sign in with your browser, sign in with a code, sign in with a personal access token, or "Don't have an account? Sign Up")</li>
-<li>remember to set up Git username and email
-<ul>
-<li><code>git config --global user.name "FIRST_NAME LAST_NAME"</code></li>
-<li><code>git config --global user.email "MY_NAME@example.com"</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2>Fun Errors</h2>
-<h3>filename problem</h3>
-<ul>
-<li><a href="https://forum.obsidian.md/t/files-with-question-marks-on-name-title-arent-being-synced-on-mobile/21352/4">Files with question marks (?) on name title aren't being synced on mobile - Bug graveyard - Obsidian Forum</a></li>
-</ul>
-<pre><code>Uncaught (in promise) Error: Cloning into plugin: obsidian-git:23833
-'C: \Users \Administrator \Documents \My First Vault\developer-massive-wiki'
-error: invalid path '"Breadcrumb" test page. md'
+      &lt;h1&gt;Installing Obsidian + Obsidian Git&lt;/h1&gt;
+&lt;h2&gt;Page History&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Most of the page below is from 2022-09-29&lt;/li&gt;
+&lt;li&gt;Pete validated the core Git install approach on 2024-06-04
+&lt;ul&gt;
+&lt;li&gt;Windows Server 2022 21H2&lt;/li&gt;
+&lt;li&gt;Git-for-Windows (64-bit) as below&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git clone&lt;/code&gt; from GitHub with https triggered authentication&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Setup&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fresh Windows 10 machine on AWS&lt;/li&gt;
+&lt;li&gt;Obsidian v0.15.9&lt;/li&gt;
+&lt;li&gt;Mathew&#39;s Windows 10 machine&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Recap&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Installing Obsidian, Git-for-Windows, and Obsidian Git plugin was sufficient to get everything working!&lt;/li&gt;
+&lt;li&gt;We deprecated use of GitHub Desktop - it&#39;s not needed, and it&#39;s confusing to have one more software package to juggle.&lt;/li&gt;
+&lt;li&gt;On the flip side, we are currently using Obsidian Git&#39;s &#34;Clone an existing remote repo&#34; command, which seems to only allow creating directories inside the current vault. (Clicking the &#34;...&#34; button makes the clone dialog window go away.)
+&lt;ul&gt;
+&lt;li&gt;This means that the user needs to find the newly-created clone directory, and move it up a level.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Also, user needs to install Obsidian Git (again) in the newly-created clone directory.&lt;/li&gt;
+&lt;li&gt;There are places to ignore errors:
+&lt;ul&gt;
+&lt;li&gt;when you don&#39;t have a .git directory (can be fixed with Obsidian Git command to initialize repo)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Filename errors in Developer Wiki prevented it from cloning properly on Windows. We fixed &lt;code&gt;&#34;Breadcrumbs&#34;&lt;/code&gt;, we didn&#39;t fix a link testing file.&lt;/li&gt;
+&lt;li&gt;Separately, Mathew and Pete created a &lt;a href=&#34;https://github.com/Fellowship-of-the-Link&#34;&gt;Fellowship of the Link organization in GitHub&lt;/a&gt; for TfT repo(s).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Software installs&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Git-for-Windows (64-bit): https://git-scm.com/download/win
+&lt;ul&gt;
+&lt;li&gt;select &#34;Use Notepad as Git&#39;s default editor&#34;&lt;/li&gt;
+&lt;li&gt;usually, select &#34;Override the default branch name for new repositories&#34; and choose &#34;main&#34; (ask your Git teammates for help if you have questions)&lt;/li&gt;
+&lt;li&gt;leave &#34;Git from the command line and also from 3rd-party software&#34;&lt;/li&gt;
+&lt;li&gt;leave &#34;Checkout Windows-style, commit Unix-style line endings&#34;&lt;/li&gt;
+&lt;li&gt;leave &#34;Default (fast-forward or merge)&#34;&lt;/li&gt;
+&lt;li&gt;leave &#34;Git Credential Manager&#34;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Obsidian: https://obsidian.md/&lt;/li&gt;
+&lt;li&gt;Obsidian Git (in Community Plugins in Obsidian)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now we test the setup by attempting to commit and push this file to the GitHub repository.&lt;/p&gt;
+&lt;p&gt;Success!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Initiating Push in Obsidian brings up a GitHub dialog box requesting login to GitHub via browser, sign in with a code, sign in with a personal access token, or &#34;Don&#39;t have an account? Sign Up&#34;).&lt;/li&gt;
+&lt;li&gt;GitHub opens to dialog box requesting authorization; click the green button.&lt;/li&gt;
+&lt;li&gt;Authentication succeeds &lt;em&gt;and&lt;/em&gt; Obsidian completes the Push operation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Sekrit Debugging Tricks&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;in Obsidian, use Shift-Ctrl-I (Windows) or Shift-Cmd-I (Mac) to turn on debugging console&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Obsidian&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;download obsidian (if needed)&lt;/li&gt;
+&lt;li&gt;Create new vault
+&lt;ul&gt;
+&lt;li&gt;Vault name (pick something like &#34;My First Vault&#34;, use &#34;Documents&#34; for location)&lt;/li&gt;
+&lt;li&gt;click the &#34;new note&#34; icon, name your page something like &#34;My First Note&#34;, and add some text to it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;open Settings (explain icon, etc.)&lt;/li&gt;
+&lt;li&gt;click &#34;Community plugins&#34;, read the info (scroll down if needed)
+&lt;ul&gt;
+&lt;li&gt;e.g., &#34;Community plugins, like any other software you install, could potentially cause data integrity and security issues.&#34; ...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;click &#34;Turn on community plugins&#34;&lt;/li&gt;
+&lt;li&gt;Restricted mode: leave off&lt;/li&gt;
+&lt;li&gt;click &#34;Browse&#34;&lt;/li&gt;
+&lt;li&gt;in the search box, type &#34;Git&#34;&lt;/li&gt;
+&lt;li&gt;select &#34;Obsidian Git&#34;&lt;/li&gt;
+&lt;li&gt;click &#34;Install&#34;&lt;/li&gt;
+&lt;li&gt;click &#34;Enable&#34;
+&lt;ul&gt;
+&lt;li&gt;error popup, just ignore - &#34;Error: fatal: not a git repository (or any of
+the parent directories): .git&#34;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Obsidian Git&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Obsidian Git: Clone an existing remote repo
+&lt;ul&gt;
+&lt;li&gt;https://github.com/Massive-Wiki/massive-sandbox
+&lt;ul&gt;
+&lt;li&gt;https://github.com/Massive-Wiki/massive-sandbox.git&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;In &#34;Enter directory for clone&#34; textbox, put &#34;massive-sandbox&#34; (same as above, after the last slash, but without &#34;.git&#34;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Workflow (That Worked)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fork Massive Sandbox into your own GitHub account
+&lt;ul&gt;
+&lt;li&gt;can leave name as &#34;massive-sandbox&#34; or change to &#34;my-massive-sandbox&#34; or whatever&lt;/li&gt;
+&lt;li&gt;get the &#34;code&#34; url, e.g. https://github.com/peterkaminski/my-massive-sandbox.git&lt;/li&gt;
+&lt;li&gt;in Obsidian, in &#34;My Vault&#34;, clone existing repo
+&lt;ul&gt;
+&lt;li&gt;url: https://github.com/peterkaminski/my-massive-sandbox.git&lt;/li&gt;
+&lt;li&gt;directory (will be inside &#34;My Vault&#34;): my-massive-sandbox&lt;/li&gt;
+&lt;li&gt;(it&#39;s okay to ignore &#34;you need to restart Obsidian message&#34;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;in File Explorer, move my-massive-sandbox out of My Vault into Documents&lt;/li&gt;
+&lt;li&gt;in Obsidian, &#34;Open folder as vault&#34; and open my-massive-sandbox&lt;/li&gt;
+&lt;li&gt;in new vault, install Obsidian Git &lt;strong&gt;again&lt;/strong&gt; ::sigh::&lt;/li&gt;
+&lt;li&gt;open Obsidian Git Source Control View panel (explain more)
+&lt;ul&gt;
+&lt;li&gt;pull (should say &#34;Everything up-to-date&#34;)&lt;/li&gt;
+&lt;li&gt;push (should pop up the &#34;Connect to GitHub&#34; popup, can sign in with your browser, sign in with a code, sign in with a personal access token, or &#34;Don&#39;t have an account? Sign Up&#34;)&lt;/li&gt;
+&lt;li&gt;remember to set up Git username and email
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git config --global user.name &#34;FIRST_NAME LAST_NAME&#34;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git config --global user.email &#34;MY_NAME@example.com&#34;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Fun Errors&lt;/h2&gt;
+&lt;h3&gt;filename problem&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://forum.obsidian.md/t/files-with-question-marks-on-name-title-arent-being-synced-on-mobile/21352/4&#34;&gt;Files with question marks (?) on name title aren&#39;t being synced on mobile - Bug graveyard - Obsidian Forum&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;Uncaught (in promise) Error: Cloning into plugin: obsidian-git:23833
+&#39;C: \Users \Administrator \Documents \My First Vault\developer-massive-wiki&#39;
+error: invalid path &#39;&#34;Breadcrumb&#34; test page. md&#39;
 fatal: unable to checkout working tree
 warning: Clone succeeded, but checkout failed.
-You can inspect what was checked out with 'git status'
-and retry with 'git restore--source=HEAD :/'
-</code></pre>
-<p>Similar problem with the Link testing page, with lots of punctuation characters in filename.</p>
-<h2>Users / Roles / Use Cases</h2>
-<h3>What To Clone</h3>
-<ul>
-<li>On your own, fork a starter wiki and clone that</li>
-<li>With a team, clone the team wiki</li>
-</ul>
-<h3>What you want to do</h3>
-<ul>
-<li>Want to publish, need MWB</li>
-</ul>
-<h2>Big Git Forges</h2>
-<ul>
-<li>GitHub</li>
-<li>GitLab</li>
-<li>BitBucket</li>
-<li>sourcehut</li>
-<li>(self-hosted: Gitea, Gitorious etc.)</li>
-</ul>
-<p>Centralized Git forges allowed for GitHub-style collaboration workflow features.</p>
-<h2>Git Branching, etc.</h2>
-<ul>
-<li><a href="https://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model » nvie.com</a></li>
-</ul>
-<h2>Git Workflow</h2>
-<h3>In A Repo Where You're A Member</h3>
-<ul>
-<li>pull new changes from the cloud</li>
-<li>edit files locally</li>
-<li>add/remove files to/from "Staged"</li>
-<li>when ready, make a "commit" bundle, with a commit message</li>
-<li>pull again, to make sure any upstream changes get merged</li>
-<li>push</li>
-</ul>
-<h3>With A Repo Where You're Not A Member</h3>
-<ul>
-<li>fork repo into your own git forge account</li>
-<li>make changes as in "where you're a member"</li>
-<li>submit a pull request (GitHub name) / merge request (GitLab name)</li>
-</ul>
+You can inspect what was checked out with &#39;git status&#39;
+and retry with &#39;git restore--source=HEAD :/&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Similar problem with the Link testing page, with lots of punctuation characters in filename.&lt;/p&gt;
+&lt;h2&gt;Users / Roles / Use Cases&lt;/h2&gt;
+&lt;h3&gt;What To Clone&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;On your own, fork a starter wiki and clone that&lt;/li&gt;
+&lt;li&gt;With a team, clone the team wiki&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What you want to do&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Want to publish, need MWB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Big Git Forges&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub&lt;/li&gt;
+&lt;li&gt;GitLab&lt;/li&gt;
+&lt;li&gt;BitBucket&lt;/li&gt;
+&lt;li&gt;sourcehut&lt;/li&gt;
+&lt;li&gt;(self-hosted: Gitea, Gitorious etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Centralized Git forges allowed for GitHub-style collaboration workflow features.&lt;/p&gt;
+&lt;h2&gt;Git Branching, etc.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nvie.com/posts/a-successful-git-branching-model/&#34;&gt;A successful Git branching model » nvie.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Git Workflow&lt;/h2&gt;
+&lt;h3&gt;In A Repo Where You&#39;re A Member&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;pull new changes from the cloud&lt;/li&gt;
+&lt;li&gt;edit files locally&lt;/li&gt;
+&lt;li&gt;add/remove files to/from &#34;Staged&#34;&lt;/li&gt;
+&lt;li&gt;when ready, make a &#34;commit&#34; bundle, with a commit message&lt;/li&gt;
+&lt;li&gt;pull again, to make sure any upstream changes get merged&lt;/li&gt;
+&lt;li&gt;push&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;With A Repo Where You&#39;re Not A Member&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fork repo into your own git forge account&lt;/li&gt;
+&lt;li&gt;make changes as in &#34;where you&#39;re a member&#34;&lt;/li&gt;
+&lt;li&gt;submit a pull request (GitHub name) / merge request (GitLab name)&lt;/li&gt;
+&lt;/ul&gt;
 
       
       <hr>
@@ -272,9 +272,9 @@ and retry with 'git restore--source=HEAD :/'
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
-    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
-    <div><em>Site last updated on Wednesday, October 23, 2024 at 20:40 UTC.</em></div>
+    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
+    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 15:37 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>

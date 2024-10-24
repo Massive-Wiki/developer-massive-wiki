@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729716029.5234456.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729784267.595525.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729716029.5234456.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729784267.595525.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      <p>(we are switching to a new theme,<br />
-don't worry if things look different for a while!)</p>
-<h2>Site Navigation</h2>
-<div class="navlinks">
-<ul>
-<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
-<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
-<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
-<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
-</ul>
-</div>
-<div class="navlinks">
-  <button onclick="location.href=`${randomPageLink()}`">
+      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
+don&#39;t worry if things look different for a while!)&lt;/p&gt;
+&lt;h2&gt;Site Navigation&lt;/h2&gt;
+&lt;div class=&#34;navlinks&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;navlinks&#34;&gt;
+  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
     RANDOM PAGE
-  </button>
-</div>
-<h2>Plans</h2>
-<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
-<h2>For Testing</h2>
-<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
-<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;h2&gt;Plans&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;For Testing&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
 
     </div>
 
@@ -68,27 +68,27 @@ don't worry if things look different for a while!)</p>
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      <h1>MWB wikilinks specification?</h1>
-<p>see more about wiki links, filenames, and URLs at <a class="wikilink" href="/developer-massive-wiki/Link_workbench/Link_workbench.html">Link workbench</a>.</p>
-<p>(question mark missing from filename because Netlify doesn't like <code>?</code> or <code>#</code> in deployed filenames.)</p>
-<p>(Or something like a specification? use RFC template?)</p>
-<p>/ outline the syntax //
-/ do not assume scheme when encountering ':' (Obsidian does not allow ':' in file names, so such links cannot create wiki pages) //
+      &lt;h1&gt;MWB wikilinks specification?&lt;/h1&gt;
+&lt;p&gt;see more about wiki links, filenames, and URLs at &lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/Link_workbench.html&#34;&gt;Link workbench&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;(question mark missing from filename because Netlify doesn&#39;t like &lt;code&gt;?&lt;/code&gt; or &lt;code&gt;#&lt;/code&gt; in deployed filenames.)&lt;/p&gt;
+&lt;p&gt;(Or something like a specification? use RFC template?)&lt;/p&gt;
+&lt;p&gt;/ outline the syntax //
+/ do not assume scheme when encountering &#39;:&#39; (Obsidian does not allow &#39;:&#39; in file names, so such links cannot create wiki pages) //
 / generate full path links from root of the wiki //
-/ do not change case on the text in the link //</p>
-<pre><code>
+/ do not change case on the text in the link //&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
 for each line
   find wikilink string
-  (e.g., with this re: wikilink_pattern="\[\[(.*?)\]\]")
+  (e.g., with this re: wikilink_pattern=&#34;\[\[(.*?)\]\]&#34;)
 
 search wikifiles dictionary
   if found replace string with wikilink full pathname
 
 
-</code></pre>
-<h4>2022-05-12</h4>
-<p>wikilink edge cases (from Pete)</p>
-<pre><code>-   [[wiki page]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;2022-05-12&lt;/h4&gt;
+&lt;p&gt;wikilink edge cases (from Pete)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-   [[wiki page]]
 -   [[Wiki Page]]
 -   [[wikI pagE]]
 -   [[WikiPage]]
@@ -106,16 +106,16 @@ search wikifiles dictionary
 -   [[wiki page.exe]]
 -   [[wiki page.txt]]
 -   [[Page: Wiki]]
--   [[Punctuation Is !@#$%^&amp;*()_+-={}[]|\:";'&lt;&gt;,.?/~` Fun]]
+-   [[Punctuation Is !@#$%^&amp;amp;*()_+-={}[]|\:&#34;;&#39;&amp;lt;&amp;gt;,.?/~` Fun]]
 
-</code></pre>
-<p>build first tests for a small set of ordinary cases that</p>
-<ol>
-<li>do not have identical wiki page basenames in links to different pages</li>
-<li>can have "/" in the links</li>
-<li>have case-sensitive basenames</li>
-</ol>
-<pre><code>-   [[wiki page1]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;build first tests for a small set of ordinary cases that&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;do not have identical wiki page basenames in links to different pages&lt;/li&gt;
+&lt;li&gt;can have &#34;/&#34; in the links&lt;/li&gt;
+&lt;li&gt;have case-sensitive basenames&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;-   [[wiki page1]]
 -   [[../wiki page2]]
 -   [[../../wiki page3]]
 -   [[../subdir/wiki page4]]
@@ -123,41 +123,41 @@ search wikifiles dictionary
 -   [[/subdir/wiki page6]]
 -   [[/subdir/../subdir2/../wiki page7]]
 -
-</code></pre>
-<h4>2022-05-22</h4>
-<ul>
-<li>need to handle ".txt" files (also other media and document files) explicitly, perhaps the same way as image files; or</li>
-<li>perhaps build a way to create wikilinks for any file that is <em>not</em> a Markdown files with ".md" extension?</li>
-</ul>
-<h3>2022-05-23</h3>
-<p>Pete's guess at workflow for wikilinks, including wikilinks with paths:</p>
-<ul>
-<li>walk the wiki, find all the filenames, lowercase the filename, and save the filepath to the file to a dictionary</li>
-<li>when processing each page and converting wikilinks to HTML links:
-<ul>
-<li>if a target string (starts with any <code>.</code> or <code>/</code> characters) or (includes a <code>/</code>  character anywhere), just append <code>.html</code> to the target to create the HTML link, and emit a diagnostic message that the link was not transformed in anyway, because it contained path-like characters (<code>./</code>).</li>
-<li>otherwise, lowercase the target string, then use it as a key to look up the filepath in the dictionary. Append <code>.html</code> to the filepath, and use that to create the HTML link</li>
-</ul>
-</li>
-</ul>
-<p>Design principles:</p>
-<ul>
-<li>don't try to process path characters, because handling a complicated path is complicated (e.g., <code>foo/../../bar/../baz</code>), and we don't (yet) want to promise users we will do it correctly.  instead, just pass along any target that looks like it is trying to include path characters (even if the path would be invalid).</li>
-<li>at least for now, minimize the code required to handle links, to make it easier to write and maintain.</li>
-<li>make links case-insensitive, by lowercasing wiki links and generated filenames.</li>
-</ul>
-<p>Examples:</p>
-<ul>
-<li>foobar -&gt; foobar.html</li>
-<li>FooBar -&gt; foobar.html</li>
-<li>Foobar -&gt; foobar.html</li>
-<li>foo bar -&gt; foo bar.html</li>
-<li>foo/bar -&gt; foo/bar.html</li>
-<li>./foobar -&gt; ./foobar.html</li>
-<li>.foobar -&gt; .foobar.html (may not work properly, as designed)</li>
-<li>foobar/ -&gt; foobar/.html (may not work properly, as designed)</li>
-<li>/foo/bar/baz -&gt; /foo/bar/baz.html</li>
-</ul>
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;2022-05-22&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;need to handle &#34;.txt&#34; files (also other media and document files) explicitly, perhaps the same way as image files; or&lt;/li&gt;
+&lt;li&gt;perhaps build a way to create wikilinks for any file that is &lt;em&gt;not&lt;/em&gt; a Markdown files with &#34;.md&#34; extension?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2022-05-23&lt;/h3&gt;
+&lt;p&gt;Pete&#39;s guess at workflow for wikilinks, including wikilinks with paths:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;walk the wiki, find all the filenames, lowercase the filename, and save the filepath to the file to a dictionary&lt;/li&gt;
+&lt;li&gt;when processing each page and converting wikilinks to HTML links:
+&lt;ul&gt;
+&lt;li&gt;if a target string (starts with any &lt;code&gt;.&lt;/code&gt; or &lt;code&gt;/&lt;/code&gt; characters) or (includes a &lt;code&gt;/&lt;/code&gt;  character anywhere), just append &lt;code&gt;.html&lt;/code&gt; to the target to create the HTML link, and emit a diagnostic message that the link was not transformed in anyway, because it contained path-like characters (&lt;code&gt;./&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;otherwise, lowercase the target string, then use it as a key to look up the filepath in the dictionary. Append &lt;code&gt;.html&lt;/code&gt; to the filepath, and use that to create the HTML link&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Design principles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;don&#39;t try to process path characters, because handling a complicated path is complicated (e.g., &lt;code&gt;foo/../../bar/../baz&lt;/code&gt;), and we don&#39;t (yet) want to promise users we will do it correctly.  instead, just pass along any target that looks like it is trying to include path characters (even if the path would be invalid).&lt;/li&gt;
+&lt;li&gt;at least for now, minimize the code required to handle links, to make it easier to write and maintain.&lt;/li&gt;
+&lt;li&gt;make links case-insensitive, by lowercasing wiki links and generated filenames.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;foobar -&amp;gt; foobar.html&lt;/li&gt;
+&lt;li&gt;FooBar -&amp;gt; foobar.html&lt;/li&gt;
+&lt;li&gt;Foobar -&amp;gt; foobar.html&lt;/li&gt;
+&lt;li&gt;foo bar -&amp;gt; foo bar.html&lt;/li&gt;
+&lt;li&gt;foo/bar -&amp;gt; foo/bar.html&lt;/li&gt;
+&lt;li&gt;./foobar -&amp;gt; ./foobar.html&lt;/li&gt;
+&lt;li&gt;.foobar -&amp;gt; .foobar.html (may not work properly, as designed)&lt;/li&gt;
+&lt;li&gt;foobar/ -&amp;gt; foobar/.html (may not work properly, as designed)&lt;/li&gt;
+&lt;li&gt;/foo/bar/baz -&amp;gt; /foo/bar/baz.html&lt;/li&gt;
+&lt;/ul&gt;
 
       
       <hr>
@@ -175,9 +175,9 @@ search wikifiles dictionary
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
-    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
-    <div><em>Site last updated on Wednesday, October 23, 2024 at 20:40 UTC.</em></div>
+    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
+    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 15:37 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>

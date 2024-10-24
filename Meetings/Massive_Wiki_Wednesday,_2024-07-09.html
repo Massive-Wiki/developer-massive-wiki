@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/alt-style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729716029.5234456.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1729784267.595525.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729716029.5234456.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1729784267.595525.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,30 +32,30 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      <p>(we are switching to a new theme,<br />
-don't worry if things look different for a while!)</p>
-<h2>Site Navigation</h2>
-<div class="navlinks">
-<ul>
-<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
-<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
-<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
-<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
-</ul>
-</div>
-<div class="navlinks">
-  <button onclick="location.href=`${randomPageLink()}`">
+      &lt;p&gt;(we are switching to a new theme,&lt;br /&gt;
+don&#39;t worry if things look different for a while!)&lt;/p&gt;
+&lt;h2&gt;Site Navigation&lt;/h2&gt;
+&lt;div class=&#34;navlinks&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/README.html&#34;&gt;HOME&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/search.html&#34;&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/all-pages.html&#34;&gt;ALL PAGES&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/developer-massive-wiki/recent-pages.html&#34;&gt;RECENT CHANGES&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;navlinks&#34;&gt;
+  &lt;button onclick=&#34;location.href=`${randomPageLink()}`&#34;&gt;
     RANDOM PAGE
-  </button>
-</div>
-<h2>Plans</h2>
-<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
-<h2>For Testing</h2>
-<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
-<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
-<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;h2&gt;Plans&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Roadmap.html&#34;&gt;Massive Wiki Roadmap&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Pier2Pier.html&#34;&gt;Pier2Pier&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html&#34;&gt;Massive Wiki Builder redesign&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;For Testing&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html&#34;&gt;wiki link test page&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/Mistletoe_parser_test_page.html&#34;&gt;Mistletoe parser test page&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&#34;wikilink&#34; href=&#34;/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&amp;_the_ampersand_story.html&#34;&gt;Mistletoe &amp; the ampersand story&lt;/a&gt;&lt;/p&gt;
 
     </div>
 
@@ -68,47 +68,47 @@ don't worry if things look different for a while!)</p>
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      <h1>Massive Wiki Wednesday, 2024-07-09</h1>
-<ul>
-<li>[x] fold in "website root" code, so it works locally, on Netlify, and on GitHub Pages</li>
-<li>[ ] merge pytest code</li>
-<li>[ ] finish Dolce to v1 (footer and whatever), PK</li>
-<li>[ ] finish and document "Edit on $git_repo" button</li>
-<li>[x] move mainline dev work to nxc (which will have its name changed someday)</li>
-<li>[ ] manual testing:
-<ul>
-<li>[ ] with another forge or two, in case there's something unexpectedly different in how they handle this.</li>
-<li>[ ] What happens when you have a github account, but are not a contributor. May be able to make a pull-request. Might require too many details to explain that in a tooltip.</li>
-</ul>
-</li>
-<li>[ ] clean up mwb repo issues list, port any keepers to the new repo</li>
-<li>[ ] code review everything</li>
-<li>[ ] find a name</li>
-<li>[ ] make landing page for module nice enough</li>
-</ul>
-<h2>Getting Started with NXC</h2>
-<p>(as it works currently; workflow and docs will be tweaked to improve)</p>
-<ul>
-<li>make a new empty directory and change to it</li>
-<li>make a venv: <code>python3 -m venv venv</code></li>
-<li>activate venv: <code>source venv/bin/activate</code></li>
-<li>(to deactivate later: <code>deactivate</code>)</li>
-<li>download requirements.txt from https://github.com/band/nxcTestVault/blob/main/.massivewikibuilder/requirements.txt</li>
-<li><code>pip install -r requirements.txt</code></li>
-<li><code>nxc init</code> and answer questions</li>
-<li><code>touch README.md</code></li>
-<li><code>nxc build -i . -o ../output</code></li>
-<li>will get built into output dir; cd there and run a local webserver with e.g. <code>python3 -m http.server</code></li>
-</ul>
-<h2>"Edit This Page" etc.</h2>
-<ul>
-<li>historical UEB: https://universaleditbutton.org/</li>
-<li></li>
-</ul>
-<h2>Wikimedia constitutional change (Pete: "not great") going on</h2>
-<ul>
-<li>read Samuel (SJ) Klein's message here, and more discussion in a couple related threads: https://lists.wikimedia.org/hyperkitty/list/offline-l@lists.wikimedia.org/thread/HUPJD3JKCBEBOWBAUV2ICVM46SXRHIJG/</li>
-</ul>
+      &lt;h1&gt;Massive Wiki Wednesday, 2024-07-09&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;[x] fold in &#34;website root&#34; code, so it works locally, on Netlify, and on GitHub Pages&lt;/li&gt;
+&lt;li&gt;[ ] merge pytest code&lt;/li&gt;
+&lt;li&gt;[ ] finish Dolce to v1 (footer and whatever), PK&lt;/li&gt;
+&lt;li&gt;[ ] finish and document &#34;Edit on $git_repo&#34; button&lt;/li&gt;
+&lt;li&gt;[x] move mainline dev work to nxc (which will have its name changed someday)&lt;/li&gt;
+&lt;li&gt;[ ] manual testing:
+&lt;ul&gt;
+&lt;li&gt;[ ] with another forge or two, in case there&#39;s something unexpectedly different in how they handle this.&lt;/li&gt;
+&lt;li&gt;[ ] What happens when you have a github account, but are not a contributor. May be able to make a pull-request. Might require too many details to explain that in a tooltip.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] clean up mwb repo issues list, port any keepers to the new repo&lt;/li&gt;
+&lt;li&gt;[ ] code review everything&lt;/li&gt;
+&lt;li&gt;[ ] find a name&lt;/li&gt;
+&lt;li&gt;[ ] make landing page for module nice enough&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Getting Started with NXC&lt;/h2&gt;
+&lt;p&gt;(as it works currently; workflow and docs will be tweaked to improve)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;make a new empty directory and change to it&lt;/li&gt;
+&lt;li&gt;make a venv: &lt;code&gt;python3 -m venv venv&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;activate venv: &lt;code&gt;source venv/bin/activate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;(to deactivate later: &lt;code&gt;deactivate&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;download requirements.txt from https://github.com/band/nxcTestVault/blob/main/.massivewikibuilder/requirements.txt&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pip install -r requirements.txt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nxc init&lt;/code&gt; and answer questions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;touch README.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nxc build -i . -o ../output&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;will get built into output dir; cd there and run a local webserver with e.g. &lt;code&gt;python3 -m http.server&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&#34;Edit This Page&#34; etc.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;historical UEB: https://universaleditbutton.org/&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Wikimedia constitutional change (Pete: &#34;not great&#34;) going on&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;read Samuel (SJ) Klein&#39;s message here, and more discussion in a couple related threads: https://lists.wikimedia.org/hyperkitty/list/offline-l@lists.wikimedia.org/thread/HUPJD3JKCBEBOWBAUV2ICVM46SXRHIJG/&lt;/li&gt;
+&lt;/ul&gt;
 
       
     </div>
@@ -116,9 +116,9 @@ don't worry if things look different for a while!)</p>
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
-    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
-    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
-    <div><em>Site last updated on Wednesday, October 23, 2024 at 20:40 UTC.</em></div>
+    <div>Central repository at &lt;a href=&#34;https://github.com/Massive-Wiki/developer-massive-wiki&#34;&gt;developer-massive-wiki&lt;/a&gt;.</div>
+    <div>Licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.</div>
+    <div><em>Site last updated on Thursday, October 24, 2024 at 15:37 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>
