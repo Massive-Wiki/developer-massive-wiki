@@ -4,6 +4,7 @@ MassiveWikiWednesday agenda items:
 - review recent automated security check of `nxc.py` issues
     - do `env = Environment(autoescape=True)` or equivalent
     - **2024-10-24**: DONE? verification needed
+	    - this seems to have caused a problem -- checking now ....
 - review using `logging.getLogger(__name__)` to include module names in messages
     - Yes
 - specify the remaining MUST HAVE items for PyPI package release
