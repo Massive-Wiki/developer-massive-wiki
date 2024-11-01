@@ -52,6 +52,11 @@ when `exclude_subdirs` is a list of directories this code is an option:
 filtered_markdown_files = [file for file in markdown_files if not any(file.startswith(exclude_subdir) for exclude_subdir in exclude_subdirs)]
 ```
 
+2024-10-25: updated to find `excluded_subdir` anywhere in the file path:  
+```python
+filtered_markdown_files = [file for file in markdown_files if not any(exclude_subdir in file for exclude_subdir in exclude_subdirs)]
+```
+
 2024-07-07:
  - "Edit the page" code in the test-pypi package ToBeTested  
 	 - exclude "Edit this page" button from README and Sidebar (nxc 0.1.13)

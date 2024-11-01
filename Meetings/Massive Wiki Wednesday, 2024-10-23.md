@@ -3,15 +3,16 @@
 MassiveWikiWednesday agenda items:
 - review recent automated security check of `nxc.py` issues
     - do `env = Environment(autoescape=True)` or equivalent
-    - **2024-10-24**: DONE? verification needed
-	    - this seems to have caused a problem -- checking now ....
+    - **2024-10-24**: WIP verification needed
+	    - this seems to have caused a problem: that setting seems to make the sidebar-body and main-body into strings; more investigation needed. 
 - review using `logging.getLogger(__name__)` to include module names in messages
-    - Yes
+    - **2024-10-27**: `logging` set up in `nxc.py` and `massivewiki.py` to share a `logger` - needs review
 - specify the remaining MUST HAVE items for PyPI package release
   - name
   - documentation of support for netlify and GitHub pages builds?
   - include "excluded directories" capability?
       - Yes
+      - **2024-10-25**: DONE/WLA
   - what is left for the `dolce` theme CSS?  replace content of `styles.css` with the contents of `alt-styles.css`
       - Yes  **2024-10-23**: DONE/WLA
   - include a minimal `Sidebar.md`? when initializing existing MWB setup (do not overwrite existing `Sidebar.md`)
@@ -32,7 +33,7 @@ These changes tighten up blank vertical space.
 - in `#header`, make `margin-bottom` 0.2em
 - in `#main-column`, make `padding` 0px 20px 20px 20px
 - in `.footer`, make padding: 2rem 0rem 4rem;
-**2024-10-23**: DONE/WLA
+**2024-10-23**: DONE/WLA (set footer margin-bottom to 3rem)
 ## Logging setup example
 
 ```python=
@@ -69,3 +70,5 @@ excluded_directories:
   - node_modules
   - _site
 ```
+
+[[MWW 2024-10-23 task notes]]  
