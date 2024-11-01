@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MWW 2024-10-23 task notes - Developer Wiki (Massive Wiki)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1730494549.5776587.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/developer-massive-wiki/lunr-posts-1730494549.5776587.js"></script>
+    <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/developer-massive-wiki/index.html">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <p>(we are switching to a new theme,<br />
+don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
+    RANDOM PAGE
+  </button>
+</div>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/MWW 2024-10-23 task notes.md"
+	class="edit-this-page-button">Edit on GitHub</a></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>MWW 2024-10-23 task notes</h1>
+<p>notes on implementation of the TODOs from <a class="wikilink" href="/developer-massive-wiki/Meetings/Massive_Wiki_Wednesday,_2024-10-23.html">Massive Wiki Wednesday, 2024-10-23</a><br />
+notes include work done since 23 October</p>
+<ul>
+<li>
+<p>Jinja2 environment setting of <code>autoescape=True</code> seemed to mark the markdown-body of sidebar and main column as strings. So, more investigation needed.</p>
+</li>
+<li>
+<p><code>dolce</code> CSS updates:</p>
+<ul>
+<li>incorporated the specified changes</li>
+<li>made the bottom-margin of footer 3em instead of 4em</li>
+<li>incorporated <code>basso</code> elements to support incipient-links, transclusion error, and all-pages table margins</li>
+<li>put all changes into <code>style.css</code></li>
+</ul>
+</li>
+<li>
+<p><code>dolce</code> HTML updates:</p>
+<ul>
+<li>use <code>style.css</code> in <code>_header.html</code></li>
+<li>delete <code>_navbar.html</code>, <code>wiki.html</code>; do not seem to be needed</li>
+<li>remove Bulma code from <code>_javascript.html</code></li>
+<li>fixed missing '@' in font link in <code>_header.html</code> (this went into version 0.2.5)</li>
+</ul>
+</li>
+<li>
+<p>2024-10-25: these CSS and HTML changes incorporated into <code>nxc</code> version 0.2.3.</p>
+</li>
+<li>
+<p>2024-10-25: support for <code>excluded_directories</code> implemented in <code>nxc</code> 0.2.4</p>
+<ul>
+<li>one problem with this implementation: <code>excluded_directories</code> are not published on the website; however, the content is in the repository, and will be accessible via the <code>Edit on GitHub</code> button.</li>
+</ul>
+</li>
+<li>
+<p>2024-10-27: shared <code>logger</code> set up for <code>nxc.py</code> and module <code>massivewiki.py</code> in <code>nxc</code> 0.2.6</p>
+</li>
+<li>
+<p>2024-10-29: noticed whilst updating NXC description:</p>
+<ul>
+<li>deprecated <code>mwb-static</code> warning no longer needed?</li>
+</ul>
+</li>
+<li>
+<p>2024-11-01:</p>
+<ul>
+<li>implemented guards on <code>nxc</code> initializations (e.g., not specifying website title)</li>
+<li>implemented hiding "Edit on Git forge" buttons</li>
+<li>Claude-3 assisted in refactoring the page rendering functions and function calls</li>
+</ul>
+</li>
+</ul>
+<pre><code>	
+</code></pre>
+
+      
+      <hr>
+      <div>
+	<h4>Pages that link to this page</h4>
+	<ul>
+	  
+	  <li><a href="/developer-massive-wiki/Meetings/Massive_Wiki_Wednesday,_2024-10-23.html">Massive Wiki Wednesday, 2024-10-23</a>
+	  
+	</ul>
+      </div>
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Friday, November 01, 2024 at 20:55 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>
+</body>
+</html>

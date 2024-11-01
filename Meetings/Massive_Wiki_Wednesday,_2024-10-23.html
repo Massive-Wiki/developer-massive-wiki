@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1729971966.071874.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1730494549.5776587.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1729971966.071874.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1730494549.5776587.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -74,16 +74,16 @@ don't worry if things look different for a while!)</p>
 <li>review recent automated security check of <code>nxc.py</code> issues
 <ul>
 <li>do <code>env = Environment(autoescape=True)</code> or equivalent</li>
-<li><strong>2024-10-24</strong>: DONE? verification needed
+<li><strong>2024-10-24</strong>: WIP verification needed
 <ul>
-<li>this seems to have caused a problem -- checking now ....</li>
+<li>this seems to have caused a problem: that setting seems to make the sidebar-body and main-body into strings; more investigation needed.</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>review using <code>logging.getLogger(__name__)</code> to include module names in messages
 <ul>
-<li>Yes</li>
+<li><strong>2024-10-27</strong>: <code>logging</code> set up in <code>nxc.py</code> and <code>massivewiki.py</code> to share a <code>logger</code> - needs review</li>
 </ul>
 </li>
 <li>specify the remaining MUST HAVE items for PyPI package release
@@ -93,6 +93,7 @@ don't worry if things look different for a while!)</p>
 <li>include "excluded directories" capability?
 <ul>
 <li>Yes</li>
+<li><strong>2024-10-25</strong>: DONE/WLA</li>
 </ul>
 </li>
 <li>what is left for the <code>dolce</code> theme CSS?  replace content of <code>styles.css</code> with the contents of <code>alt-styles.css</code>
@@ -131,7 +132,7 @@ don't worry if things look different for a while!)</p>
 <li>in <code>#header</code>, make <code>margin-bottom</code> 0.2em</li>
 <li>in <code>#main-column</code>, make <code>padding</code> 0px 20px 20px 20px</li>
 <li>in <code>.footer</code>, make padding: 2rem 0rem 4rem;
-<strong>2024-10-23</strong>: DONE/WLA</li>
+<strong>2024-10-23</strong>: DONE/WLA (set footer margin-bottom to 3rem)</li>
 </ul>
 <h2>Logging setup example</h2>
 <pre><code class="language-python=">def setup_logging(log_level: str) -&gt; None:
@@ -164,7 +165,18 @@ excluded_directories:
   - node_modules
   - _site
 </code></pre>
+<p><a class="wikilink" href="/developer-massive-wiki/MWW_2024-10-23_task_notes.html">MWW 2024-10-23 task notes</a></p>
 
+      
+      <hr>
+      <div>
+	<h4>Pages that link to this page</h4>
+	<ul>
+	  
+	  <li><a href="/developer-massive-wiki/MWW_2024-10-23_task_notes.html">MWW 2024-10-23 task notes</a>
+	  
+	</ul>
+      </div>
       
     </div>
   </div>
@@ -173,7 +185,7 @@ excluded_directories:
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
     <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
     <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
-    <div><em>Site last updated on Saturday, October 26, 2024 at 19:46 UTC.</em></div>
+    <div><em>Site last updated on Friday, November 01, 2024 at 20:55 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>
