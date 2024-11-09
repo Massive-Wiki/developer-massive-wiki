@@ -17,7 +17,7 @@ The plain text format used by Massive Wiki works with any standard operating sys
 
 Massive Wiki is built to diffuse information across space and time, unlike a centralized server-based wiki or website. Each author has a copy of the whole wiki, in text format. For public wikis, there's also a copy on GitHub or another public Git forge.
 
-Anyone can archive it, share it, duplicate and change it, without any infrastructure besides their computing device -- for example, a laptop, smartphone, or a tablet.
+Anyone can archive it, share it, duplicate and change it, without any infrastructure besides their computing device—for example, a laptop, smartphone, or a tablet.
 
 You can zip up the whole wiki easily and email the zipped-up wiki to a million friends for safekeeping or further distribution. Any recipient who can receive email and unzip a file will have the whole wiki.
 
@@ -44,6 +44,6 @@ Each page is one **file.**
 
 Standard files are an easy and reasonably precise unit of data interchange between different computer systems.
 
-The plural "files" is important -- a wiki needs more than one page.
+The plural "files" is important—a wiki needs more than one page.
 
 

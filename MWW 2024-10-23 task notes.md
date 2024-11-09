@@ -24,6 +24,14 @@ notes include work done since 23 October
 
 - 2024-11-01:  
 	- implemented guards on `nxc` initializations (e.g., not specifying website title)
+	- DONE: install a `.Sidebar.md` file on `init`; do not overwrite an existing sidebar file
 	- implemented hiding "Edit on Git forge" buttons
 	- Claude-3 assisted in refactoring the page rendering functions and function calls
-	
+- 2024-11-04:  
+	- DONE: 2024-11-04: install a `.gitignore` file, or add to an existing `.gitignore` on `init` 
+	-  TODO: what are the required entries in a `.gitignore` for `nxc`?  
+
+- 2024-11-09:  
+	- DONE: implemented Edit-this-page support for GitLab repositories (`nxc 0.2.12`); and  
+	- implemented a GitLab Pages `.gitlab-ci.yml` file (similar to GitHub pages)  
+	- TODO: incorporate this into `nxc`  
