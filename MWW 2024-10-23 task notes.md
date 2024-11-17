@@ -35,3 +35,6 @@ notes include work done since 23 October
 	- DONE: implemented Edit-this-page support for GitLab repositories (`nxc 0.2.12`); and  
 	- implemented a GitLab Pages `.gitlab-ci.yml` file (similar to GitHub pages)  
 	- TODO: incorporate this into `nxc`  
+
+- 2024-11-13:  
+	- DONE: Vercel deployment of `nxc` built websites  
