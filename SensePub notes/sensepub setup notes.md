@@ -1,10 +1,20 @@
 # sensepub setup notes
 
 2024-12-16,  2024-12-20:
+FIRST REQUIREMENTS:  
+- Python3 installed
+- `sensepub` install if using system python3 install:  
+```shell 
+pip install --upgrade pip
+pip install --extra-index-url https://test.pypi.org/simple/ sensepub
+```
+- `sensepub` install if using a local Python virtual environment
+
 NOTE: these steps assume that only one directory of Markdown documents is being set up.
 	TODO: create steps to install `sensepub` to initialize several separate document collections  
 - after creating directory and some markdown docs  
 - set that directory up as an Obsidian vault  
+
 - NEXT STEPS:  
 	- initialize the directory with `sensepub`  
 		 - this requires a `Python3` installation  
