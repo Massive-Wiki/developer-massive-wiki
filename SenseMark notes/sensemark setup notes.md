@@ -1,0 +1,34 @@
+# sensemark setup notes
+
+2024-12-16,  2024-12-20:
+NOTE: these steps assume that only one directory of Markdown documents is being set up.
+	TODO: create steps to install `sensemark` to initialize several separate document collections  
+- after creating directory and some markdown docs  
+- set that directory up as an Obsidian vault  
+- NEXT STEPS:  
+	- initialize the directory with `sensemark`  
+		 - this requires a `Python3` installation  
+		 - Apple computers have a default installation
+		 - Microsoft Windows: Python3 can be installed from Microsoft Store
+		 - Most Linux systems have a default installation
+	- 
+		- install `sensemark` in the system wide Python environment, or a specific environment  
+		- 
+	- `nxc init`  
+	- 
+
+
+
+	- make it a GitHub repo  
+		- this is a collection of steps using `git`:   
+```shell
+git init
+git add .
+git commit -m "initial commit"
+git branch -M main
+git remote add origin https://github.com/band/socialpraxis.git
+git status
+git push -u origin main
+```
+  - once the GitHub repository is established, initialize that repository with `sensemark`:  
+
