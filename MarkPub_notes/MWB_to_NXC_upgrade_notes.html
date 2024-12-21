@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sensepub setup notes - Developer Wiki (Massive Wiki)</title>
+    <title>MWB to NXC upgrade notes - Developer Wiki (Massive Wiki)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1734723710.4863195.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1734801377.8317657.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1734723710.4863195.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1734801377.8317657.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -63,59 +63,64 @@ don't worry if things look different for a while!)</p>
       
       <div> <!-- edit this page button -->
 	<p style="float:right; margin:.5em .5em
-	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/SensePub notes/sensepub setup notes.md"
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/MarkPub notes/MWB to NXC upgrade notes.md"
 	class="edit-this-page-button">Edit on GitHub</a></p>
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      <h1>sensepub setup notes</h1>
-<p>2024-12-16,  2024-12-20:
-NOTE: these steps assume that only one directory of Markdown documents is being set up.
-TODO: create steps to install <code>sensepub</code> to initialize several separate document collections</p>
+      <h1>MWB to NXC upgrade notes</h1>
+<h3>2024-10-20</h3>
 <ul>
-<li>after creating directory and some markdown docs</li>
-<li>set that directory up as an Obsidian vault</li>
-<li>NEXT STEPS:
-<ul>
-<li>
-<p>initialize the directory with <code>sensepub</code></p>
-<ul>
-<li>this requires a <code>Python3</code> installation</li>
-<li>Apple computers have a default installation</li>
-<li>Microsoft Windows: Python3 can be installed from Microsoft Store</li>
-<li>Most Linux systems have a default installation</li>
+<li>Notes on steps taken to upgrade an existing MWB install to the PyPI package <code>nxc</code>:</li>
+<li>created an empty directory <code>nxcworkbench</code></li>
+<li>in that directory set up a python environment:</li>
 </ul>
-</li>
-<li>
-<ul>
-<li>install <code>sensepub</code> in the system wide Python environment, or a specific environment</li>
-<li></li>
-</ul>
-</li>
-<li>
-<p><code>nxc init</code></p>
-</li>
-<li></li>
-<li>
-<p>make it a GitHub repo</p>
-<ul>
-<li>this is a collection of steps using <code>git</code>:</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<pre><code class="language-shell">git init
-git add .
-git commit -m "initial commit"
-git branch -M main
-git remote add origin https://github.com/band/socialpraxis.git
-git status
-git push -u origin main
+<pre><code class="language-shell">python3 -m venv venv
+source venv/bin/activate
 </code></pre>
 <ul>
-<li>once the GitHub repository is established, initialize that repository with <code>sensepub</code>:</li>
+<li>and then install <code>nxc</code>:</li>
+<li>this particular setup uses the test-pypi index and needs a <code>requirements.txt</code> file containing the following two lines:</li>
 </ul>
+<pre><code>--extra-index-url https://test.pypi.org/simple/
+nxc
+</code></pre>
+<ul>
+<li><code>nxc</code> is installed using <code>pip</code>:</li>
+</ul>
+<pre><code class="language-shell">(venv) $ pip install -r requirements.txt
+</code></pre>
+<ul>
+<li>then install <code>nxc</code> as the build process for an existing MWB installation:</li>
+</ul>
+<pre><code class="language-shell">(venv) $ nxc init /file/path/to/existing/mwb-directory
+</code></pre>
+<ul>
+<li>the following information is requested; for example:</li>
+</ul>
+<pre><code class="language-shell"> $ nxc init /Users/band/Documents/myWiki 
+Enter the website title: My Wiki
+Enter the author name(s): Me, the unpaid anderbill
+Enter Git repository url: github.com/band/myWiki
+</code></pre>
+<ul>
+<li>To use the <code>nxc</code> software to build a website from this directory:
+<ul>
+<li>update <code>.gitignore</code></li>
+<li>add the updates to the repository; e.g.:</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-shell">git add .gitignore
+git add netlify.toml netlify-prior.toml .nxc/
+git commit -m "nxc initialization"
+git push
+</code></pre>
+<ul>
+<li>If this repository is set to use <code>netlify</code> to build, then the website is rebuilt using <code>nxc</code> .</li>
+</ul>
+<p><strong>TODO</strong>: specify the details on building the website using GitHub Pages and Actions</p>
+<p><strong>TODO</strong>: document information about default website theme, and how it may be customized.</p>
 
       
     </div>
@@ -125,7 +130,7 @@ git push -u origin main
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
     <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
     <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
-    <div><em>Site last updated on Friday, December 20, 2024 at 19:41 UTC.</em></div>
+    <div><em>Site last updated on Saturday, December 21, 2024 at 17:16 UTC.</em></div>
   </div>
 </footer>
   <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>
