@@ -38,6 +38,6 @@ git push -u origin main
 ```
   - once the GitHub repository is established, initialize that repository with `markpub`:  
   ```shell
-markpub directory-name
+markpub init directory-name
 ```
 
