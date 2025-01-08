@@ -8,7 +8,7 @@ FIRST REQUIREMENTS:
 pip install --upgrade pip
 pip install markpub
 ```
-- `markpub` install if using a local Python virtual environment
+- TODO: `markpub` install if using a local Python virtual environment
 
 NOTE: these steps assume that only one directory of Markdown documents is being set up.
 	TODO: create steps to install `markpub` to initialize several separate document collections  
@@ -32,7 +32,7 @@ git init
 git add .
 git commit -m "initial commit"
 git branch -M main
-git remote add origin https://github.com/band/socialpraxis.git
+git remote add origin https://github.com/band/repository-name.git
 git status
 git push -u origin main
 ```

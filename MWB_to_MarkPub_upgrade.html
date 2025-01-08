@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MWB to MarkPub upgrade - Developer Wiki (Massive Wiki)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1736365697.4242864.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/developer-massive-wiki/lunr-posts-1736365697.4242864.js"></script>
+    <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/developer-massive-wiki/index.html">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <p>(we are switching to a new theme,<br />
+don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
+    RANDOM PAGE
+  </button>
+</div>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/MWB to MarkPub upgrade.md"
+	class="edit-this-page-button">Edit on GitHub</a></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>MWB to MarkPub upgrade</h1>
+<p>Note: 2025-01-08
+Move bandstands.praxis101.net from using MWB to MarkPub</p>
+<ol>
+<li>Initialize the local GitHub repository directory</li>
+</ol>
+<pre><code class="language-shell">markpub init /Users/band/Documents/myWikis/bandstands
+</code></pre>
+<ol start="2">
+<li>Compare contents of <code>bandstands/.markpub/markpub.yaml</code> to previous mwb.yaml</li>
+</ol>
+<pre><code class="language-shell">cd /Users/band/Documents/myWikis/bandstands
+diff .markpub/markpub.yaml .massivewikibuilder/mwb.yaml
+</code></pre>
+<ol start="3">
+<li>test local build of website using MarkPub<br />
+3.1. setup Python3</li>
+</ol>
+<pre><code class="language-shell">cd .markpub
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements
+</code></pre>
+<pre><code>3.2. on the local machine: first install node modules, then build the website
+</code></pre>
+<pre><code class="language-shell">npm ci
+markpub build -i .. -o ./output --lunr --commits
+</code></pre>
+<pre><code> 3.3. view the build result  
+</code></pre>
+<pre><code class="language-shell">cd output
+python -m http.server
+</code></pre>
+<pre><code>	Open a browser to http://localhost:8000
+</code></pre>
+<ol start="4">
+<li>
+<p>Commit the MarkPub changes to the repository</p>
+<ul>
+<li>include the changes to <code>.gitignore</code>; clean this up later</li>
+</ul>
+</li>
+<li>
+<p>TODO: move old Sidebar content into the new Sidebar</p>
+<ul>
+<li>use Obsidian or another text editor</li>
+<li><code>git commit</code> the Sidebar updates</li>
+</ul>
+</li>
+<li>
+<p>I pushed all committed changes; might have been better to push in stages</p>
+</li>
+<li>
+<p>adjustments:<br />
+7.1. add hypothes.is JS back to <code>dolce/page.html</code></p>
+</li>
+<li>
+<p>The steps Bill used to remove MassiveWikiBuilder and MWThemes</p>
+</li>
+</ol>
+<pre><code class="language-shell">git submodule deinit -f .massivewikibuilder/massivewikibuilder
+rm -rf .git/modules/.massivewikibuilder/massivewikibuilder
+rm -rf .massivewikibuilder/massivewikibuilder
+</code></pre>
+<p>Edit the .gitmodules file and delete these lines<br />
+[submodule ".massivewikibuilder/massivewikibuilder"]
+path = .massivewikibuilder/massivewikibuilder
+url = https://github.com/Massive-Wiki/massivewikibuilder.git
+branch = main</p>
+<pre><code class="language-shell">git rm --cached .massivewikibuilder/massivewikibuilder
+git commit -am "Removed submodule .massivewikibuilder/massivewikibuilder"
+git push
+</code></pre>
+<ul>
+<li>once this is complete I think it is safe to</li>
+</ul>
+<pre><code class="language-shell">rm .gitmodules
+rm -fr .git/modules
+</code></pre>
+<ol start="8">
+<li>review any outstanding <code>git</code> changes; commit and push what is relevant
+<ul>
+<li>review the output that is published on the web</li>
+<li>if it all looks good, then I think the upgrade (or transition) is done</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Wednesday, January 08, 2025 at 19:48 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>
+</body>
+</html>
