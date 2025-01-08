@@ -32,15 +32,18 @@ markpub build -i .. -o ./output --lunr --commits
 cd output
 python -m http.server
 ```  
-		Open a browser to http://localhost:8000
+		Open a browser to http://localhost:8000 
+
 4. Commit the MarkPub changes to the repository
 	- include the changes to `.gitignore`; clean this up later  
-5. TODO: move old Sidebar content into the new Sidebar  
+
+1. TODO: move old Sidebar content into the new Sidebar  
 	- use Obsidian or another text editor
 	- `git commit` the Sidebar updates
-6. I pushed all committed changes; might have been better to push in stages
 
-7. adjustments:  
+2. I pushed all committed changes; might have been better to push in stages
+
+3. adjustments:  
 	7.1. add hypothes.is JS back to `dolce/page.html`
 
 8. The steps Bill used to remove MassiveWikiBuilder and MWThemes  
@@ -65,7 +68,10 @@ rm .gitmodules
 rm -fr .git/modules
 ```
 
-8. review any outstanding `git` changes; commit and push what is relevant
+9. review any outstanding `git` changes; commit and push what is relevant
 	- review the output that is published on the web
-	- if it all looks good, then I think the upgrade (or transition) is done
+	- if it all looks good, then I think the upgrade (or transition) is done  
+
+-----
+TODO: document the cleanup of `.gitignore`  
 
