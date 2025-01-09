@@ -49,3 +49,4 @@
 - [ ] use SuperLiminal
 - [ ] Wiki Culture
 
+Wow, I am *so* glad to see the edit button in a/the reference MassiveWiki. It's a hack, no question, but it works! Also, looking forward to the blogging. Where is the blog? --JohnAbbe
