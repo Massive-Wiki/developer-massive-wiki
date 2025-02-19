@@ -93,8 +93,21 @@ Publishing markpub (**0.4.3**) to PyPI
 ```
 
 
+## 2025-01-20: update MarkPub package dependencies
+- notes on `poetry` commands
+```shell
+poetry show  # list dpendencies
 
-  
+poetry --dry-run update packages  # see what will happen
+poetry update packages  # update all packages to the latest
+```
 
+- this updated everything but did *not* update `Jinja2` to its latest version. Documentation suggested bypassing the poetry cache for that particular package and that worked:
+```shell
+poetry --dry-run --no-cache update Jinja2  # to see what will happen
+poetry --no-cache update Jinja2  # do it
+poetry show
+```
 
+- next steps are to update the MarkPub package distribution, and figure out how to close the dependabot alerts  
 
