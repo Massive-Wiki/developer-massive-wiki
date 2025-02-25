@@ -4,6 +4,9 @@ This directory contains architectural and workflow documentation for the NXC (Ma
 
 ## Available Documentation
 
+NOTE: Some of these pages use Mermaid diagrams, which are not rendered on the website. But if you have this repo on your computer, you can use Markdown tools like Obsidian or Typora to view the page with the diagrams rendered as intended.
+
+- [NXC User Guide](nxc_user_guide.md) - Guide to using the NXC static site generator.
 - [NXC Architecture](nxc_architecture.md) - Overview of the system architecture and components
 - [NXC Workflow](nxc_workflow.md) - Detailed workflows for initialization and build processes
 - [NXC Data Flow](nxc_data_flow.md) - Data flow diagrams showing how information moves through the system
