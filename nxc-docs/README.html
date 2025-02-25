@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Wiki (Massive Wiki)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1740513871.7237267.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/developer-massive-wiki/lunr-posts-1740513871.7237267.js"></script>
+    <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/developer-massive-wiki/index.html">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <p>(we are switching to a new theme,<br />
+don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/nxc-docs/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
+    RANDOM PAGE
+  </button>
+</div>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <h1>NXC Documentation</h1>
+<p>This directory contains architectural and workflow documentation for the NXC (Massive Wiki Builder) static site generator. This entire directory was generated automatically by Claude 3.7 Sonnet on 2025-02-25, based on nxc <code>edbac489fef82bb8f6ac716d725ac14de6b38a171</code> of 2024-12-12. It is believed to be useful, but it has been not been comprehensively reviewed by humans yet.</p>
+<h2>Available Documentation</h2>
+<ul>
+<li><a href="nxc_architecture.md">NXC Architecture</a> - Overview of the system architecture and components</li>
+<li><a href="nxc_workflow.md">NXC Workflow</a> - Detailed workflows for initialization and build processes</li>
+<li><a href="nxc_data_flow.md">NXC Data Flow</a> - Data flow diagrams showing how information moves through the system</li>
+</ul>
+<h2>Quick Reference</h2>
+<p>NXC is a static site generator that builds HTML websites from Markdown files, with special support for wiki-style features:</p>
+<ul>
+<li><strong>Wiki Links</strong>: Links between pages using <code>[[Page Name]]</code> syntax</li>
+<li><strong>Transclusion</strong>: Including content from one page in another with <code>![[Page Name]]</code></li>
+<li><strong>Image Embedding</strong>: Wiki-style image embedding with <code>![[image.png]]</code></li>
+<li><strong>Front Matter</strong>: YAML metadata at the top of Markdown files</li>
+<li><strong>Search</strong>: Optional full-text search with Lunr.js</li>
+</ul>
+<h2>Key Commands</h2>
+<pre><code># Initialize a new site
+nxc init directory-name
+
+# Build a site
+nxc build -i &lt;input_directory&gt; -o &lt;output_directory&gt; [--lunr] [--commits]
+</code></pre>
+<h2>Configuration</h2>
+<p>Configuration is stored in <code>.nxc/nxc.yaml</code> and includes:</p>
+<ul>
+<li>Site title and author</li>
+<li>Repository information</li>
+<li>Theme selection</li>
+<li>Sidebar configuration</li>
+<li>Excluded directories</li>
+</ul>
+<h2>Extension Points</h2>
+<p>NXC can be extended through:</p>
+<ol>
+<li>Custom themes in the <code>this-website-themes</code> directory</li>
+<li>YAML configuration options</li>
+<li>Custom CSS and JavaScript in theme folders</li>
+</ol>
+<h2>See Also</h2>
+<ul>
+<li><a href="../README.md">Main README</a> - Installation and basic usage</li>
+<li><a href="https://test.pypi.org/project/nxc/">PyPI Package</a> - Package listing on TestPyPI</li>
+</ul>
+
+      
+      <hr>
+      <div>
+	<h4>Pages that link to this page</h4>
+	<ul>
+	  
+	  <li><a href="/developer-massive-wiki/2021-11-11-Milosz.html">2021-11-11-Milosz</a>
+	  
+	  <li><a href="/developer-massive-wiki/404.html">404</a>
+	  
+	  <li><a href="/developer-massive-wiki/Breadcrumb_test_page.html">Breadcrumb test page</a>
+	  
+	  <li><a href="/developer-massive-wiki/Link_workbench/transclude_this.html">transclude this</a>
+	  
+	  <li><a href="/developer-massive-wiki/conversationsWiki/unlinked_files_output.html">unlinked files output</a>
+	  
+	</ul>
+      </div>
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, February 25, 2025 at 20:04 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>
+</body>
+</html>

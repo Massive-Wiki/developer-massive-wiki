@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nxc_workflow - Developer Wiki (Massive Wiki)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1740513871.7237267.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/developer-massive-wiki/lunr-posts-1740513871.7237267.js"></script>
+    <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/developer-massive-wiki/index.html">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <p>(we are switching to a new theme,<br />
+don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/nxc-docs/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
+    RANDOM PAGE
+  </button>
+</div>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/nxc-docs/nxc_workflow.md"
+	class="edit-this-page-button">Edit on GitHub</a></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>NXC Workflow</h1>
+<p>NXC (Massive Wiki Builder) follows two main workflows: Initialization and Build. This document outlines the process and components involved in each.</p>
+<h2>Initialization Workflow</h2>
+<pre><code class="language-mermaid">graph TD
+    A[Start] --&gt; B[Parse Command Line Arguments]
+    B --&gt; C{Command = init?}
+    C --&gt;|Yes| D[Check if Directory Exists]
+    D --&gt;|No| E[Create Directory]
+    D --&gt;|Yes| F{Directory Already Initialized?}
+    F --&gt;|Yes| G[Exit: Already Initialized]
+    F --&gt;|No| H[Continue]
+    E --&gt; H
+    H --&gt; I[Copy Template Files]
+    I --&gt; J[Gather Configuration Input]
+    J --&gt; K[Create nxc.yaml Configuration]
+    K --&gt; L[End: Initialization Complete]
+    
+    C --&gt;|No| M[Build Process]
+</code></pre>
+<p>Key components during initialization:</p>
+<ol>
+<li>Directory validation and creation</li>
+<li>Template file copying (templates, themes, configuration)</li>
+<li>User input collection (website title, author, Git repository)</li>
+<li>Configuration file creation (.nxc/nxc.yaml)</li>
+</ol>
+<h2>Build Workflow</h2>
+<pre><code class="language-mermaid">graph TD
+    A[Start] --&gt; B[Parse Command Line Arguments]
+    B --&gt; C{Command = build?}
+    C --&gt;|Yes| D{Directory Initialized?}
+    D --&gt;|No| E[Exit: Not Initialized]
+    D --&gt;|Yes| F[Load Configuration]
+    F --&gt; G[Setup Environment]
+    G --&gt; H[Prepare Output Directory]
+    H --&gt; I[Create README.md if Missing]
+    I --&gt; J[Collect All Files]
+    J --&gt; K[Build Wikilinks Dictionary]
+    K --&gt; L[Process All Markdown Files]
+    L --&gt; M[Generate HTML Pages]
+    M --&gt; N[Generate Search Index if --lunr]
+    N --&gt; O[Build All-Pages and Recent-Pages]
+    O --&gt; P[Copy Static Assets]
+    P --&gt; Q[End: Build Complete]
+    
+    C --&gt;|No| R[Invalid Command]
+</code></pre>
+<p>Key components during build:</p>
+<ol>
+<li>Configuration loading</li>
+<li>File collection and wiki link processing</li>
+<li>Markdown to HTML conversion</li>
+<li>Template rendering with Jinja2</li>
+<li>Search index generation (optional)</li>
+<li>Static asset copying</li>
+</ol>
+<h2>Markdown Processing Workflow</h2>
+<pre><code class="language-mermaid">graph TD
+    A[Read Markdown File] --&gt; B[Extract YAML Front Matter]
+    B --&gt; C[Process Markdown Body]
+    C --&gt; D[Convert Wiki Links]
+    D --&gt; E[Process Transcluded Content]
+    E --&gt; F[Generate HTML]
+    F --&gt; G[Apply Templates]
+    G --&gt; H[Write HTML File]
+</code></pre>
+<h2>Wiki Link Types</h2>
+<p>NXC supports several types of wiki links:</p>
+<ol>
+<li><strong>Regular Wiki Links</strong>: <code>[[Page Name]]</code> or <code>[[Page Name|Display Text]]</code></li>
+<li><strong>Image Links</strong>: <code>![[image.png]]</code> or <code>![[image.png|Alt Text]]</code></li>
+<li><strong>Transclusion Links</strong>: <code>![[Page Name]]</code> (includes content from another page)</li>
+</ol>
+<h2>Component Architecture</h2>
+<pre><code class="language-mermaid">graph TD
+    A[Command Line Interface] --&gt; B[nxc.py]
+    B --&gt; C[init_site Function]
+    B --&gt; D[build_site Function]
+    D --&gt; E[Jinja2 Templates]
+    D --&gt; F[MassiveWikiRenderer]
+    F --&gt; G[mistletoe]
+    D --&gt; H[Lunr Search Index]
+</code></pre>
+<p>The nxc package integrates several components:</p>
+<ul>
+<li>Command-line interface for user interaction</li>
+<li>File system operations for reading/writing files</li>
+<li>Markdown parsing and HTML rendering</li>
+<li>Wiki link processing</li>
+<li>Template rendering with Jinja2</li>
+<li>Optional search index generation with Lunr</li>
+</ul>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Tuesday, February 25, 2025 at 20:04 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>
+</body>
+</html>
