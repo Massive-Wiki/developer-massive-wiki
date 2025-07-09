@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massive Wiki Wednesday, 2025-07-09 - Developer Wiki (Massive Wiki)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1752094039.9313025.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/developer-massive-wiki/lunr-posts-1752094039.9313025.js"></script>
+    <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/developer-massive-wiki/index.html">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <p>(we are switching to a new theme,<br />
+don't worry if things look different for a while!)</p>
+<h2>Site Navigation</h2>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/nxc-docs/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
+    RANDOM PAGE
+  </button>
+</div>
+<h2>Plans</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h2>For Testing</h2>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/Meetings/Massive Wiki Wednesday, 2025-07-09.md"
+	class="edit-this-page-button">Edit on GitHub</a></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>Massive Wiki Wednesday, 2025-07-09</h1>
+<h2>Topics</h2>
+<ul>
+<li>handling updates to dolce (and themes in general)
+<ul>
+<li>ChatGPT convo documenting the theme Python package pattern: https://chatgpt.com/share/686e9511-9d38-800a-b9b8-d3eea60f7e30</li>
+</ul>
+</li>
+<li>upgrading Matthew</li>
+<li>move from poetry to uv</li>
+<li>announce MarkPub more broadly</li>
+<li>Jerry's Excalidraw transclusion feature request</li>
+</ul>
+<h2>Announce MarkPub More Broadly</h2>
+<ul>
+<li>update massive.wiki to markpub</li>
+<li>update markpub.org to latest markpub</li>
+<li>remove MWB stuff from massive.wiki</li>
+<li>create massivewiki.org as a redirect to massive.wiki???</li>
+<li>get MarkPub listed in jamstack.org</li>
+<li>get 5-10 stars on the GitHub repo (ask friends, etc.)</li>
+<li>announce MarkPub on Obsidian forum, discord</li>
+<li>someday, announce on ProductHunt?</li>
+</ul>
+<h1>2025-07-08: Bill's notes for the next MWW</h1>
+<h2>Bluesky comment notes:</h2>
+<p>Need a way for each page to know its file path in the repo.</p>
+<ul>
+<li>select a way to put the <code>fs_path</code> of the webpage into the rendered <code>html</code> file
+<ul>
+<li>Bill has settled on using an HTML <code>data</code> element to put the <code>fs_path</code> into each webpage for subsequent use by, e.g., a Bluesky comment React component.</li>
+<li>the HTML element is added to <code>page.html</code> and the <code>fs_path</code> is added when <code>markpub.py</code> renders the webpage.</li>
+<li>Pete suggests a way to put it in <code>_header.html</code>, see below</li>
+</ul>
+</li>
+</ul>
+<h2>Updating the <code>dolce</code> theme:</h2>
+<ul>
+<li>GitHub branch created to enable a <code>markpub update</code> command; code added to <code>markpub.py</code> to support creating a backup of the current <code>dolce</code> code prior to installing the updated theme data.</li>
+<li>Another alternative: use <code>theme:</code> in <code>markpub.yaml</code>; move the themes to another repo</li>
+</ul>
+<h2>Alerting the website maintainer to theme updates</h2>
+<ul>
+<li>use an email list to alert about updates</li>
+<li>use a Discord server to alert about updates</li>
+<li>when <code>markpub build</code> happens, check a well-known URL, if there are updates available, say so in the logs</li>
+<li>keep a human-readable web page that says the most recent</li>
+</ul>
+<h2>putting <code>fs_path</code> in <code>_header.html</code></h2>
+<p>set <code>fs_path</code> before rendering the templates, then in <code>_header.html</code>:</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    {% if fs_path != '' }
+    &lt;meta name="fs_path" content="{{ fs_path }}"&gt;
+    {% endif %}
+    &lt;title&gt;{{ page_title }}&lt;/title&gt;
+</code></pre>
+<p>... etc.</p>
+
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    <div><em>Site last updated on Wednesday, July 09, 2025 at 20:47 UTC.</em></div>
+  </div>
+</footer>
+  <script src="/developer-massive-wiki/mwb-static/js/script.js"></script>
+</body>
+</html>
