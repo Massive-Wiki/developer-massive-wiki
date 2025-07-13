@@ -6,6 +6,10 @@ This document explains how to create a self-contained Node.js command-line utili
 
 If the Excalidraw drawings are coming from Obsidian, you may need `.excalidraw.md` to `.excalidraw` conversion. See sample code and documentation pointers in [Massive-Wiki/obsidian-excalidraw-converter](https://github.com/Massive-Wiki/obsidian-excalidraw-converter).
 
+Some Excalidraw drawings embed images that can be pulled from the same vault. The renderer may need to find and pass the images to Excalidraw as well as just the Excalidraw source.
+
+Here is a list of possible candidate tools for command-line rendering: https://github.com/markpub/markpub/issues/19#issuecomment-3067056938
+
 ### Use Case and the Need for Puppeteer
 
 When building static websites, you often want to embed dynamic content or content generated from specific formats. Excalidraw diagrams, stored as JSON data, are a prime example. While Excalidraw is primarily a web-based drawing tool designed to run in a browser, the goal here is to convert these JSON diagrams into static image assets (like PNGs) during your site's build process.
