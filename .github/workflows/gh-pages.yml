@@ -1,4 +1,4 @@
-name: Deploy MassiveWiki to GitHub Pages
+name: Markpub deploy to GitHub Pages
 
 on:
   push:
@@ -13,28 +13,30 @@ jobs:
 
     steps:
     - name: checkout repository
-      uses: actions/checkout@v5
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: setup Python
-      uses: actions/setup-python@v6
+      uses: actions/setup-python@v5
       with:
         python-version: '3.12'
 
     - name: install Python dependencies
       run: |
-        cd .nxc
+        cd .markpub
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
     - name: install node modules
-      working-directory: .nxc
+      working-directory: .markpub
       run: |
         npm ci
 
     - name: Build website
       run: |
-        cd .nxc
-        nxc build -i .. -o ../output -r /developer-massive-wiki --lunr --commits
+        cd .markpub
+        markpub build -i .. -o ../output -r /developer-massive-wiki --lunr --commits
 
     - name: add a nojekyll file
       run: touch $GITHUB_WORKSPACE/output/.nojekyll

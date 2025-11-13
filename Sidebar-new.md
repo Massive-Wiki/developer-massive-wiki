@@ -13,15 +13,3 @@
   </button>
 {< /div >}
 
-### Plans
-
-[[Massive Wiki Roadmap]]  
-[[Pier2Pier]]  
-[[Massive Wiki Builder redesign notes and plans|Massive Wiki Builder redesign]]     
-
-### For Testing
-
-[[wiki link test page]]  
-[[Mistletoe parser test page|Mistletoe parser test page]]  
-[[Mistletoe & the ampersand story]]  
-
