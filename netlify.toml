@@ -1,8 +1,8 @@
 [build]
   ignore = "/bin/false"
-  base = ".nxc"
+  base = ".markpub"
   publish = "./output"
-  command = "nxc build -i .. -o ./output --lunr --commits"
+  command = "markpub build -i .. -o ./output --lunr --commits"
 
 [build.environment]
   PYTHON_VERSION = "3.12"

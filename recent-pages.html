@@ -4,19 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="fs_path" content="">
+    
     <title>Recent Changes - Developer Wiki (Massive Wiki)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/style.css">
-    <link rel="stylesheet" href="/developer-massive-wiki/mwb-static/css/custom.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/markpub_static/css/style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/markpub_static/css/custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.12.0/dist/bluesky-comments.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/developer-massive-wiki/lunr-index-1761755215.5871708.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1763057751.2630725.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/developer-massive-wiki/lunr-posts-1761755215.5871708.js"></script>
+    <script src="/developer-massive-wiki/lunr-posts-1763057751.2630725.js"></script>
     <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -31,12 +35,10 @@
         <button id="hide-btn">Hide</button>
         <button id="move-btn" class="hidden">Move to Sidebar</button>
       </div>
-      <p>(we are switching to a new theme,<br />
-don't worry if things look different for a while!)</p>
-<h2>Site Navigation</h2>
+      <h3>Site Navigation</h3>
 <div class="navlinks">
 <ul>
-<li><a class="wikilink" href="/developer-massive-wiki/nxc-docs/README.html">HOME</a></li>
+<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
 <li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
 <li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
 <li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
@@ -47,11 +49,11 @@ don't worry if things look different for a while!)</p>
     RANDOM PAGE
   </button>
 </div>
-<h2>Plans</h2>
+<h3>Plans</h3>
 <p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
 <a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
 <a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
-<h2>For Testing</h2>
+<h3>For Testing</h3>
 <p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
 <a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
 <a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
@@ -62,37 +64,37 @@ don't worry if things look different for a while!)</p>
       <h1>Recent new and updated pages</h1>
       
       <p>
-	<div><a href="/developer-massive-wiki/2022-11-25_Massive_Wiki_and_Mastodon_spelunking.html">2022-11-25 Massive Wiki and Mastodon spelunking</a></div>
+	<div><a href="/developer-massive-wiki/Sidebar-new.html">Sidebar-new</a></div>
 	
-	<div><blockquote class="recent-changes-page-abstract">[** Open Source Gardens**@opensourcegardens@chaos.social](https://chaos.social/@opensourcegardens) Dear [#Fediverse](https://chaos.social/tags/Fediverse): We are looking for a good solution to collaboratively create and maintain a [...]</blockquote></div>
-	
-      </p>
-      
-      <p>
-	<div><a href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a></div>
-	
-	<div><blockquote class="recent-changes-page-abstract">This page contains several tests of the Markdown extensions that many Massive Wikis make use of. These include: - Footnotes (how the heck do you specify these in Obsidian?) - Strikethrough - like ~~this text has been struck through~~ - but this has [...]</blockquote></div>
+	<div><blockquote class="recent-changes-page-abstract">{< div class="navlinks" >} - [[README|HOME]] - [SEARCH](/search.html) - [ALL PAGES](/all-pages.html) - [RECENT CHANGES](/recent-pages.html) {< /div >} {< div class="navlinks" >} <button onclick="location.href=`${randomPageLink()}`"> RANDOM PAGE [...]</blockquote></div>
 	
       </p>
       
       <p>
-	<div><a href="/developer-massive-wiki/Refreshing_a_wiki_to_MWB_2.X.html">Refreshing a wiki to MWB 2.X</a></div>
+	<div><a href="/developer-massive-wiki/nxc-docs/nxc_documentation.html">nxc_documentation</a></div>
 	
-	<div><blockquote class="recent-changes-page-abstract">Before you do anything else, have all contributors commit and push any changes to the wiki, and then have them close their Obsidian or other windows / editors on the wiki. Have them wait to make changes while you do the following. This process re- [...]</blockquote></div>
-	
-      </p>
-      
-      <p>
-	<div><a href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign notes and plans</a></div>
-	
-	<div><blockquote class="recent-changes-page-abstract">2022-09-18: Bill has drawn a dataflow style diagram with two aims in mind: 1. illustrate the top-level Massive Wiki builder data processing; and 2. calling out key datastructures that can be refactored into a multi-purpose data structure to support MW [...]</blockquote></div>
+	<div><blockquote class="recent-changes-page-abstract">This directory contains architectural and workflow documentation for the NXC (Massive Wiki Builder) static site generator. This entire directory was generated automatically by Claude 3.7 Sonnet on 2025-02-25, based on nxc [...]</blockquote></div>
 	
       </p>
       
       <p>
-	<div><a href="/developer-massive-wiki/new_wiki_install_notes.html">new wiki install notes</a></div>
+	<div><a href="/developer-massive-wiki/Meetings/Massive_Wiki_Wednesday,_2025-10-29.html">Massive Wiki Wednesday, 2025-10-29</a></div>
 	
-	<div><blockquote class="recent-changes-page-abstract">Notes on attempting to start up a new MW using the starter-repo 2022-07-25: - used the `git clone --recurse-submodules ...` command to establish the starter wiki vault - n.b.: massivewikibuilder submodule is installed at v1.7.1 - need to upgrade it to [...]</blockquote></div>
+	<div><blockquote class="recent-changes-page-abstract">nouns - markpub-themes package installed locally - local user themes directory (sort of a cache) - `-t` option for markpub - markpub.yaml verbs for themes - install - activate - update - clone? use cases - novice user that doesn't want to think about [...]</blockquote></div>
+	
+      </p>
+      
+      <p>
+	<div><a href="/developer-massive-wiki/Meetings/Massive_Wiki_Wednesday,_2025-08-27.html">Massive Wiki Wednesday, 2025-08-27</a></div>
+	
+	<div><blockquote class="recent-changes-page-abstract">- now have pytest and good dir structure - new release (v1.1.x) - blue sky comments additions -> fediverse - another new release (v1.2.x) - migrate from mattermost to [matrix](https://matrix.to/#/#massive_wiki:matrix.org) - roll out ~v1.2.x to key [...]</blockquote></div>
+	
+      </p>
+      
+      <p>
+	<div><a href="/developer-massive-wiki/Tech_Note_-_Markpub_Python_Package.html">Tech Note - Markpub Python Package</a></div>
+	
+	<div><blockquote class="recent-changes-page-abstract">This page collects notes about managing the "Markpub" Python package. - 2025-08-10: current package building and publishing is done using Poetry - this process will be moved to "uv" (see below) - Notes and observations about testing: - These testing [...]</blockquote></div>
 	
       </p>
       
@@ -101,12 +103,18 @@ don't worry if things look different for a while!)</p>
 </div>
 <footer class="footer">
   <div class="content has-text-centered">
+    
     <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    
+    
     <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    
+    
     <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
-    <div><em>Site last updated on Wednesday, October 29, 2025 at 16:26 UTC.</em></div>
+    
+    <div><em>Site last updated on Thursday, November 13, 2025 at 18:15 UTC.</em></div>
   </div>
 </footer>
-<script src="/developer-massive-wiki/mwb-static/js/script.js"></script>
+<script src="/developer-massive-wiki/markpub_static/js/script.js"></script>
 </body>
 </html>

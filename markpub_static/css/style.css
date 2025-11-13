@@ -1,12 +1,9 @@
 /* Base Styles */
 
 body {
-  font-size: 1.125rem;
   font-size: 1.0rem;
-  line-height: 1.6;
   line-height: 1.3;
   font-weight: 400;
-  font-family: Georgia, Times New Roman, serif;
   font-family: "Roboto", "Trebuchet MS", Arial, sans-serif;
   color: #333;
   background: #FEFEFE;
@@ -23,9 +20,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Media */
-img, video, iframe {
+img, video {
   max-width: 100%;
   height: auto;
+}
+
+iframe {
+  max-width: 100%;
 }
 
 /* Layout */
@@ -93,7 +94,7 @@ img, video, iframe {
 #main-column {
   max-width: 43em;
   background-color: white;
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
   flex-grow: 1;
   margin-left: 2em;
 }
@@ -102,7 +103,7 @@ img, video, iframe {
 #header {
   font-family: "Roboto", "Trebuchet MS", Arial, sans-serif;
   font-size: 2.25rem;
-  margin: 0.5em 0 1em;
+  margin: 0.5em 0 0.2em;
   color: black;
   background: #d6eaf8;
   background: #3298dc;
@@ -127,6 +128,11 @@ img, video, iframe {
   margin-right: 0.5em;
 }
 
+/* make space around All Pages table */
+div#allPagesTableWrapper {
+    margin: 3em 4em 1em 4em;
+}
+
 /* Utility Classes */
 .hidden {
   display: none;
@@ -147,10 +153,20 @@ img, video, iframe {
     max-width: 83% !important;
 }
 
+/* Recent Changes page abstract */
+blockquote.recent-changes-page-abstract {
+  margin-left: 2em;
+}
+
+/* transclusion error */
+span.transclusion-error {
+  color: #dd3333;
+}
+
 /* Footer */
 .footer {
   background-color: #fafafa;
-  padding: 3rem 1.5rem 6rem;
+  padding: 2rem 0rem 3rem;
 }
 
 /* Buttons */
@@ -190,6 +206,52 @@ img, video, iframe {
 .edit-this-page-button a:hover {
   background-color: #e4f4fc;
   color: #484848;
+}
+
+/* incipient link */
+span.incipient-wikilink {
+  color: #dd3333;
+  position: relative;
+  display: inline-block;
+  text-decoration: underline dashed;
+  cursor: pointer;
+}
+
+/* body of incipient link popup */
+span.incipient-wikilink::before {
+  content: "No page exists for this link yet; one may be created in the future.";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ee8;
+  color: #000;
+  padding: .1em .5em .1em .5em;
+  border-radius: .5em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+/* display the incipient link popup */
+span.incipient-wikilink:hover::before {
+  opacity: 1;
+}
+
+/* the small "speech bubble" triangle under the incipient link popup */
+span.incipient-wikilink:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: .5em solid transparent;
+  border-top-color: #ee8;
+  border-bottom: 0;
+  margin-left: -.5em;
+  margin-bottom: -.5em;
 }
 
 /* Media Queries */
