@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="fs_path" content="/MarkPub notes/developer-wiki MWB to MarkPub upgrade.md">
+    
+    <title>developer-wiki MWB to MarkPub upgrade - Developer Wiki (Massive Wiki)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/developer-massive-wiki/markpub_static/css/style.css">
+    <link rel="stylesheet" href="/developer-massive-wiki/markpub_static/css/custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.12.0/dist/bluesky-comments.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/developer-massive-wiki/lunr-index-1763070008.9949772.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/developer-massive-wiki/lunr-posts-1763070008.9949772.js"></script>
+    <script> function randomPageLink() { return "/developer-massive-wiki"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/developer-massive-wiki/index.html">Developer Wiki (Massive Wiki)</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h3>Site Navigation</h3>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/developer-massive-wiki/README.html">HOME</a></li>
+<li><a href="/developer-massive-wiki/search.html">SEARCH</a></li>
+<li><a href="/developer-massive-wiki/all-pages.html">ALL PAGES</a></li>
+<li><a href="/developer-massive-wiki/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
+    RANDOM PAGE
+  </button>
+</div>
+<h3>Plans</h3>
+<p><a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Roadmap.html">Massive Wiki Roadmap</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Pier2Pier.html">Pier2Pier</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Massive_Wiki_Builder_redesign_notes_and_plans.html">Massive Wiki Builder redesign</a></p>
+<h3>For Testing</h3>
+<p><a class="wikilink" href="/developer-massive-wiki/Link_workbench/testdir/wiki_link_test_page.html">wiki link test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/Mistletoe_parser_test_page.html">Mistletoe parser test page</a><br />
+<a class="wikilink" href="/developer-massive-wiki/MWB_upgrade_notes/Mistletoe_&_the_ampersand_story.html">Mistletoe & the ampersand story</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/Massive-Wiki/developer-massive-wiki/edit/main/MarkPub notes/developer-wiki MWB to MarkPub upgrade.md"
+	class="edit-this-page-button">Edit on GitHub</a></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>developer-wiki MWB to MarkPub upgrade</h1>
+<p>Note: 2025-11-13
+Move <code>developer.massive.wiki</code> from depending on <code>massivewikibuilder</code> and <code>nxc</code></p>
+<ol>
+<li>Initialize the local GitHub repository
+<ul>
+<li>N.B.: Markpub initialization needs to be run outside the "developer-massive-wiki" directory</li>
+<li>my choice was to install <code>markpub</code> in a "~/local/markpubBench" directory</li>
+</ul>
+</li>
+</ol>
+<pre><code class="language-shell">cd ~/local/markpubBench
+python3 -m venv venv
+source venv/bin/activate
+pip install -U pip
+pip install markpub
+
+markpub init ~/Documents/Github/developer-massive-wiki
+deactivate # deactivate this Python env
+</code></pre>
+<ul>
+<li>provide wiki title; author, git repository name at the command line</li>
+</ul>
+<ol start="2">
+<li>To check the new config file against the MWB file, compare contents of <code>developer-massive-wiki/.markpub/markpub.yaml</code> to previous <code>.massivewikibuilder/mwb.yaml</code></li>
+</ol>
+<pre><code class="language-shell">cd ~/Documents/Github/developer-massive-wiki
+diff .markpub/markpub.yaml .massivewikibuilder/mwb.yaml
+</code></pre>
+<ol start="3">
+<li>test local build of website using MarkPub<br />
+3.1. setup Python3 for local build</li>
+</ol>
+<pre><code class="language-shell">cd ~/Documents/Github/developer-massive-wiki/.markpub
+python3 -m venv venv
+source venv/bin/activate
+pip install -U pip
+pip install markpub
+</code></pre>
+<pre><code>3.2. on the local machine: first install node modules, then build the website
+</code></pre>
+<pre><code class="language-shell">npm ci
+markpub build -i .. -o ./output --lunr --commits
+</code></pre>
+<pre><code> 3.3. view the build result  
+</code></pre>
+<pre><code class="language-shell">cd output
+python -m http.server
+</code></pre>
+<pre><code>	Open a browser to http://localhost:8000 
+</code></pre>
+<ol start="4">
+<li>
+<p>Commit the MarkPub changes to the repository</p>
+<ul>
+<li>include the changes to <code>.gitignore</code>; clean this up later</li>
+</ul>
+</li>
+<li>
+<p>TODO: move any old Sidebar content to keep into the new Sidebar</p>
+<ul>
+<li>use Obsidian or another text editor</li>
+<li><code>git commit</code> the Sidebar updates</li>
+</ul>
+</li>
+<li>
+<p>I pushed all committed changes; might have been better to push in stages</p>
+</li>
+</ol>
+<p><strong>TODO</strong>: think through these steps one more time; remove <code>requirements.txt</code> from the package src</p>
+<ol start="7">
+<li>The steps "Claude" provided to remove MassiveWikiBuilder and MWThemes</li>
+</ol>
+<pre><code class="language-text">  Steps to Remove Git Submodules
+
+  1. Remove the submodule entries from .git/config:
+  git submodule deinit -f .massivewikibuilder/massivewikibuilder
+  git submodule deinit -f .massivewikibuilder/massive-wiki-themes
+
+  2. Remove the submodule directories from the working tree and index:
+  git rm -f .massivewikibuilder/massivewikibuilder
+  git rm -f .massivewikibuilder/massive-wiki-themes
+
+  3. Remove the .gitmodules file:
+  git rm .gitmodules
+
+  4. Remove the submodule directories from .git/modules:
+  rm -rf .git/modules/.massivewikibuilder
+
+  5. Commit the changes:
+  git commit -m "Remove git submodules"
+
+  All commands in sequence:
+
+  git submodule deinit -f .massivewikibuilder/massivewikibuilder
+  git submodule deinit -f .massivewikibuilder/massive-wiki-themes
+  git rm -f .massivewikibuilder/massivewikibuilder
+  git rm -f .massivewikibuilder/massive-wiki-themes
+  git rm .gitmodules
+  rm -rf .git/modules/.massivewikibuilder
+  git commit -m "Remove git submodules"
+</code></pre>
+<ol start="9">
+<li>review any outstanding <code>git</code> changes; commit and push what is relevant
+<ul>
+<li>review the output that is published on the web</li>
+<li>if it all looks good, then I think the upgrade (or transition) is done</li>
+</ul>
+</li>
+</ol>
+<hr />
+<p><strong>TODO</strong>: document the cleanup of <code>.gitignore</code></p>
+
+      
+    </div>
+  </div>
+  <script src="/developer-massive-wiki/markpub_static/js/script.js"></script>
+  
+  <footer class="footer">
+  <div class="content has-text-centered">
+    
+    <div><strong>Developer Wiki (Massive Wiki)</strong> by the Massive Wiki Team.</div>
+    
+    
+    <div>Central repository at <a href="https://github.com/Massive-Wiki/developer-massive-wiki">developer-massive-wiki</a>.</div>
+    
+    
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    
+    <div><em>Site last updated on Thursday, November 13, 2025 at 21:40 UTC.</em></div>
+  </div>
+</footer>
+</body>
+</html>
